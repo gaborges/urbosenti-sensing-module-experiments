@@ -37,6 +37,7 @@ import urbosenti.core.events.Event;
 import urbosenti.core.events.EventManager;
 import urbosenti.core.events.SystemEvent;
 import urbosenti.core.events.SystemHandler;
+import urbosenti.test.TestManager;
 import urbosenti.user.User;
 import urbosenti.user.UserManager;
 import urbosenti.util.DeveloperSettings;
@@ -102,6 +103,15 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
      *
      */
     public static final int EVENT_SYSTEM_REPORT_GENERATED = 6;
+    /**
+     * int EVENT_EXPERIMENTAL_INTERACTION_RESPONSE_RECEIVED = 7; </ br>
+     *
+     * <ul><li>id: 7</li>
+     * <li>evento: Resposta do experimento de interação foi recebida</li>
+     * <li>parâmetros: ip (ip); porta (port); id do evento inicial (eventId); tempo do evento inicial (timestampEvent)</li></ul>
+     *
+     */
+    public static final int EVENT_EXPERIMENTAL_INTERACTION_RESPONSE_RECEIVED = 7;
     /*
      *********************************************************************
      ***************************** Actions ******************************* 
@@ -153,6 +163,22 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
      *
      */
     public static final int ACTION_UPDATE_LAST_SENT_REPORT_DATE = 5;
+    /**
+     * int ACTION_EXPERIMENTAL_INTERACTION = 6;
+     * <ul><li>id: 6</li>
+     * <li>ação: Interação experimental</li>
+     * <li>parâmetros: id do evento inicial (eventId); tempo do evento inicial (timestampEvent)</li></ul>
+     *
+     */
+    public static final int ACTION_EXPERIMENTAL_INTERACTION = 6;
+    /**
+     * int ACTION_EXPERIMENTAL_INTERACTION = 7;
+     * <ul><li>id: 7</li>
+     * <li>ação: Interação experimental</li>
+     * <li>parâmetros: nenhum</li></ul>
+     *
+     */
+    public static final int ACTION_EXPERIMENTAL_INTERACTION_STOP_AGENT = 7;
     //private LocalKnowledge localKnowledge
     private Queue<Event> availableEvents;
     private ContextManager contextManager;
@@ -274,7 +300,8 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                 this.discoveryAdapter = new UrboSentiDiscoveryAdapter();
             }
             // pegar diretamente do banco de dados depois de adicionado, por enquanto estático para testes
-            this.intervalAmongModuleStateReports = 43200000L; // cada 12 horas
+            //this.intervalAmongModuleStateReports = 43200000L; // cada 12 horas
+            this.intervalAmongModuleStateReports = 21600000L; // cada 6 horas
             this.intervalCleanStoredMessages = 3600000L; // cada hora
             this.scanIntervalOfServiceErrors = 60000L; // cada 1 minuto
             this.isAllowedReportingFunctionsToUploadService = true;
@@ -393,6 +420,8 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
         ExecutionPlan executionPlan;
         Address target;
         UploadService up = null;
+        int genericInteger1;
+        int genericInteger2;
         while (isRunning()) {
             Event event = null, generatedEvent;
             diagnosis = new Diagnosis();
@@ -537,7 +566,7 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                  * ************** Analisys Process **************
                  */
 
-                switch (event.getOriginType()) {
+                switch (event.getEventType()) {
                     /*
                      *************************************************************
                      *************************************************************
@@ -585,6 +614,25 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                             // não necessário agora
                         } else if (event.getId() == AdaptationDAO.INTERACTION_TO_CANCEL_REGISTRATION) { // Assinatura cancelada
                             // não necessáro agora
+                        } else if (event.getId() == TestManager.INTERACTION_REQUEST_RESPONSE){ // resposta da mensagem de teste
+                            interactionModel = (super.getDeviceManager().getDataManager().getAgentTypeDAO().getInteractionModel(TestManager.INTERACTION_ANSWER_THE_REQUEST_RESPONSE));
+                            // parâmetros: id o evento (eventId); tempo do evento (timestampEvent); ip (ip); porta(port)
+                            target = new Address("http://"+event.getParameters().get("ip")+":"+event.getParameters().get("port"));
+                            target.setLayer(Address.LAYER_SYSTEM);
+                            target.setUid(((Address) event.getParameters().get("sender")).getUid());
+                            event.getParameters().put("target", target);
+                            event.getParameters().put("interactionModel", interactionModel);
+                            event.getParameters().put("ip", getDeviceManager().getCommunicationManager().getMainPushServiceReceiver().getInterfaceConfigurations().get("ipv4Address"));
+                            event.getParameters().put("port", getDeviceManager().getCommunicationManager().getMainPushServiceReceiver().getInterfaceConfigurations().get("port"));
+                            //values.put("eventId", event.getDatabaseId()); já estão no conteúdo do HashMap
+                            //values.put("timestampEvent", event.getTime().getTime());
+                            diagnosis.addChange(new Change(20, event.getParameters())); // parâmetros são os mesmos
+                        } else if (event.getId() == TestManager.INTERACTION_ANSWER_THE_REQUEST_RESPONSE){ // resposta da mensagem de teste
+                            //id do evento (eventId);tempo de evento (timestampEvent);
+                            diagnosis.addChange(new Change(22 , event.getParameters())); // parâmetros são os mesmos
+                        } else if (event.getId() == TestManager.INTERACTION_REQUEST_SHUTDOWN){ 
+                            //desligar
+                            diagnosis.addChange(new Change(21, null)); // sem parâmetros
                         }
                         /* Analysis -- Diagnosis */
                         /* Planning -- Plan */
@@ -896,7 +944,62 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                 values.put("time", event.getTime());
                                 diagnosis.addChange(new Change(10, values));
                             }
-                        }
+                        } else if (event.getComponentManager().getComponentId() == TestManager.COMPONENT_ID) {
+                            if(event.getId() == TestManager.EVENT_GENERIC_EVENT){
+                                // Quantidade de regras (rules); quantidade de condições (conditions);
+                                genericInteger1 = (Integer) event.getParameters().get("rules");
+                                genericInteger2 = (Integer) event.getParameters().get("conditions");
+                                for(int i = 0; i < genericInteger1; i++){
+                                    for(int j = 0; j < genericInteger2;j++){
+                                        this.adaptationDAO.getLastRecordedErrorFromInstance(1, this.intervalAmongModuleStateReports);
+                                    }
+                                }
+                                values = new HashMap<String, Object>();
+                                values.put("event", event);
+                                diagnosis.addChange(new Change(16, values));
+                            } else if (event.getId() == TestManager.EVENT_START_INTERACTION) {
+                                /// fazer depois
+                                // ip (ip); porta (port);Quantidade de regras (rules); quantidade de condições (conditions);
+                                genericInteger1 = (Integer) event.getParameters().get("rules");
+                                genericInteger2 = (Integer) event.getParameters().get("conditions");
+                                for(int i = 0; i < genericInteger1; i++){
+                                    for(int j = 0; j < genericInteger2;j++){
+                                        this.adaptationDAO.getLastRecordedErrorFromInstance(1, this.intervalAmongModuleStateReports);
+                                    }
+                                }
+                                interactionModel = (super.getDeviceManager().getDataManager().getAgentTypeDAO().getInteractionModel(TestManager.INTERACTION_REQUEST_RESPONSE));
+                                // parâmetros: id o evento (eventId); tempo do evento (timestampEvent); ip (ip); porta(port)
+                                values = new HashMap<String, Object>();
+                                target = new Address("http://"+event.getParameters().get("ip")+":"+event.getParameters().get("port"));
+                                target.setLayer(Address.LAYER_SYSTEM);
+                                target.setUid(event.getParameters().get("uid").toString());
+                                values.put("target", target);
+                                values.put("interactionModel", interactionModel);
+                                values.put("eventId", event.getDatabaseId());
+                                values.put("timestampEvent", event.getTime().getTime());
+                                // vai funcionar somente para desktop
+                                values.put("ip", getDeviceManager().getCommunicationManager().getMainPushServiceReceiver().getInterfaceConfigurations().get("ipv4Address"));
+                                values.put("port", getDeviceManager().getCommunicationManager().getMainPushServiceReceiver().getInterfaceConfigurations().get("port"));
+                                interactionModel.setContentToParameter("eventId", event.getDatabaseId());
+                                interactionModel.setContentToParameter("timestampEvent", event.getTime().getTime());
+                                diagnosis.addChange(new Change(17, values));
+                            } else if (event.getId() == TestManager.EVENT_SHUTDOWN_ANOTHER_AGENT) {
+                                interactionModel = (super.getDeviceManager().getDataManager().getAgentTypeDAO().getInteractionModel(TestManager.INTERACTION_REQUEST_SHUTDOWN));
+                                
+                                // parâmetros: id o evento (eventId); tempo do evento (timestampEvent); ip (ip); porta(port)
+                                values = new HashMap<String, Object>();
+                                target = new Address("http://"+event.getParameters().get("ip")+":"+event.getParameters().get("port"));
+                                target.setLayer(Address.LAYER_SYSTEM);
+                                target.setUid(event.getParameters().get("uid").toString());
+                                values.put("target", target);
+                                values.put("interactionModel", interactionModel);
+                                target = new Address();
+                                target.setLayer(Address.LAYER_SYSTEM);
+                                target.setUid(getDeviceManager().getBackendService().getApplicationUID());
+                                event.getParameters().put("origin",target);
+                                diagnosis.addChange(new Change(18, values));
+                            }
+                        } 
                         // último diagnóstico a ser executado
                         if (diagnosis.getChanges().isEmpty()) {
                             diagnosis.addChange(new Change(Diagnosis.DIAGNOSIS_NO_ADAPTATION_NEEDED, null));
@@ -1035,6 +1138,62 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                 // comentei para teste
                                 actions.add(action);
                                 break;
+                            case 16: // action: ação genérica para teste
+                                action = new Action();
+                                action.setId(TestManager.ACTION_GENERIC_ACTION);
+                                action.setParameters(values);
+                                action.setTargetEntityId(TestManager.ENTITY_TEST_ENTITY);
+                                action.setTargetComponentId(TestManager.COMPONENT_ID);
+                                actions.add(action);
+                                break;
+                            case 17: // ação: interação para requirir resposta (Síncrona)
+                                action = new Action();
+                                action.setId(TestManager.INTERACTION_REQUEST_RESPONSE);
+                                action.setActionType(Event.INTERATION_EVENT);
+                                action.setParameters(values);
+                                action.setSynchronous(true);
+                                actions.add(action);
+                                break;
+                            case 18: // ação: interação para requirir o desligamento (Síncrona)
+                                action = new Action();
+                                action.setId(TestManager.INTERACTION_REQUEST_SHUTDOWN);
+                                action.setActionType(Event.INTERATION_EVENT);
+                                action.setParameters(values);
+                                action.setSynchronous(true);
+                                actions.add(action);
+                                break;
+                            case 19: // ação: ação para informar resposta de interação de teste
+                                action = new Action();
+                                action.setId(TestManager.ACTION_INTERACTION_RESULT);
+                                action.setParameters(values);
+                                action.setTargetEntityId(TestManager.ENTITY_TEST_ENTITY);
+                                action.setTargetComponentId(TestManager.COMPONENT_ID);
+                                actions.add(action);
+                                break;
+                            case 20: // ação: interação resposta para requirir resposta (Síncrona)
+                                action = new Action();
+                                action.setId(TestManager.INTERACTION_ANSWER_THE_REQUEST_RESPONSE);
+                                action.setActionType(Event.INTERATION_EVENT);
+                                action.setParameters(values);
+                                action.setSynchronous(true);
+                                actions.add(action);
+                                break;
+                            case 21: // ação: desligar
+                                action = new Action();
+                                action.setId(TestManager.ACTION_SHUTDOWN);
+                                action.setTargetEntityId(TestManager.ENTITY_TEST_ENTITY);
+                                action.setTargetComponentId(TestManager.COMPONENT_ID);
+                                action.setParameters(values);
+                                actions.add(action);
+                                break;
+                            case 22: // action: ação de interação para confirmar resposta
+                                action = new Action();
+                                action.setId(TestManager.ACTION_INTERACTION_RESULT);
+                                action.setParameters(values);
+                                action.setTargetEntityId(TestManager.ENTITY_TEST_ENTITY);
+                                action.setTargetComponentId(TestManager.COMPONENT_ID);
+                                actions.add(action);
+                                break;
                             default:
                                 // evento de erro. Diagnóstico não conhecido
                                 break;
@@ -1127,6 +1286,9 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                 this.newEvent(errorEvent);
             }
         }
+    }
+    public synchronized int getEventsCount() {
+        return this.availableEvents.size();
     }
 
 }

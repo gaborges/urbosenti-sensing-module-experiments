@@ -21,6 +21,7 @@ import org.xml.sax.InputSource;
 import urbosenti.adaptation.AdaptationManager;
 import urbosenti.adaptation.ExecutionPlan;
 import urbosenti.core.communication.Address;
+import urbosenti.core.communication.CommunicationManager;
 import urbosenti.core.communication.Message;
 import urbosenti.core.data.DataManager;
 import urbosenti.core.device.BaseComponentManager;
@@ -143,17 +144,18 @@ public final class AdaptationDAO {
          * **** Validações ******
          */
         // verifica se o UID da mensagem existe no sistema, se sim retorna o agente referente e o serviço
-        Service service = dataManager.getServiceDAO().getServiceByUid(message.getOrigin().getUid());
-        // se volta null o serviço não está cadastrado
-        if (service == null) {
-            throw new Exception("Service UID '" + message.getOrigin().getUid() + "' not found.");
-        }
-        // se retorna null, o serviço não possui agente para interação
-        if (service.getAgent() == null) {
-            // caso não
-            // excessão agente não registrado
-            throw new Exception("Agent of service UID '" + message.getOrigin().getUid() + "' not was found.");
-        }
+        // Comentado para teste, serviço não sendo usado
+//        Service service = dataManager.getServiceDAO().getServiceByUid(message.getOrigin().getUid());
+//        // se volta null o serviço não está cadastrado
+//        if (service == null) {
+//            throw new Exception("Service UID '" + message.getOrigin().getUid() + "' not found.");
+//        }
+//        // se retorna null, o serviço não possui agente para interação
+//        if (service.getAgent() == null) {
+//            // caso não
+//            // excessão agente não registrado
+//            throw new Exception("Agent of service UID '" + message.getOrigin().getUid() + "' not was found.");
+//        }
         /**
          * *** Extrair a mensagem *****
          */
@@ -278,15 +280,22 @@ public final class AdaptationDAO {
         Message message = new Message();
         message.setContent(finalString);
         message.setTarget((Address) action.getParameters().get("target"));
+        if(action.getParameters().get("origin")!=null){
+            System.out.println("    -------------------- Origem não nula ---------"+action.getParameters().get("origin"));
+             message.setOrigin((Address) action.getParameters().get("origin"));
+        } else {
+            message.setOrigin(new Address());
+            message.getOrigin().setLayer(Address.LAYER_SYSTEM);
+        }
         message.setSubject(Message.SUBJECT_SYSTEM_MESSAGE);
         message.setContentType("text/xml");
         message.setUsesUrboSentiXMLEnvelope(true);
         // Preparar ação para envio: envio de mensagens assíncrona
         action.getParameters().put("message", message);
         if (action.isSynchronous()) {
-            action.setId(23);
+            action.setId(CommunicationManager.ACTION_SEND_SYNCHRONOUS_MESSAGE);
         } else {
-            action.setId(22);
+            action.setId(CommunicationManager.ACTION_SEND_ASSYNCHRONOUS_MESSAGE);
         }
         action.setOrigin(Address.LAYER_SYSTEM);
         action.setTargetComponentId(CommunicationDAO.COMPONENT_ID);
@@ -476,7 +485,7 @@ public final class AdaptationDAO {
                                 + (parameters.get(parameters.size() - 1).getId() == parameter.getId() ? "" : " ,");
                     }
                 }
-                json += " ] } " + ((actions.get(actions.size() - 1).getDataBaseId() == action.getDataBaseId() || feedbackErros.isEmpty()) ? "" : ", ");
+                json += " ] } " + ((feedbackErros.get(feedbackErros.size() - 1).getDataBaseId() == action.getDataBaseId() || feedbackErros.isEmpty()) ? "" : ", ");
             }
             json += " ] } ";
         }

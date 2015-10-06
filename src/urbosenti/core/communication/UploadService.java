@@ -57,7 +57,7 @@ public class UploadService extends UrboSentiService implements Runnable, Instanc
                 limitOfReportsSentByUploadInterval = (Integer) Content.parseContent(s.getDataType(), s.getCurrentValue());
             } else if (s.getModelId() == CommunicationDAO.STATE_ID_OF_UPLOAD_PERIODIC_REPORTS_SUBSCRIBED_MAXIMUM_UPLOAD_RATE) {
                 this.subscribedMaximumUploadRate = (Boolean) Content.parseContent(s.getDataType(), s.getCurrentValue());
-            } 
+            }
         }
     }
 
@@ -108,7 +108,7 @@ public class UploadService extends UrboSentiService implements Runnable, Instanc
                 }
                 if (upload) {
                     communicationManager.newInternalEvent(CommunicationManager.EVENT_NEW_START_OF_UPLOAD_SERVICE_FUNCTION_LOOP, this.getInstance().getModelId());
-                    communicationManager.uploadServiceFunction(service, this,this.uploadInterval,this.uploadRate,this.limitOfReportsSentByUploadInterval);
+                    communicationManager.uploadServiceFunction(service, this, this.uploadInterval, this.uploadRate, this.limitOfReportsSentByUploadInterval);
                 }
             }
         } catch (InterruptedException ex) {
@@ -383,7 +383,7 @@ public class UploadService extends UrboSentiService implements Runnable, Instanc
     public synchronized boolean isAllowedToPerformUpload() {
         return allowedToPerformUpload;
     }
-    
+
     public synchronized void setUploadInterval(Long uploadInterval) {
         this.uploadInterval = uploadInterval;
     }
@@ -408,7 +408,7 @@ public class UploadService extends UrboSentiService implements Runnable, Instanc
         this.subscribedMaximumUploadRate = subscribedMaximumUploadRate;
         notifyAll();
     }
-    
+
     @Override
     public String toString() {
         return String.valueOf(instance.getId());

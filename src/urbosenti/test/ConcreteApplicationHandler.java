@@ -21,7 +21,7 @@ public class ConcreteApplicationHandler extends ApplicationHandler{
 
     @Override
     public void newEvent(Event event) {
-        System.out.println("New application event: "+event.toString());
+        //System.out.println("New application event: "+event.toString());
     }
     
 }

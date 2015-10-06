@@ -192,6 +192,9 @@ public final class DeviceManager extends ComponentManager implements BaseCompone
         this.communicationManager.setComponentId(COMMUNICATION_COMPONENT_ID);
         this.eventManager.setComponentId(EVENTS_COMPONENT_ID);
         this.isRunning = false;
+        // instancia uma lista de componentes habilitados
+        this.enabledComponentManagers = new ArrayList();
+        
     }
 
     public CommunicationManager getCommunicationManager() {
@@ -275,8 +278,6 @@ public final class DeviceManager extends ComponentManager implements BaseCompone
         content.setTime(new Date());
         content.setValue(true);
         try {
-            // instancia uma lista de componentes habilitados
-            this.enabledComponentManagers = new ArrayList();
             // habilita do componente de dados
             this.dataManager.onCreate(); // Deve ser o primeiro a ser executado. Os demais irão utilizar esse gerente para acessar dados
             this.enabledComponentManagers.add(this.dataManager);
@@ -1218,7 +1219,8 @@ public final class DeviceManager extends ComponentManager implements BaseCompone
 
     @Override
     public void addComponentManager(ComponentManager componentManager) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // usado para simulação
+        this.enabledComponentManagers.add(componentManager);
     }
 
     /**
@@ -1237,7 +1239,9 @@ public final class DeviceManager extends ComponentManager implements BaseCompone
              * *** Configurações necessárias para os componentes ****
              */
             // tratador de eventos do sistema
-            this.getAdaptationManager().start();
+            if(this.getAdaptationManager()!=null){
+                this.getAdaptationManager().start();
+            }
             // Registrar do nó de sensoriamento movel no backend server :
             // 1 - busca o servidor backend cadastrado no conhecimento inicial
             Service backendServer = this.getBackendService();
@@ -1269,7 +1273,9 @@ public final class DeviceManager extends ComponentManager implements BaseCompone
      */
     public void stopUrboSentiServices() {
         // Para o adaptation Manager
-        this.adaptationManager.stop();
+        if(this.getAdaptationManager()!=null){
+            this.adaptationManager.stop();
+        }
         // Para  serviço de Upload
         this.communicationManager.stopAllCommunicationServices();
         // Para os listeners

@@ -872,9 +872,14 @@ public class CommunicationManager extends ComponentManager {
                     }
                 }
                 break;
-            case 22: // 22 - Enviar mensagem síncrona - com comfirmação de chegada - target,message
+            case 22: // 22 - Enviar mensagem síncrona - com confirmação de chegada - target,message
                 message = (Message) action.getParameters().get("message");
                 message.setTarget((Address) action.getParameters().get("target"));
+                if(message.getOrigin()!=null){
+                    if(message.getOrigin().getUid().isEmpty() || message.getOrigin().getUid().equals(Address.DEFAULT_UID_VALUE)){
+                        message.getOrigin().setUid(getDeviceManager().getBackendService().getApplicationUID());
+                    }
+                }
                 try {
                     this.sendMessage(message);
                 } catch (SocketTimeoutException ex) {
@@ -2104,7 +2109,7 @@ public class CommunicationManager extends ComponentManager {
         return null;
     }
 
-    public void updateInputCommunicationInterfaceConfiguration(SocketPushServiceReceiver inputInterface, HashMap<String, String> interfaceConfigurations) {
+    public void updateInputCommunicationInterfaceConfiguration(PushServiceReceiver inputInterface, HashMap<String, String> interfaceConfigurations) {
         this.newInternalEvent(EVENT_NEW_INPUT_COMMUNICATION_INTERFACE_ADDRESS, inputInterface, interfaceConfigurations);
     }
 
