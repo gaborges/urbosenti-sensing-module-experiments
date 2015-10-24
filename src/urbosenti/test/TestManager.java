@@ -244,8 +244,8 @@ public class TestManager extends ComponentManager implements Runnable {
                 break;
             case ACTION_SHUTDOWN:
                 try {
-                    this.writer.close();
                     this.writer.flush();
+                    this.writer.close();
                 } catch (IOException ex) {
                     Logger.getLogger(TestManager.class.getName()).log(Level.SEVERE, null, ex);
                 }

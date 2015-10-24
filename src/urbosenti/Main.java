@@ -22,7 +22,9 @@ import urbosenti.core.device.model.Service;
 import urbosenti.test.ConcreteApplicationHandler;
 import urbosenti.test.DesktopOperationalSystemDiscovery;
 import urbosenti.test.TestCommunication;
+import urbosenti.test.TestECADiagnosisModel;
 import urbosenti.test.TestManager;
+import urbosenti.test.TestStaticPlanningModel;
 
 /**
  *
@@ -42,7 +44,7 @@ public class Main {
      * <ul>
      * <li>Args Gerais: (0) porta; (1) Experimento; (2 ...) depende dos
      * experimentos</li>
-     * <li>Experimento 1 (Aplicação): nenhum</li>
+     * <li>Experimento 1 (Aplicação): (2) tempo de parada; (3) intervalo entre uploads </li>
      * <li>Experimento 2 (Eventos internos): (2) quantityOfEvents, (3) int
      * quantityOfRules, (4) quantityOfConditions, (5) nomeArquivoDeSaída</li>
      * <li>Experimento 3 (Interações): (2) Modo de operação (1 ou 2); </li>
@@ -58,6 +60,7 @@ public class Main {
      * ips; (8) desligar escutadores?</li>
      * </ul>
      * @throws java.io.IOException
+     * @throws java.lang.InterruptedException
      *
      */
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -70,7 +73,12 @@ public class Main {
          */
         // Instanciar componentes -- Device manager e os demais onDemand
         DeviceManager deviceManager = new DeviceManager(); // Objetos Core já estão incanciados internamente
-        deviceManager.enableAdaptationComponent(); // Habilita componente de adaptação   
+        deviceManager.enableAdaptationComponent(); // Habilita componente de adaptação
+        // adiciona os tradadores de evento cursomisados
+        deviceManager.getAdaptationManager().setDiagnosisModel(
+                new TestECADiagnosisModel(deviceManager));
+        deviceManager.getAdaptationManager().setPlanningModel(
+                new TestStaticPlanningModel(deviceManager));
         TestManager testManager;
         if (args.length >= 5) {  // tem 5 ou mais itens, então usa o parâmetro 5 do arquivo  
             testManager = new TestManager(deviceManager, args[6]);
@@ -131,7 +139,14 @@ public class Main {
                 // Testes
                 TestCommunication tc = new TestCommunication(deviceManager);
                 // experimento de aplicação
-                tc.test2();
+                try{
+                    if (args.length < 4)
+                        tc.test2(0, Long.parseLong(args[2]));
+                    else
+                        tc.test2(Long.parseLong(args[3]),Long.parseLong(args[2]));
+                } catch (java.lang.ArrayIndexOutOfBoundsException ex){
+                    tc.test2(0,Long.parseLong(args[2]));
+                }
                 break;
             case 2: //Experimento 2 (Eventos internos): 
                 // (2) quantityOfEvents, (3) quantityOfRules, (4) quantityOfConditions, (5) nomeArquivoDeSaída

@@ -303,7 +303,7 @@ public class AgentTypeDAO {
         }
     }
 
-    List<InteractionModel> getAgentInteractions(AgentType agentType) throws SQLException {
+    List<InteractionModel> getAgentInteractionModels(AgentType agentType) throws SQLException {
         List<InteractionModel> interactions = new ArrayList();
         InteractionModel interaction = null;
         String sql = "SELECT interactions.id as id, interactions.description as interaction_desc, communicative_act_id, communicative_acts.description as act_desc,  \n"
@@ -338,7 +338,7 @@ public class AgentTypeDAO {
         return interactions;
     }
 
-    List<State> getAgentStates(AgentType agentType) throws SQLException {
+    List<State> getAgentStateModels(AgentType agentType) throws SQLException {
         List<State> states = new ArrayList();
         State state = null;
         String sql = "SELECT agent_states.id as state_id, agent_states.description as state_desc, "
@@ -357,8 +357,8 @@ public class AgentTypeDAO {
             DataType type = new DataType();
             type.setId(rs.getInt("data_type_id"));
             type.setDescription(rs.getString("data_desc"));
-            type.setInitialValue(Content.parseContent(state.getDataType(), rs.getObject("data_initial_value")));
             state.setDataType(type);
+            type.setInitialValue(Content.parseContent(state.getDataType(),rs.getObject("data_initial_value")));
             state.setInferiorLimit(Content.parseContent(type, rs.getObject("inferior_limit")));
             state.setSuperiorLimit(Content.parseContent(type, rs.getObject("superior_limit")));
             state.setInitialValue(Content.parseContent(type, rs.getObject("initial_value")));
@@ -505,6 +505,19 @@ public class AgentTypeDAO {
         return possibleContents;
     }
 
+    public List<AgentType> getAgentTypes() throws SQLException{
+        List<AgentType> agentTypes = new ArrayList();
+        String sql = " SELECT id, description FROM agent_types ";
+        stmt = this.connection.prepareStatement(sql);
+        ResultSet rs = stmt.executeQuery();
+        while (rs.next()) {
+            agentTypes.add(new AgentType(rs.getInt("id"), rs.getString("description")));
+        }
+        rs.close();
+        stmt.close();
+        return agentTypes;
+    }
+    
     List<Conversation> getAgentConversations(Agent agent) throws SQLException {
         List<Conversation> conversations = new ArrayList();
         Conversation conversation = null;

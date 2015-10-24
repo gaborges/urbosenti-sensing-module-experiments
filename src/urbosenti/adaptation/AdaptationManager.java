@@ -12,6 +12,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import urbosenti.adaptation.models.ECADiagnosisModel;
+import urbosenti.adaptation.models.StaticPlanningModel;
 import urbosenti.context.ContextManager;
 import urbosenti.core.communication.Address;
 import urbosenti.core.communication.CommunicationInterface;
@@ -108,7 +110,8 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
      *
      * <ul><li>id: 7</li>
      * <li>evento: Resposta do experimento de interação foi recebida</li>
-     * <li>parâmetros: ip (ip); porta (port); id do evento inicial (eventId); tempo do evento inicial (timestampEvent)</li></ul>
+     * <li>parâmetros: ip (ip); porta (port); id do evento inicial (eventId);
+     * tempo do evento inicial (timestampEvent)</li></ul>
      *
      */
     public static final int EVENT_EXPERIMENTAL_INTERACTION_RESPONSE_RECEIVED = 7;
@@ -167,7 +170,8 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
      * int ACTION_EXPERIMENTAL_INTERACTION = 6;
      * <ul><li>id: 6</li>
      * <li>ação: Interação experimental</li>
-     * <li>parâmetros: id do evento inicial (eventId); tempo do evento inicial (timestampEvent)</li></ul>
+     * <li>parâmetros: id do evento inicial (eventId); tempo do evento inicial
+     * (timestampEvent)</li></ul>
      *
      */
     public static final int ACTION_EXPERIMENTAL_INTERACTION = 6;
@@ -186,7 +190,6 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
     private boolean running;
     private Boolean flag;
     private Boolean monitor;
-    private DiscoveryAdapter discoveryAdapter;
     private AdaptationDAO adaptationDAO;
     // private AdaptationLoopControler adaptationLoopControler;
     private boolean isAllowedReportingFunctionsToUploadService;
@@ -196,6 +199,8 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
     private long limitIntervalToUploadService;
     private long limitIntervalToUploadReconnectionService;
     private Date lastReportedDate;
+    private AbstractDiagnosisModel diagnosisModel;
+    private AbstractPlanningModel planningModel;
 
     public AdaptationManager(DeviceManager deviceManager) {
         super(deviceManager, AdaptationDAO.COMPONENT_ID);
@@ -205,8 +210,9 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
         this.availableEvents = new LinkedList();
         this.flag = true;
         this.monitor = true;
-        this.discoveryAdapter = null;
         this.adaptationDAO = null;
+        this.diagnosisModel = null;
+        this.planningModel = null;
     }
 
     @Override
@@ -241,49 +247,14 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
         //this.discovery(deviceManager);
         // discoveryAdapter.discovery(deviceManager);
         /* It begin the monitoring process of events */
-        simplestAdaptationControlLoop();
+        //simplestAdaptationControlLoop();
+        adaptationControlLoop();
 //        try {
 //            
 //            monitoring();
 //        } catch (InterruptedException ex) {
 //            Logger.getLogger(AdaptationManager.class.getName()).log(Level.SEVERE, null, ex);
 //        }
-    }
-
-    private void monitoring() throws InterruptedException {
-        Event event;
-
-        while (isRunning()) {
-
-            /* Monitoring */
-            synchronized (this) {
-                event = availableEvents.poll();
-                if (event == null) {
-                    // System.out.println("Esperando;;;");
-                    wait();
-                }
-            }
-
-            if (event != null) {
-                switch (event.getOriginType()) {
-                    case Event.INTERATION_EVENT:
-
-                        //InteractionEvent;
-                        /* Analysis -- Diagnosis */
-                        /* Planning -- Plan */
-                        break;
-                    case Event.COMPONENT_EVENT:
-                        //ContextEvent
-                        /* Analysis -- Diagnosis */
-                        /* Planning -- Plan */
-                        break;
-                }
-                /* Execute */
-                if (DeveloperSettings.SHOW_FUNCTION_DEBUG_ACTIVITY) {
-                    System.out.println("Event: " + event.toString());
-                }
-            }
-        }
     }
 
     @Override
@@ -293,11 +264,15 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                 System.out.println("Activating: " + getClass());
             }
             this.adaptationDAO = super.getDeviceManager().getDataManager().getAdaptationDAO();
-            this.adaptationDAO.populateAcls();
+
             // Carregar dados e configurações que serão utilizados para execução em memória
-            // Preparar configurações inicias para execução
-            if (this.discoveryAdapter == null) {
-                this.discoveryAdapter = new UrboSentiDiscoveryAdapter();
+            this.adaptationDAO.loadStructureModels();
+            // carrega o modelo de diagnóstico
+            if (this.diagnosisModel == null) {
+                this.diagnosisModel = new ECADiagnosisModel(this.adaptationDAO, getDeviceManager());
+            }
+            if (this.planningModel == null) {
+                this.planningModel = new StaticPlanningModel(adaptationDAO, getDeviceManager());
             }
             // pegar diretamente do banco de dados depois de adicionado, por enquanto estático para testes
             //this.intervalAmongModuleStateReports = 43200000L; // cada 12 horas
@@ -401,10 +376,6 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
         return answer;
     }
 
-    public void setExternalDiscoveryAdapter(DiscoveryAdapter discoveryAdapter) {
-        this.discoveryAdapter = discoveryAdapter;
-    }
-
     protected void simplestAdaptationControlLoop() {
 
         EventModel eventModel;
@@ -466,7 +437,7 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                     errorEvent.setEntityId(AdaptationDAO.ENTITY_ID_OF_ADAPTATION_MANAGEMENT);
                     errorEvent.setParameters(values);
                     this.newEvent(errorEvent);
-                    throw new NullPointerException("Evento "+event.getId()+" "+event.getName()+" "+event.toString()+"não existe no banco de dados!");
+                    throw new NullPointerException("Evento " + event.getId() + " " + event.getName() + " " + event.toString() + "não existe no banco de dados!");
                 } else {  // caso encontre
                     // adiciona o id o BD, se for necessário armazenar então usa o gerado pelo banco de dados
                     event.setDatabaseId(eventModel.getId());
@@ -509,7 +480,7 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                             }
                                         }
                                     } else if (event.getParameters().get("reconnectionService") instanceof ReconnectionService) {
-                                        for (State instanceState : ((PushServiceReceiver) event.getParameters().get("reconnectionService")).getInstance().getStates()) {
+                                        for (State instanceState : ((ReconnectionService) event.getParameters().get("reconnectionService")).getInstance().getStates()) {
                                             if (p.getRelatedState().getModelId() == instanceState.getModelId()) {
                                                 instanceState.setContent(content);
                                                 super.getDeviceManager().getDataManager().getInstanceDAO().insertContent(instanceState);
@@ -517,7 +488,7 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                             }
                                         }
                                     } else if (event.getParameters().get("uploadService") instanceof UploadService) {
-                                        for (State instanceState : ((PushServiceReceiver) event.getParameters().get("uploadService")).getInstance().getStates()) {
+                                        for (State instanceState : ((UploadService) event.getParameters().get("uploadService")).getInstance().getStates()) {
                                             if (p.getRelatedState().getModelId() == instanceState.getModelId()) {
                                                 instanceState.setContent(content);
                                                 super.getDeviceManager().getDataManager().getInstanceDAO().insertContent(instanceState);
@@ -614,10 +585,10 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                             // não necessário agora
                         } else if (event.getId() == AdaptationDAO.INTERACTION_TO_CANCEL_REGISTRATION) { // Assinatura cancelada
                             // não necessáro agora
-                        } else if (event.getId() == TestManager.INTERACTION_REQUEST_RESPONSE){ // resposta da mensagem de teste
+                        } else if (event.getId() == TestManager.INTERACTION_REQUEST_RESPONSE) { // resposta da mensagem de teste
                             interactionModel = (super.getDeviceManager().getDataManager().getAgentTypeDAO().getInteractionModel(TestManager.INTERACTION_ANSWER_THE_REQUEST_RESPONSE));
                             // parâmetros: id o evento (eventId); tempo do evento (timestampEvent); ip (ip); porta(port)
-                            target = new Address("http://"+event.getParameters().get("ip")+":"+event.getParameters().get("port"));
+                            target = new Address("http://" + event.getParameters().get("ip") + ":" + event.getParameters().get("port"));
                             target.setLayer(Address.LAYER_SYSTEM);
                             target.setUid(((Address) event.getParameters().get("sender")).getUid());
                             event.getParameters().put("target", target);
@@ -627,10 +598,10 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                             //values.put("eventId", event.getDatabaseId()); já estão no conteúdo do HashMap
                             //values.put("timestampEvent", event.getTime().getTime());
                             diagnosis.addChange(new Change(20, event.getParameters())); // parâmetros são os mesmos
-                        } else if (event.getId() == TestManager.INTERACTION_ANSWER_THE_REQUEST_RESPONSE){ // resposta da mensagem de teste
+                        } else if (event.getId() == TestManager.INTERACTION_ANSWER_THE_REQUEST_RESPONSE) { // resposta da mensagem de teste
                             //id do evento (eventId);tempo de evento (timestampEvent);
-                            diagnosis.addChange(new Change(22 , event.getParameters())); // parâmetros são os mesmos
-                        } else if (event.getId() == TestManager.INTERACTION_REQUEST_SHUTDOWN){ 
+                            diagnosis.addChange(new Change(22, event.getParameters())); // parâmetros são os mesmos
+                        } else if (event.getId() == TestManager.INTERACTION_REQUEST_SHUTDOWN) {
                             //desligar
                             diagnosis.addChange(new Change(21, null)); // sem parâmetros
                         }
@@ -779,14 +750,14 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                  conexão utilizada mais um valor de tolerância em milissegundos e politica de uso de 
                                  dados móveis não permite o uso de dados móveis e esta interface conectada. */
                                 /*
-                                System.out.println("Checando erros do sersiço de upload: ");
-                                System.out.println("Não Desconectado? " + !getDeviceManager().getCommunicationManager().isCompletelyDisconnected());
-                                System.out.println("Relatos no banco de dados: " + getDeviceManager().getDataManager().getReportDAO().reportsCount(up.getService()));
-                                System.out.println("Não Utiliza dados móveis: " + !getDeviceManager().getCommunicationManager().getCurrentCommunicationInterface().isUsesMobileData());
-                                System.out.println("Timeout + intervalo limite: " + getDeviceManager().getCommunicationManager().getCurrentCommunicationInterface().getTimeout() + limitIntervalToUploadService);
-                                System.out.println("Último relato enviado: " + (System.currentTimeMillis() - lastSentMessageByServiceUpload.getTime()));
-                                System.out.println("Último erro da instância: " + adaptationDAO.getLastRecordedErrorFromInstance(up.getInstance().getId(), scanIntervalOfServiceErrors));
-                                */
+                                 System.out.println("Checando erros do sersiço de upload: ");
+                                 System.out.println("Não Desconectado? " + !getDeviceManager().getCommunicationManager().isCompletelyDisconnected());
+                                 System.out.println("Relatos no banco de dados: " + getDeviceManager().getDataManager().getReportDAO().reportsCount(up.getService()));
+                                 System.out.println("Não Utiliza dados móveis: " + !getDeviceManager().getCommunicationManager().getCurrentCommunicationInterface().isUsesMobileData());
+                                 System.out.println("Timeout + intervalo limite: " + getDeviceManager().getCommunicationManager().getCurrentCommunicationInterface().getTimeout() + limitIntervalToUploadService);
+                                 System.out.println("Último relato enviado: " + (System.currentTimeMillis() - lastSentMessageByServiceUpload.getTime()));
+                                 System.out.println("Último erro da instância: " + adaptationDAO.getLastRecordedErrorFromInstance(up.getInstance().getId(), scanIntervalOfServiceErrors));
+                                 */
                                 if (up.isAllowedToPerformUpload()
                                         && !getDeviceManager().getCommunicationManager().isCompletelyDisconnected() // não está desconectado
                                         && (getDeviceManager().getDataManager().getReportDAO().reportsCount(up.getService()) > 0) //  possui mensagens para enviar
@@ -832,7 +803,7 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                  Se o modulo de sensoriamento estiver completamente desconectado e 
                                  serviço de reconexão geral não responder dentro do intervalo de maior 
                                  timeout da interface tentando reconectar mais o limite do intervalo de reconexão.
-                                */
+                                 */
                                 for (ReconnectionService rs : getDeviceManager().getCommunicationManager().getReconnectionServices()) {
                                     c = getDeviceManager().getDataManager().getEventModelDAO()
                                             .getLastEventContentByLabelAndValue(rs.getInstance().getId(), "reconnectionService",
@@ -945,12 +916,12 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                 diagnosis.addChange(new Change(10, values));
                             }
                         } else if (event.getComponentManager().getComponentId() == TestManager.COMPONENT_ID) {
-                            if(event.getId() == TestManager.EVENT_GENERIC_EVENT){
+                            if (event.getId() == TestManager.EVENT_GENERIC_EVENT) {
                                 // Quantidade de regras (rules); quantidade de condições (conditions);
                                 genericInteger1 = (Integer) event.getParameters().get("rules");
                                 genericInteger2 = (Integer) event.getParameters().get("conditions");
-                                for(int i = 0; i < genericInteger1; i++){
-                                    for(int j = 0; j < genericInteger2;j++){
+                                for (int i = 0; i < genericInteger1; i++) {
+                                    for (int j = 0; j < genericInteger2; j++) {
                                         this.adaptationDAO.getLastRecordedErrorFromInstance(1, this.intervalAmongModuleStateReports);
                                     }
                                 }
@@ -962,15 +933,15 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                 // ip (ip); porta (port);Quantidade de regras (rules); quantidade de condições (conditions);
                                 genericInteger1 = (Integer) event.getParameters().get("rules");
                                 genericInteger2 = (Integer) event.getParameters().get("conditions");
-                                for(int i = 0; i < genericInteger1; i++){
-                                    for(int j = 0; j < genericInteger2;j++){
+                                for (int i = 0; i < genericInteger1; i++) {
+                                    for (int j = 0; j < genericInteger2; j++) {
                                         this.adaptationDAO.getLastRecordedErrorFromInstance(1, this.intervalAmongModuleStateReports);
                                     }
                                 }
                                 interactionModel = (super.getDeviceManager().getDataManager().getAgentTypeDAO().getInteractionModel(TestManager.INTERACTION_REQUEST_RESPONSE));
                                 // parâmetros: id o evento (eventId); tempo do evento (timestampEvent); ip (ip); porta(port)
                                 values = new HashMap<String, Object>();
-                                target = new Address("http://"+event.getParameters().get("ip")+":"+event.getParameters().get("port"));
+                                target = new Address("http://" + event.getParameters().get("ip") + ":" + event.getParameters().get("port"));
                                 target.setLayer(Address.LAYER_SYSTEM);
                                 target.setUid(event.getParameters().get("uid").toString());
                                 values.put("target", target);
@@ -985,10 +956,10 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                 diagnosis.addChange(new Change(17, values));
                             } else if (event.getId() == TestManager.EVENT_SHUTDOWN_ANOTHER_AGENT) {
                                 interactionModel = (super.getDeviceManager().getDataManager().getAgentTypeDAO().getInteractionModel(TestManager.INTERACTION_REQUEST_SHUTDOWN));
-                                
+
                                 // parâmetros: id o evento (eventId); tempo do evento (timestampEvent); ip (ip); porta(port)
                                 values = new HashMap<String, Object>();
-                                target = new Address("http://"+event.getParameters().get("ip")+":"+event.getParameters().get("port"));
+                                target = new Address("http://" + event.getParameters().get("ip") + ":" + event.getParameters().get("port"));
                                 target.setLayer(Address.LAYER_SYSTEM);
                                 target.setUid(event.getParameters().get("uid").toString());
                                 values.put("target", target);
@@ -996,10 +967,10 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                                 target = new Address();
                                 target.setLayer(Address.LAYER_SYSTEM);
                                 target.setUid(getDeviceManager().getBackendService().getApplicationUID());
-                                event.getParameters().put("origin",target);
+                                event.getParameters().put("origin", target);
                                 diagnosis.addChange(new Change(18, values));
                             }
-                        } 
+                        }
                         // último diagnóstico a ser executado
                         if (diagnosis.getChanges().isEmpty()) {
                             diagnosis.addChange(new Change(Diagnosis.DIAGNOSIS_NO_ADAPTATION_NEEDED, null));
@@ -1253,7 +1224,7 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                     Logger.getLogger(AdaptationManager.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 values = new HashMap<String, Object>();
-                values.put("error", "Exception: "+ex+" Error in: " + event.toString());
+                values.put("error", "Exception: " + ex + " Error in: " + event.toString());
                 errorEvent = new SystemEvent(this);
                 errorEvent.setName("Adaptation loop error");
                 errorEvent.setId(AdaptationManager.EVENT_ADAPTATION_LOOP_ERROR);
@@ -1265,7 +1236,7 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                     Logger.getLogger(AdaptationManager.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 values = new HashMap<String, Object>();
-                values.put("error", "Exception: "+ex+" Error in: " + event.toString());
+                values.put("error", "Exception: " + ex + " Error in: " + event.toString());
                 errorEvent = new SystemEvent(this);
                 errorEvent.setName("Adaptation loop error");
                 errorEvent.setId(AdaptationManager.EVENT_ADAPTATION_LOOP_ERROR);
@@ -1277,7 +1248,7 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
                     Logger.getLogger(AdaptationManager.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 values = new HashMap<String, Object>();
-                values.put("error", "Exception: "+ex+" Error in: " + event.toString());
+                values.put("error", "Exception: " + ex + " Error in: " + event.toString());
                 errorEvent = new SystemEvent(this);
                 errorEvent.setName("Adaptation loop error");
                 errorEvent.setId(AdaptationManager.EVENT_ADAPTATION_LOOP_ERROR);
@@ -1287,8 +1258,188 @@ public class AdaptationManager extends ComponentManager implements Runnable, Sys
             }
         }
     }
+
     public synchronized int getEventsCount() {
         return this.availableEvents.size();
+    }
+
+    protected void adaptationControlLoop() {
+
+        Event errorEvent;
+        Plan plan;
+        Diagnosis diagnosis;
+        FeedbackAnswer response;
+        HashMap<String, Object> values;
+        Object eventInteractionModel;
+        while (isRunning()) {
+            Event event = null;
+            try {
+
+                /* Monitoring */
+                synchronized (this) {
+                    while (event == null) {
+                        event = availableEvents.poll();
+                        if (event == null) {
+                            if (urbosenti.util.DeveloperSettings.SHOW_FUNCTION_DEBUG_ACTIVITY) {
+                                System.out.println("Esperando evento.");
+                            }
+                            wait();
+                        }
+                    }
+                }
+                if (DeveloperSettings.SHOW_FUNCTION_DEBUG_ACTIVITY) {
+                    System.out.println("Event: " + event.toString());
+                }
+                /**
+                 * ************** Update world model **************
+                 */
+                // verifica se é uma interação ou um evento
+                // se uma interação extrai a interação dos parâmetros do evento
+                // de forma semelhante ao evento salva as informações
+                // gera uma interação que é passada para análise -- o mesmo ocorre com o evento
+                // buscar o modelo de evento
+                try {
+                    eventInteractionModel = this.adaptationDAO.updateWorldModel(event);
+                } catch (NullPointerException ex) {
+                    // gera um evento de evento desconhecido ou não existente e adiciona os dados do evento não reconecido nos parâmetros
+                    values = new HashMap();
+                    values.put("error", "Evento não conhecido: " + event.toString());
+                    errorEvent = new SystemEvent(this);
+                    errorEvent.setName("Unknown event");
+                    errorEvent.setId(AdaptationManager.EVENT_UNKNOWN_EVENT_WARNING);
+                    errorEvent.setEntityId(AdaptationDAO.ENTITY_ID_OF_ADAPTATION_MANAGEMENT);
+                    errorEvent.setParameters(values);
+                    this.newEvent(errorEvent);
+                    throw new NullPointerException(ex.getMessage());
+                }
+                /**
+                 * ************** Analisys Process **************
+                 */
+                diagnosis = this.diagnosisModel.analysis(event);
+                /**
+                 * ************** Planning Process **************
+                 */
+                plan = this.planningModel.planning(diagnosis, diagnosisModel);
+                /**
+                 * ************** Execute Process **************
+                 */
+                //System.out.println("Message: "+ event.getValue().toString() );
+                // existe alguma ação?
+                if (plan.getExecutionPlans().size() > 0) {
+                    response = null;
+                    // para cada plano de execução
+                    for (ExecutionPlan ep : plan.getExecutionPlans()) {
+                        // para cada ação até condição de parada
+                        for (Action actionToExecute : ep.getQueueOfActions()) {
+                            if (DeveloperSettings.SHOW_FUNCTION_DEBUG_ACTIVITY) {
+                                System.out.println("Action: " + actionToExecute.toString());
+                            }
+                            // verificar se é interação
+                            if (actionToExecute.getActionType() == Event.INTERATION_EVENT) {
+                                // se sim, gerar uma mensagem no formato da linguagem e popular os parâmetros de envio.
+                                actionToExecute = adaptationDAO.makeInteractionMessage(actionToExecute);
+                            }
+                            // encontrar o componente para envio, no caso de interação o Componente Communication
+                            for (ComponentManager cm : getDeviceManager().getComponentManagers()) {
+                                if (cm.getComponentId() == actionToExecute.getTargetComponentId()) {
+                                    // aplicar a ação e pegar o feedback
+                                    response = cm.applyAction(actionToExecute);
+                                    // atualizar a decisão da ação
+                                    this.adaptationDAO.updateDecision(response, event, actionToExecute, ep);
+                                    break;
+                                }
+                            }
+                            // componente não encontrado
+                            if (response == null) {
+                                throw new Exception("Target component id:" + actionToExecute.getTargetComponentId() + " was not found!");
+                            }
+                            // verificar condição de parada
+                            if (ep.getStoppingCondition() == ExecutionPlan.STOPPING_CONDITION_UNTIL_SUCCESS) {
+                                if (response.getId() == FeedbackAnswer.ACTION_RESULT_WAS_SUCCESSFUL) {
+                                    break;
+                                }
+                            } else if (ep.getStoppingCondition() == ExecutionPlan.STOPPING_CONDITION_UNTIL_FAIL_OR_END) {
+                                if (response.getId() == FeedbackAnswer.ACTION_RESULT_FAILED || response.getId() == FeedbackAnswer.ACTION_RESULT_FAILED_TIMEOUT) {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (SQLException ex) {
+                if (DeveloperSettings.SHOW_EXCEPTION_ERRORS) {
+                    Logger.getLogger(AdaptationManager.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                values = new HashMap<String, Object>();
+                values.put("error", "Exception: " + ex + " Error in: " + event.toString());
+                errorEvent = new SystemEvent(this);
+                errorEvent.setName("Adaptation loop error");
+                errorEvent.setId(AdaptationManager.EVENT_ADAPTATION_LOOP_ERROR);
+                errorEvent.setEntityId(AdaptationDAO.ENTITY_ID_OF_ADAPTATION_MANAGEMENT);
+                errorEvent.setParameters(values);
+                this.newEvent(errorEvent);
+            } catch (InterruptedException ex) {
+                if (DeveloperSettings.SHOW_EXCEPTION_ERRORS) {
+                    Logger.getLogger(AdaptationManager.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                values = new HashMap<String, Object>();
+                values.put("error", "Exception: " + ex + " Error in: " + event.toString());
+                errorEvent = new SystemEvent(this);
+                errorEvent.setName("Adaptation loop error");
+                errorEvent.setId(AdaptationManager.EVENT_ADAPTATION_LOOP_ERROR);
+                errorEvent.setEntityId(AdaptationDAO.ENTITY_ID_OF_ADAPTATION_MANAGEMENT);
+                errorEvent.setParameters(values);
+                this.newEvent(errorEvent);
+            } catch (Exception ex) { // outras excessões desconhecidas
+                if (DeveloperSettings.SHOW_EXCEPTION_ERRORS) {
+                    Logger.getLogger(AdaptationManager.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                values = new HashMap<String, Object>();
+                values.put("error", "Exception: " + ex + " Error in: " + event.toString());
+                errorEvent = new SystemEvent(this);
+                errorEvent.setName("Adaptation loop error");
+                errorEvent.setId(AdaptationManager.EVENT_ADAPTATION_LOOP_ERROR);
+                errorEvent.setEntityId(AdaptationDAO.ENTITY_ID_OF_ADAPTATION_MANAGEMENT);
+                errorEvent.setParameters(values);
+                this.newEvent(errorEvent);
+            }
+        }
+    }
+
+    public boolean isAllowedReportingFunctionsToUploadService() {
+        return isAllowedReportingFunctionsToUploadService;
+    }
+
+    public Long getIntervalAmongModuleStateReports() {
+        return intervalAmongModuleStateReports;
+    }
+
+    public Long getIntervalCleanStoredMessages() {
+        return intervalCleanStoredMessages;
+    }
+
+    public long getScanIntervalOfServiceErrors() {
+        return scanIntervalOfServiceErrors;
+    }
+
+    public long getLimitIntervalToUploadReconnectionService() {
+        return limitIntervalToUploadReconnectionService;
+    }
+
+    public long getLimitIntervalToUploadService() {
+        return limitIntervalToUploadService;
+    }
+
+    public void setDiagnosisModel(AbstractDiagnosisModel diagnosisModel) {
+        this.diagnosisModel = diagnosisModel;
+    }
+
+    public void setPlanningModel(AbstractPlanningModel planningModel) {
+        this.planningModel = planningModel;
+    }
+
+    public AdaptationDAO getAdaptationDAO() {
+        return adaptationDAO;
     }
 
 }

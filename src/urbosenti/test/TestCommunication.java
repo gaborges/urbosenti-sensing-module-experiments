@@ -46,13 +46,21 @@ public class TestCommunication {
 
     }
 
-    public void test2() {
+    public void test2(long interval,long experimentalTime) {
         
         end = false;
         FileReader fr = null;
         final Timer timer = new Timer("Tester");
         long endInterval = 10000L; //10s
         long stopTime = 57600000L; //16h
+        
+        if(interval > 0){
+            endInterval = interval;
+        }
+        
+        if(experimentalTime > 0){
+            stopTime = experimentalTime;
+        }
         
         //long endInterval = 2831650;
         final String data = "14353,20,Walking,324212291000,5.41,13.21,-4.630918\n"
