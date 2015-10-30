@@ -410,7 +410,7 @@ public class TestECADiagnosisModel extends AbstractDiagnosisModel {
                 genericInteger2 = (Integer) event.getParameters().get("conditions");
                 for (int i = 0; i < genericInteger1; i++) {
                     for (int j = 0; j < genericInteger2; j++) {
-//                        adaptationDAO.getLastRecordedErrorFromInstance(1, getDeviceManager().getAdaptationManager().getIntervalAmongModuleStateReports());
+                        adaptationDAO.getLastRecordedErrorFromInstance(1, getDeviceManager().getAdaptationManager().getIntervalAmongModuleStateReports());
                     }
                 }
                 values = new HashMap<String, Object>();

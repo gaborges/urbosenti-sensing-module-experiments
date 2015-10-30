@@ -176,18 +176,20 @@ public class Main {
                     }
                     agentAddresses.close();
                     for (int i = 0; i < ips.size(); i++) {
-                        testManager.startExperimentOfInteractionEvents(
+                        testManager.startExperimentOfContinuosInteractionEvents(
                                 Integer.parseInt(args[3]),//quantityOfInteractions, 
                                 Integer.parseInt(args[4]),//quantityOfRules, 
                                 Integer.parseInt(args[5]),//quantityOfConditions, 
                                 ips.get(i),
                                 ports.get(i));
                     }
+                    testManager.waitEventsQueueBeFinished();
+                    args[8] = args[8].trim();
                     // testar se precisa desligar
                     if (args[8].equals("sim") || args[8].equals("yes") || args[8].equals("s") || args[8].equals("y")) {
                         testManager.stopAgents(ips, ports);
+                        Thread.sleep(5000);
                     }
-                    testManager.waitEventsQueueBeFinished();
                 }
                 break;
             case 4: //Experimento 4 (Interações e eventos internos)
@@ -197,6 +199,31 @@ public class Main {
                 } else if (args[3].equals("2")) { // modo de operação 2 (Envia mensagens):
                     // (2) quantityOfEvents, (3) int quantityOfRules, (4) quantityOfConditions,
                     // (5) nomeArquivoDeSaída; (6) arquivo de lista de ips; (7) desligar escutadores?
+                    ArrayList<String> ips = new ArrayList();
+                    ArrayList<Integer> ports = new ArrayList<Integer>();
+                    FileReader agentAddresses = new FileReader(args[7]); //  (6) arquivo de lista de ips; 
+                    BufferedReader br = new BufferedReader(agentAddresses);
+                    String s, ss[];
+                    while ((s = br.readLine()) != null) {
+                        ss = s.split(":");
+                        ips.add(ss[0]);
+                        ports.add(Integer.parseInt(ss[1]));
+                    }
+                    agentAddresses.close();
+                    for (int i = 0; i < ips.size(); i++) {
+                        testManager.startExperimentOfInteractionEvents(
+                                Integer.parseInt(args[3]),//quantityOfInteractions, 
+                                Integer.parseInt(args[4]),//quantityOfRules, 
+                                Integer.parseInt(args[5]),//quantityOfConditions, 
+                                ips.get(i),
+                                ports.get(i));
+                    }
+                    args[8] = args[8].trim();
+                    // testar se precisa desligar
+                    if (args[8].equals("sim") || args[8].equals("yes") || args[8].equals("s") || args[8].equals("y")) {
+                        testManager.stopAgents(ips, ports);
+                    }
+                    testManager.waitEventsQueueBeFinished();
                 }
                 break;
         }

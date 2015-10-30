@@ -135,6 +135,10 @@ public class TestManager extends ComponentManager implements Runnable {
     private final DeviceManager deviceManager;
     private final FileWriter experimentalResults;
     private final BufferedWriter writer;
+    private Event continuousEvent;
+    private int eventCount;
+    private int eventLimit;
+    private int interactionMode;
     
     private Thread thread;
     private boolean shudown;
@@ -145,19 +149,25 @@ public class TestManager extends ComponentManager implements Runnable {
         this.experimentalResults = new FileWriter(new File("actionResults" + filesName + ".out"));
         this.writer = new BufferedWriter(this.experimentalResults);
         this.shudown = false;
+        this.eventCount = 0;
+        this.eventLimit = 1;
+        this.interactionMode = 0;
     }
 
     public TestManager(DeviceManager deviceManager) throws IOException {
         this(deviceManager, "");
     }
 
-    public void startExperimentOfInternalEvents(int quantityOfEvents, int quantityOfRules, int quantityOfConditions) {
+    public void startExperimentOfInternalEvents(int quantityOfEvents, int quantityOfRules, int quantityOfConditions) throws IOException {
         Event event;
+        Date fistDate = new Date();
         HashMap<String, Object> values;
+        this.writer.write(fistDate.getTime()+"\n");
         for (int i = 0; i < quantityOfEvents; i++) {
             event = new SystemEvent(this);
             event.setId(EVENT_GENERIC_EVENT);
             event.setName("Generic test event!");
+            event.setTime(fistDate);
             values = new HashMap<String, Object>();
             values.put("rules", quantityOfRules);
             values.put("conditions", quantityOfConditions);
@@ -167,13 +177,16 @@ public class TestManager extends ComponentManager implements Runnable {
         }
     }
 
-    public void startExperimentOfInteractionEvents(int quantityOfInteractions, int quantityOfRules, int quantityOfConditions, String ip, int port) {
+    public void startExperimentOfInteractionEvents(int quantityOfInteractions, int quantityOfRules, int quantityOfConditions, String ip, int port) throws IOException {
         Event event;
+        Date fistDate = new Date();
         HashMap<String, Object> values;
+        this.writer.write(fistDate.getTime()+"\n");
         for (int i = 0; i < quantityOfInteractions; i++) {
             event = new SystemEvent(this);
             event.setId(EVENT_START_INTERACTION);
             event.setName("Generic interaction event!");
+            event.setTime(fistDate);
             values = new HashMap<String, Object>();
             values.put("ip", ip);
             values.put("port", port);
@@ -184,6 +197,27 @@ public class TestManager extends ComponentManager implements Runnable {
             event.setEntityId(ENTITY_TEST_ENTITY);
             deviceManager.getEventManager().newEvent(event);
         }
+    }
+
+    public void startExperimentOfContinuosInteractionEvents(int quantityOfInteractions, int quantityOfRules, int quantityOfConditions, String ip, int port) throws IOException {
+        Date fistDate = new Date();
+        HashMap<String, Object> values;
+        this.eventLimit = quantityOfInteractions;
+        this.writer.write(fistDate.getTime()+"\n");
+        this.continuousEvent = new SystemEvent(this);
+        this.continuousEvent.setId(EVENT_START_INTERACTION);
+        this.continuousEvent.setName("Continuos interaction event!");
+        this.continuousEvent.setTime(fistDate);
+        values = new HashMap<String, Object>();
+        values.put("ip", ip);
+        values.put("port", port);
+        values.put("rules", quantityOfRules);
+        values.put("conditions", quantityOfConditions);
+        values.put("uid", "any");
+        this.continuousEvent.setParameters(values);
+        this.continuousEvent.setEntityId(ENTITY_TEST_ENTITY);
+        this.interactionMode = 1;
+        this.deviceManager.getEventManager().newEvent(continuousEvent);
     }
 
     public void stopAgents(List<String> ips, List<Integer> ports) {
@@ -203,6 +237,21 @@ public class TestManager extends ComponentManager implements Runnable {
         }
     }
 
+    public void stopAgent(String ip, Integer port) {
+        Event event;
+        HashMap<String, Object> values;
+        event = new SystemEvent(this);
+        event.setId(EVENT_SHUTDOWN_ANOTHER_AGENT);
+        event.setName("Stop agent!");
+        values = new HashMap<String, Object>();
+        values.put("ip", ip);
+        values.put("port", port);
+        values.put("uid", "any");
+        event.setParameters(values);
+        event.setEntityId(ENTITY_TEST_ENTITY);
+        deviceManager.getEventManager().newEvent(event);
+    }
+
     @Override
     public void onCreate() {
 
@@ -218,11 +267,12 @@ public class TestManager extends ComponentManager implements Runnable {
         FeedbackAnswer answer = null;
         switch (action.getId()) {
             case ACTION_GENERIC_ACTION:
-               
+
                 event = (Event) action.getParameters().get("event");
                 try {
                     //tempoevento,id evento,tempoacao
-                    this.writer.write(event.getTime().getTime() + "," + event.getId() + "," + (new Date()).getTime() + "\n");
+                    //this.writer.write(event.getTime().getTime() + "," + event.getId() + "," + (new Date()).getTime() + "\n");
+                    this.writer.write((new Date()).getTime() + "\n");
                 } catch (IOException ex) {
                     if (DeveloperSettings.SHOW_EXCEPTION_ERRORS) {
                         Logger.getLogger(TestManager.class.getName()).log(Level.SEVERE, null, ex);
@@ -234,7 +284,22 @@ public class TestManager extends ComponentManager implements Runnable {
                 try {
                     // id o evento (eventId); tempo do evento (timestampEvent); ip (ip); porta(port)
                     //tempoevento,id evento,tempoacao
-                    this.writer.write(action.getParameters().get("timestampEvent") + "," + action.getParameters().get("eventId") + "," + (new Date()).getTime() + "\n");
+                    //this.writer.write(action.getParameters().get("timestampEvent") + "," + action.getParameters().get("eventId") + "," + (new Date()).getTime() + "\n");
+                    this.writer.write((new Date()).getTime() + "\n");
+                    this.eventCount++;
+//                    System.out.println("-- "+this.eventCount);
+                    if(this.interactionMode==1){
+                        if (this.eventCount < this.eventLimit) {
+//                            System.out.println("lalala");
+                            this.deviceManager.getEventManager().newEvent(continuousEvent);
+                        } else {
+//                            System.out.println("Como chegou aquiii -----------------");
+                            this.stopAgent(action.getParameters().get("ip").toString(), 
+                                    Integer.parseInt(action.getParameters().get("port").toString()));
+                            this.shudown = true;
+                            notifyAll();
+                        }
+                    }
                 } catch (IOException ex) {
                     if (DeveloperSettings.SHOW_EXCEPTION_ERRORS) {
                         Logger.getLogger(TestManager.class.getName()).log(Level.SEVERE, null, ex);
@@ -255,6 +320,26 @@ public class TestManager extends ComponentManager implements Runnable {
                 this.shudown = true;
                 notifyAll();
                 break;
+//            case ACTION_CONTINUOUS_INTERACTION_RESULT:
+//                try {
+//                    // tempo do evento (timestampEvent);ip (ip); porta(port)
+//                    if (this.eventCount == 0) {
+//                        this.writer.write(action.getParameters().get("timestampEvent") + "\n");
+//                    }
+//                    this.writer.write((new Date()).getTime() + "\n");
+//                    this.eventCount++;
+//                    if (this.eventCount < this.eventLimit) {
+//                        this.deviceManager.getEventManager().newEvent(continuousEvent);
+//                    } else {
+//                        this.stopAgent(action.getParameters().get("ip").toString(), Integer.parseInt(action.getParameters().get("port").toString()));
+//                    }
+//                } catch (IOException ex) {
+//                    if (DeveloperSettings.SHOW_EXCEPTION_ERRORS) {
+//                        Logger.getLogger(TestManager.class.getName()).log(Level.SEVERE, null, ex);
+//                    }
+//                    answer = new FeedbackAnswer(FeedbackAnswer.ACTION_RESULT_FAILED, ex.toString());
+//                }
+//                break;
             default:
                 answer = new FeedbackAnswer(FeedbackAnswer.ACTION_DOES_NOT_EXIST);
                 break;
@@ -264,14 +349,6 @@ public class TestManager extends ComponentManager implements Runnable {
             answer = new FeedbackAnswer(FeedbackAnswer.ACTION_RESULT_WAS_SUCCESSFUL);
         }
         return answer;
-    }
-
-    void experiment01() {
-        Event emulatedEvent = new SystemEvent(this);
-        // parâmetros
-        // configurações
-        // adiciona todos os ventos
-        deviceManager.getEventManager().newEvent(emulatedEvent);
     }
 
     @Override
@@ -310,7 +387,7 @@ public class TestManager extends ComponentManager implements Runnable {
         } catch (IOException ex) {
             Logger.getLogger(TestManager.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
     }
 
 }

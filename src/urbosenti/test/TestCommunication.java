@@ -322,20 +322,6 @@ public class TestCommunication {
         }
     }
 
-    public void test3() {
-        TestManager testManager;
-        try {
-            testManager = new TestManager(deviceManager);
-            deviceManager.addComponentManager(testManager);
-            // informações do evento
-            // quantidade de eventos
-            testManager.experiment01();
-        } catch (IOException ex) {
-            Logger.getLogger(TestCommunication.class.getName()).log(Level.SEVERE, null, ex);
-            System.exit(-1);
-        }
-    }
-
     public void testaEnvioMensagemSemRetorno() {
         // Envio normal de mensagem sem retorno
         Address target = new Address("http://localhost:8090/Test2Server/webresources/generic");
