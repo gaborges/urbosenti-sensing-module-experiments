@@ -24,3 +24,9 @@ java -jar ExperimentalSensingModule.jar 55666 4 1
 java -jar ExperimentalSensingModule.jar 55666 3 2 100 50 1 experimento01 ipsAddresses.in no
 
 java -jar ExperimentalSensingModule.jar 55666 3 2 4000 1 1 interacoes01 ipsAddresses.in no
+
+
+55666 2 100 100 1 0 experimento01
+
+10.0.0.5
+ 10.0.0.6

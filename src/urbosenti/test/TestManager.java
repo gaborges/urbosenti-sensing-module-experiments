@@ -293,10 +293,9 @@ public class TestManager extends ComponentManager implements Runnable {
 //                            System.out.println("lalala");
                             this.deviceManager.getEventManager().newEvent(continuousEvent);
                         } else {
-//                            System.out.println("Como chegou aquiii -----------------");
-                            this.stopAgent(action.getParameters().get("ip").toString(), 
-                                    Integer.parseInt(action.getParameters().get("port").toString()));
-                            this.shudown = true;
+////                            System.out.println("Como chegou aquiii -----------------");
+//                            this.stopAgent(action.getParameters().get("ip").toString(), 
+//                                    Integer.parseInt(action.getParameters().get("port").toString()));
                             notifyAll();
                         }
                     }
@@ -366,12 +365,30 @@ public class TestManager extends ComponentManager implements Runnable {
         }
     }
 
-    public void startAndWaitExperiment() throws InterruptedException {
+    public void waitExperiment() throws InterruptedException {
         this.thread = new Thread(this);
         this.thread.start();
         this.thread.join();
     }
 
+    public synchronized void waitInteractionsBeFinished() {
+        try {
+            while (true) {
+                if (eventCount < eventLimit) {
+                    wait(5000);
+                } else {
+                    break;
+                }
+            }
+            writer.close();
+        } catch (InterruptedException ex) {
+            Logger.getLogger(TestManager.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(TestManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+    
     public synchronized void waitEventsQueueBeFinished() {
         try {
             while (true) {
