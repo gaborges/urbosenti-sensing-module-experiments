@@ -1,0 +1,49 @@
+12-10 17:51:05.408: D/ARG(23184): 55666
+12-10 17:51:05.408: D/ARG(23184): 3
+12-10 17:51:05.408: D/ARG(23184): 2
+12-10 17:51:05.408: D/ARG(23184): 1000
+12-10 17:51:05.408: D/ARG(23184): 0
+12-10 17:51:05.408: D/ARG(23184): 0
+12-10 17:51:05.408: D/ARG(23184): Experiment01
+12-10 17:51:05.408: D/ARG(23184): ipsAddresses.in
+12-10 17:51:05.408: D/ARG(23184): yes
+12-10 17:51:05.411: D/LOG(23184): adicionou comunicação e o Application Handle
+12-10 17:51:05.411: D/LOG(23184): Adicionou o conhecimento 
+12-10 17:51:05.411: D/LOG(23184): Criou o DB Handler 
+12-10 17:51:05.442: I/System.out(23184): Interface successfully added: Wired Interface
+12-10 17:51:07.457: D/DEBUG(23184): onCreateCompletado
+12-10 17:51:07.458: I/System.out(23184): Testeeee 001
+12-10 17:51:07.458: I/System.out(23184): Testeeee 002
+12-10 17:51:07.458: I/System.out(23184): Testeeee 003
+12-10 17:51:07.458: I/Choreographer(23184): Skipped 122 frames!  The application may be doing too much work on its main thread.
+12-10 17:51:07.460: I/System.out(23184): Testeeee 004
+12-10 17:51:07.468: I/System.out(23184): Testeeee 005
+12-10 17:51:07.468: I/System.out(23184): Testeeee 006
+12-10 17:51:07.469: D/DEBUG(23184): inicialização dos serviços da urbosenti completado
+12-10 17:51:07.469: I/System.out(23184): Início experimento: 1449777067469
+12-10 17:51:07.470: I/System.out(23184): Início experimento: 2015-12-10 17:51:07.4
+12-10 18:00:50.758: I/art(23184): Background sticky concurrent mark sweep GC freed 25349(3MB) AllocSpace objects, 12(192KB) LOS objects, 35% free, 6MB/9MB, paused 11.274ms total 72.839ms
+12-10 18:02:02.902: I/art(23184): WaitForGcToComplete blocked for 8.000ms for cause HeapTrim
+12-10 18:04:46.952: I/System.out(23184): Fim experimento: 1449777886952
+12-10 18:04:46.959: E/CommunicationManager(23184): null
+12-10 18:04:46.959: E/CommunicationManager(23184): java.lang.InterruptedException
+12-10 18:04:46.959: E/CommunicationManager(23184): 	at java.lang.Object.wait(Native Method)
+12-10 18:04:46.959: E/CommunicationManager(23184): 	at urbosenti.core.communication.UploadService.getReport(UploadService.java:268)
+12-10 18:04:46.959: E/CommunicationManager(23184): 	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:304)
+12-10 18:04:46.959: E/CommunicationManager(23184): 	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1971)
+12-10 18:04:46.959: E/CommunicationManager(23184): 	at urbosenti.core.communication.UploadService.run(UploadService.java:114)
+12-10 18:04:46.959: E/CommunicationManager(23184): 	at java.lang.Thread.run(Thread.java:818)
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): null
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): java.net.SocketException: Socket closed
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): 	at libcore.io.Posix.accept(Native Method)
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): 	at libcore.io.BlockGuardOs.accept(BlockGuardOs.java:63)
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): 	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:89)
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): 	at java.net.ServerSocket.implAccept(ServerSocket.java:216)
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): 	at java.net.ServerSocket.accept(ServerSocket.java:140)
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): 	at urbosenti.core.communication.receivers.SocketPushServiceReceiver.run(SocketPushServiceReceiver.java:96)
+12-10 18:04:46.964: E/cketPushServiceReceiver(23184): 	at java.lang.Thread.run(Thread.java:818)
+12-10 18:04:46.974: E/ReconnectionService(23184): null
+12-10 18:04:46.974: E/ReconnectionService(23184): java.lang.InterruptedException
+12-10 18:04:46.974: E/ReconnectionService(23184): 	at java.lang.Object.wait(Native Method)
+12-10 18:04:46.974: E/ReconnectionService(23184): 	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:110)
+12-10 18:04:46.974: E/ReconnectionService(23184): 	at java.lang.Thread.run(Thread.java:818)

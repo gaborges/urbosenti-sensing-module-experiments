@@ -1,0 +1,7 @@
+12-04 01:04:46.926: E/AndroidRuntime(27959): FATAL EXCEPTION: Thread-3023
+12-04 01:04:46.926: E/AndroidRuntime(27959): Process: br.ufrgs.urbosenti, PID: 27959
+12-04 01:04:46.926: E/AndroidRuntime(27959): java.lang.RuntimeException: Failed : HTTP error code : 500
+12-04 01:04:46.926: E/AndroidRuntime(27959): 	at br.ufrgs.urbosenti.android.AndroidGeneralCommunicationInterface.sendMessage(AndroidGeneralCommunicationInterface.java:160)
+12-04 01:04:46.926: E/AndroidRuntime(27959): 	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1973)
+12-04 01:04:46.926: E/AndroidRuntime(27959): 	at urbosenti.core.communication.UploadService.run(UploadService.java:114)
+12-04 01:04:46.926: E/AndroidRuntime(27959): 	at java.lang.Thread.run(Thread.java:818)

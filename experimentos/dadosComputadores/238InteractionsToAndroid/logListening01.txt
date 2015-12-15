@@ -1,0 +1,43 @@
+12-11 17:36:32.427: D/ARG(11034): 55666
+12-11 17:36:32.427: D/ARG(11034): 3
+12-11 17:36:32.427: D/ARG(11034): 1
+12-11 17:36:32.429: D/LOG(11034): adicionou comunicação e o Application Handle
+12-11 17:36:32.430: D/LOG(11034): Adicionou o conhecimento 
+12-11 17:36:32.430: D/LOG(11034): Criou o DB Handler 
+12-11 17:36:32.935: I/System.out(11034): Interface successfully added: Wired Interface
+12-11 17:36:38.520: D/DEBUG(11034): onCreateCompletado
+12-11 17:36:38.521: I/Choreographer(11034): Skipped 365 frames!  The application may be doing too much work on its main thread.
+12-11 17:36:44.721: D/DEBUG(11034): inicialização dos serviços da urbosenti completado
+12-11 17:36:44.721: I/System.out(11034): Início experimento: 1449862604721
+12-11 17:36:44.724: I/System.out(11034): Início experimento: 2015-12-11 17:36:44.7
+12-11 17:40:45.259: I/System.out(11034): Fim experimento: 1449862845259
+12-11 17:40:45.259: I/System.out(11034): Fim experimento: 2015-12-11 17:40:45.2
+12-11 17:40:45.261: E/ReconnectionService(11034): null
+12-11 17:40:45.261: E/ReconnectionService(11034): java.lang.InterruptedException
+12-11 17:40:45.261: E/ReconnectionService(11034): 	at java.lang.Object.wait(Native Method)
+12-11 17:40:45.261: E/ReconnectionService(11034): 	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:110)
+12-11 17:40:45.261: E/ReconnectionService(11034): 	at java.lang.Thread.run(Thread.java:818)
+12-11 17:40:45.263: E/CommunicationManager(11034): null
+12-11 17:40:45.263: E/CommunicationManager(11034): java.lang.InterruptedException
+12-11 17:40:45.263: E/CommunicationManager(11034): 	at java.lang.Object.wait(Native Method)
+12-11 17:40:45.263: E/CommunicationManager(11034): 	at urbosenti.core.communication.UploadService.getReport(UploadService.java:268)
+12-11 17:40:45.263: E/CommunicationManager(11034): 	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:304)
+12-11 17:40:45.263: E/CommunicationManager(11034): 	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1971)
+12-11 17:40:45.263: E/CommunicationManager(11034): 	at urbosenti.core.communication.UploadService.run(UploadService.java:114)
+12-11 17:40:45.263: E/CommunicationManager(11034): 	at java.lang.Thread.run(Thread.java:818)
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): null
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): java.net.SocketException: Socket closed
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): 	at libcore.io.Posix.accept(Native Method)
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): 	at libcore.io.BlockGuardOs.accept(BlockGuardOs.java:63)
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): 	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:89)
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): 	at java.net.ServerSocket.implAccept(ServerSocket.java:216)
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): 	at java.net.ServerSocket.accept(ServerSocket.java:140)
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): 	at urbosenti.core.communication.receivers.SocketPushServiceReceiver.run(SocketPushServiceReceiver.java:96)
+12-11 17:40:45.265: E/cketPushServiceReceiver(11034): 	at java.lang.Thread.run(Thread.java:818)
+12-11 17:40:45.268: E/AdaptationManager(11034): null
+12-11 17:40:45.268: E/AdaptationManager(11034): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.util.HashMap.toString()' on a null object reference
+12-11 17:40:45.268: E/AdaptationManager(11034): 	at urbosenti.core.data.dao.ActionModelDAO.insertAction(ActionModelDAO.java:579)
+12-11 17:40:45.268: E/AdaptationManager(11034): 	at urbosenti.core.data.dao.AdaptationDAO.updateDecision(AdaptationDAO.java:498)
+12-11 17:40:45.268: E/AdaptationManager(11034): 	at urbosenti.adaptation.AdaptationManager.adaptationControlLoop(AdaptationManager.java:1174)
+12-11 17:40:45.268: E/AdaptationManager(11034): 	at urbosenti.adaptation.AdaptationManager.run(AdaptationManager.java:215)
+12-11 17:40:45.268: E/AdaptationManager(11034): 	at java.lang.Thread.run(Thread.java:818)

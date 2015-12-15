@@ -1,0 +1,52 @@
+12-07 15:32:08.412: D/ARG(32147): 55666
+12-07 15:32:08.412: D/ARG(32147): 1
+12-07 15:32:08.412: D/ARG(32147): 172800000
+12-07 15:32:08.412: D/ARG(32147): 10000
+12-07 15:32:08.412: D/ARG(32147): yes
+12-07 15:32:08.414: D/LOG(32147): adicionou comunicação e o Application Handle
+12-07 15:32:08.414: D/LOG(32147): Adicionou o conhecimento 
+12-07 15:32:08.414: D/LOG(32147): Criou o DB Handler 
+12-07 15:32:08.414: I/System.out(32147): Activating: class urbosenti.core.device.DeviceManager
+12-07 15:32:08.414: I/System.out(32147): Activating: class urbosenti.core.data.DataManager
+12-07 15:32:08.424: I/System.out(32147): Opened database successfully
+12-07 15:32:08.440: I/System.out(32147): Interface successfully added: Wired Interface
+12-07 15:32:08.581: I/System.out(32147): Activating: class urbosenti.core.events.EventManager
+12-07 15:32:08.724: I/System.out(32147): Activating: class urbosenti.core.communication.CommunicationManager
+12-07 15:32:08.733: I/System.out(32147): Activating: class urbosenti.adaptation.AdaptationManager
+12-07 15:32:09.224: I/System.out(32147): onCreate Process Finished
+12-07 15:32:09.224: D/DEBUG(32147): onCreateCompletado
+12-07 15:32:09.225: I/System.out(32147): Testeeee 001
+12-07 15:32:09.225: I/Choreographer(32147): Skipped 48 frames!  The application may be doing too much work on its main thread.
+12-07 15:32:09.225: I/System.out(32147): Testeeee 002
+12-07 15:32:09.225: I/System.out(32147): Testeeee 003
+12-07 15:32:09.228: I/System.out(32147): Testeeee 004
+12-07 15:32:09.240: I/System.out(32147): Testeeee 005.1
+12-07 15:32:09.241: I/System.out(32147): Testeeee 005.2
+12-07 15:32:09.275: I/System.out(32147): Testeeee 005.3
+12-07 15:32:09.277: I/System.out(32147): Testeeee 005.4
+12-07 15:32:09.277: I/System.out(32147): Testeeee 005.5 -- <?xml version="1.0" encoding="UTF-8"?><device><deviceSetup name="storage">0</deviceSetup><deviceSetup name="cpuCore">4</deviceSetup><deviceSetup name="cpuClock">0.0</deviceSetup><deviceSetup name="cpuModel">armv7l</deviceSetup><deviceSetup name="nativeOS">Linux</deviceSetup><deviceSetup name="memory">100663296</deviceSetup><deviceSetup name="deviceModel">motorola MotoE2</deviceSetup><deviceSetup name="battery">2390.0</deviceSetup><inputCommunicationInterface type="Socket"><extra name="port">55666</extra><extra name="ipv4Address">fe80::e690:7eff:fec3:2a66%wlan0</extra></inputCommunicationInterface><inputCommunicationInterface type="GCM"/><inputCommunicationInterface type="HTTP"/></device>
+12-07 15:32:09.280: I/System.out(32147): Testeeee 005.4.0
+12-07 15:32:09.280: I/System.out(32147): Testeeee 005.666
+12-07 15:32:09.286: I/System.out(32147): Testeeee 005.62222
+12-07 15:32:09.286: I/System.out(32147): Testeeee 005.000
+12-07 15:32:09.288: I/System.out(32147): Testeeee 005.0001
+12-07 15:32:09.288: I/System.out(32147): Testeeee 005.0007
+12-07 15:32:09.289: I/System.out(32147): Testeeee 005.0008
+12-07 15:32:09.305: I/System.out(32147): Testeeee 005.0009
+12-07 15:32:09.323: I/System.out(32147): Testeeee 005.00010
+12-07 15:32:09.324: I/System.out(32147): Testeeee 005.0011
+12-07 15:32:09.324: I/System.out(32147): Testeeee 005.00012
+12-07 15:32:09.324: I/System.out(32147): Testeeee 005.00015
+12-07 15:32:09.324: I/System.out(32147): Testeeee 005.00022 <message><header><contentType>text/xml</contentType><contentSize>18</contentSize></header><content><error>sim</error></content></message>
+12-07 15:32:09.325: I/System.out(32147): Testeeee 005.00023 null
+12-07 15:32:09.325: D/ERROR(32147): Invalid long: "null"
+12-07 15:32:13.914: I/art(32147): Explicit concurrent mark sweep GC freed 31406(1863KB) AllocSpace objects, 3(48KB) LOS objects, 42% free, 5MB/9MB, paused 880us total 35.255ms
+12-07 15:32:13.986: I/art(32147): Explicit concurrent mark sweep GC freed 5367(200KB) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 498us total 28.640ms
+12-07 15:32:14.049: I/art(32147): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 499us total 26.885ms
+12-07 15:32:14.112: I/art(32147): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 599us total 27.669ms
+12-07 15:32:14.175: I/art(32147): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 518us total 26.923ms
+12-07 15:32:21.088: I/art(32147): Explicit concurrent mark sweep GC freed 1104(66KB) AllocSpace objects, 1(16KB) LOS objects, 43% free, 5MB/9MB, paused 681us total 59.672ms
+12-07 15:32:21.155: I/art(32147): Explicit concurrent mark sweep GC freed 20(712B) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 666us total 27.791ms
+12-07 15:32:21.219: I/art(32147): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 687us total 27.718ms
+12-07 15:32:21.282: I/art(32147): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 690us total 26.973ms
+12-07 15:32:21.346: I/art(32147): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 683us total 27.740ms

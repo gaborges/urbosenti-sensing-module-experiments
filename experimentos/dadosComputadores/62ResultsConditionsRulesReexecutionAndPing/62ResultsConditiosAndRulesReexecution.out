@@ -1,0 +1,522 @@
+Start Condition Experiment Time: 17:00:20
+Início experimento: 1448046020973
+Início experimento: 2015-11-20 17:00:21.7
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448046590298
+Fim experimento: 2015-11-20 17:09:50.298
+Início experimento: 1448046590516
+Início experimento: 2015-11-20 17:09:50.550
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448047091483
+Fim experimento: 2015-11-20 17:18:11.483
+Nov 20, 2015 5:18:11 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448047091718
+Início experimento: 2015-11-20 17:18:11.752
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448047649192
+Fim experimento: 2015-11-20 17:27:29.192
+Início experimento: 1448047649443
+Início experimento: 2015-11-20 17:27:29.477
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448048145411
+Fim experimento: 2015-11-20 17:35:45.412
+Nov 20, 2015 5:35:45 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448048145622
+Início experimento: 2015-11-20 17:35:45.656
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448048699010
+Fim experimento: 2015-11-20 17:44:59.11
+Nov 20, 2015 5:44:59 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448048699256
+Início experimento: 2015-11-20 17:44:59.289
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448049185251
+Fim experimento: 2015-11-20 17:53:05.252
+Nov 20, 2015 5:53:05 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 20, 2015 5:53:05 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448049185457
+Início experimento: 2015-11-20 17:53:05.490
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448049761089
+Fim experimento: 2015-11-20 18:02:41.90
+Início experimento: 1448049761208
+Início experimento: 2015-11-20 18:02:41.241
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448050272183
+Fim experimento: 2015-11-20 18:11:12.183
+Nov 20, 2015 6:11:12 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 20, 2015 6:11:12 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448050272324
+Início experimento: 2015-11-20 18:11:12.358
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448050829636
+Fim experimento: 2015-11-20 18:20:29.639
+Nov 20, 2015 6:20:29 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448050829876
+Início experimento: 2015-11-20 18:20:29.910
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448051330854
+Fim experimento: 2015-11-20 18:28:50.854
+Nov 20, 2015 6:28:50 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448051331078
+Início experimento: 2015-11-20 18:28:51.111
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448051909298
+Fim experimento: 2015-11-20 18:38:29.298
+End Condition Experiment time: 18:38:29
+Start rule experiment time: 18:38:29
+Início experimento: 1448051909541
+Início experimento: 2015-11-20 18:38:29.575
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448052467038
+Fim experimento: 2015-11-20 18:47:47.38
+Nov 20, 2015 6:47:47 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448052467261
+Início experimento: 2015-11-20 18:47:47.295
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448052953243
+Fim experimento: 2015-11-20 18:55:53.243
+Nov 20, 2015 6:55:53 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448052953477
+Início experimento: 2015-11-20 18:55:53.511
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448053512189
+Fim experimento: 2015-11-20 19:05:12.190
+Início experimento: 1448053512407
+Início experimento: 2015-11-20 19:05:12.441
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448053998377
+Fim experimento: 2015-11-20 19:13:18.378
+Nov 20, 2015 7:13:18 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448053998590
+Início experimento: 2015-11-20 19:13:18.623
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448054575234
+Fim experimento: 2015-11-20 19:22:55.234
+Início experimento: 1448054575457
+Início experimento: 2015-11-20 19:22:55.491
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448055081446
+Fim experimento: 2015-11-20 19:31:21.447
+Nov 20, 2015 7:31:21 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 20, 2015 7:31:21 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448055081681
+Início experimento: 2015-11-20 19:31:21.714
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448055635927
+Fim experimento: 2015-11-20 19:40:35.927
+Início experimento: 1448055636139
+Início experimento: 2015-11-20 19:40:36.172
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448056117120
+Fim experimento: 2015-11-20 19:48:37.120
+Nov 20, 2015 7:48:37 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 20, 2015 7:48:37 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448056117357
+Início experimento: 2015-11-20 19:48:37.391
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448056670359
+Fim experimento: 2015-11-20 19:57:50.359
+Início experimento: 1448056670592
+Início experimento: 2015-11-20 19:57:50.625
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448057161592
+Fim experimento: 2015-11-20 20:06:01.592
+Início experimento: 1448057161713
+Início experimento: 2015-11-20 20:06:01.747
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448057714091
+Fim experimento: 2015-11-20 20:15:14.91
+Nov 20, 2015 8:15:14 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448057714280
+Início experimento: 2015-11-20 20:15:14.314
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448058210279
+Fim experimento: 2015-11-20 20:23:30.280
+Nov 20, 2015 8:23:30 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 20, 2015 8:23:30 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448058210516
+Início experimento: 2015-11-20 20:23:30.549
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448058763911
+Fim experimento: 2015-11-20 20:32:43.912
+Nov 20, 2015 8:32:43 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448058764137
+Início experimento: 2015-11-20 20:32:44.170
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448059245098
+Fim experimento: 2015-11-20 20:40:45.98
+Nov 20, 2015 8:40:45 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448059245332
+Início experimento: 2015-11-20 20:40:45.366
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448059801280
+Fim experimento: 2015-11-20 20:50:01.280
+Nov 20, 2015 8:50:01 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448059801488
+Início experimento: 2015-11-20 20:50:01.521
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448060292484
+Fim experimento: 2015-11-20 20:58:12.485
+End  rule experiment time: 20:58:12
+Start event experiment ping: 20:58:12
+End event experiment ping: 11:58:11
+Início experimento: 1448114291702
+Início experimento: 2015-11-21 11:58:11.736
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448129312576
+Fim experimento: 2015-11-21 16:08:32.577
+Nov 21, 2015 4:08:32 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448129312693
+Início experimento: 2015-11-21 16:08:32.727
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448130867698
+Fim experimento: 2015-11-21 16:34:27.700
+Nov 21, 2015 4:34:27 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448130867811
+Início experimento: 2015-11-21 16:34:27.845
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448132425986
+Fim experimento: 2015-11-21 17:00:25.986
+Nov 21, 2015 5:00:25 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448132426101
+Início experimento: 2015-11-21 17:00:26.135
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448133985227
+Fim experimento: 2015-11-21 17:26:25.228
+Nov 21, 2015 5:26:25 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448133985340
+Início experimento: 2015-11-21 17:26:25.374
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448135544731
+Fim experimento: 2015-11-21 17:52:24.732
+Nov 21, 2015 5:52:24 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448135544845
+Início experimento: 2015-11-21 17:52:24.879
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448137102222
+Fim experimento: 2015-11-21 18:18:22.223
+Nov 21, 2015 6:18:22 PM urbosenti.core.communication.UploadService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.UploadService.getReport(UploadService.java:265)
+	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:301)
+	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1972)
+	at urbosenti.core.communication.UploadService.run(UploadService.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448137102339
+Início experimento: 2015-11-21 18:18:22.372
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448138656048
+Fim experimento: 2015-11-21 18:44:16.48
+Início experimento: 1448138656162
+Início experimento: 2015-11-21 18:44:16.195
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448140211266
+Fim experimento: 2015-11-21 19:10:11.267
+Nov 21, 2015 7:10:11 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+
+Início experimento: 1448140211382
+Início experimento: 2015-11-21 19:10:11.416
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448141766325
+Fim experimento: 2015-11-21 19:36:06.325
+Início experimento: 1448141766454
+Início experimento: 2015-11-21 19:36:06.488
+Opened database successfully
+Interface successfully added: Wired Interface
+Fim experimento: 1448143326803
+Fim experimento: 2015-11-21 20:02:06.803
+Nov 21, 2015 8:02:06 PM urbosenti.core.communication.ReconnectionService run
+GRAVE: null
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:108)
+	at java.lang.Thread.run(Thread.java:745)
+

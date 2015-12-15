@@ -1,0 +1,55 @@
+12-10 17:28:31.092: D/ARG(23184): 55666
+12-10 17:28:31.092: D/ARG(23184): 3
+12-10 17:28:31.092: D/ARG(23184): 2
+12-10 17:28:31.092: D/ARG(23184): 1000
+12-10 17:28:31.092: D/ARG(23184): 0
+12-10 17:28:31.092: D/ARG(23184): 0
+12-10 17:28:31.092: D/ARG(23184): Experiment01
+12-10 17:28:31.092: D/ARG(23184): ipsAddresses.in
+12-10 17:28:31.092: D/ARG(23184): yes
+12-10 17:28:31.095: D/LOG(23184): adicionou comunicação e o Application Handle
+12-10 17:28:31.096: D/LOG(23184): Adicionou o conhecimento 
+12-10 17:28:31.096: D/LOG(23184): Criou o DB Handler 
+12-10 17:28:31.120: I/System.out(23184): Interface successfully added: Wired Interface
+12-10 17:28:31.830: D/DEBUG(23184): onCreateCompletado
+12-10 17:28:31.831: I/System.out(23184): Testeeee 001
+12-10 17:28:31.831: I/System.out(23184): Testeeee 002
+12-10 17:28:31.831: I/System.out(23184): Testeeee 003
+12-10 17:28:31.831: I/Choreographer(23184): Skipped 44 frames!  The application may be doing too much work on its main thread.
+12-10 17:28:31.833: I/System.out(23184): Testeeee 004
+12-10 17:28:31.845: I/System.out(23184): Testeeee 005
+12-10 17:28:31.846: I/System.out(23184): Testeeee 006
+12-10 17:28:31.848: D/DEBUG(23184): inicialização dos serviços da urbosenti completado
+12-10 17:28:31.848: I/System.out(23184): Início experimento: 1449775711848
+12-10 17:28:31.849: I/System.out(23184): Início experimento: 2015-12-10 17:28:31.8
+12-10 17:31:18.145: I/art(23184): Background partial concurrent mark sweep GC freed 36717(3MB) AllocSpace objects, 11(176KB) LOS objects, 41% free, 5MB/9MB, paused 1.336ms total 100.327ms
+12-10 17:35:47.643: I/art(23184): Background partial concurrent mark sweep GC freed 45457(3MB) AllocSpace objects, 11(176KB) LOS objects, 41% free, 5MB/9MB, paused 11.931ms total 47.581ms
+12-10 17:39:02.315: I/art(23184): Explicit concurrent mark sweep GC freed 27096(3MB) AllocSpace objects, 10(160KB) LOS objects, 41% free, 5MB/9MB, paused 799us total 53.623ms
+12-10 17:39:02.396: I/art(23184): Explicit concurrent mark sweep GC freed 1348(49KB) AllocSpace objects, 0(0B) LOS objects, 42% free, 5MB/9MB, paused 724us total 32.733ms
+12-10 17:39:02.464: I/art(23184): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 42% free, 5MB/9MB, paused 723us total 29.442ms
+12-10 17:39:02.533: I/art(23184): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 42% free, 5MB/9MB, paused 705us total 31.775ms
+12-10 17:39:02.602: I/art(23184): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 42% free, 5MB/9MB, paused 716us total 29.886ms
+12-10 17:39:27.429: I/art(23184): WaitForGcToComplete blocked for 9.642ms for cause HeapTrim
+12-10 17:42:18.225: I/System.out(23184): Fim experimento: 1449776538225
+12-10 17:42:18.232: E/CommunicationManager(23184): null
+12-10 17:42:18.232: E/CommunicationManager(23184): java.lang.InterruptedException
+12-10 17:42:18.232: E/CommunicationManager(23184): 	at java.lang.Object.wait(Native Method)
+12-10 17:42:18.232: E/CommunicationManager(23184): 	at urbosenti.core.communication.UploadService.getReport(UploadService.java:268)
+12-10 17:42:18.232: E/CommunicationManager(23184): 	at urbosenti.core.communication.UploadService.getReportByMobileDataPolicyCriteria(UploadService.java:304)
+12-10 17:42:18.232: E/CommunicationManager(23184): 	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1971)
+12-10 17:42:18.232: E/CommunicationManager(23184): 	at urbosenti.core.communication.UploadService.run(UploadService.java:114)
+12-10 17:42:18.232: E/CommunicationManager(23184): 	at java.lang.Thread.run(Thread.java:818)
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): null
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): java.net.SocketException: Socket closed
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): 	at libcore.io.Posix.accept(Native Method)
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): 	at libcore.io.BlockGuardOs.accept(BlockGuardOs.java:63)
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): 	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:89)
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): 	at java.net.ServerSocket.implAccept(ServerSocket.java:216)
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): 	at java.net.ServerSocket.accept(ServerSocket.java:140)
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): 	at urbosenti.core.communication.receivers.SocketPushServiceReceiver.run(SocketPushServiceReceiver.java:96)
+12-10 17:42:18.237: E/cketPushServiceReceiver(23184): 	at java.lang.Thread.run(Thread.java:818)
+12-10 17:42:18.241: E/ReconnectionService(23184): null
+12-10 17:42:18.241: E/ReconnectionService(23184): java.lang.InterruptedException
+12-10 17:42:18.241: E/ReconnectionService(23184): 	at java.lang.Object.wait(Native Method)
+12-10 17:42:18.241: E/ReconnectionService(23184): 	at urbosenti.core.communication.ReconnectionService.run(ReconnectionService.java:110)
+12-10 17:42:18.241: E/ReconnectionService(23184): 	at java.lang.Thread.run(Thread.java:818)

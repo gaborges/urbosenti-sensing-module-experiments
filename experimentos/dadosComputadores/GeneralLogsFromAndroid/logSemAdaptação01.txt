@@ -1,0 +1,902 @@
+12-04 20:12:34.829: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.262ms
+12-04 20:12:34.888: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.977ms
+12-04 20:12:40.550: I/art(8586): Explicit concurrent mark sweep GC freed 21(1736B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 26.264ms
+12-04 20:12:40.616: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.078ms
+12-04 20:12:40.677: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 25.490ms
+12-04 20:12:40.737: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.598ms
+12-04 20:12:40.798: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.272ms
+12-04 20:12:46.454: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.905ms
+12-04 20:12:46.521: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.772ms
+12-04 20:12:46.580: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.184ms
+12-04 20:12:46.640: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 333us total 24.755ms
+12-04 20:12:46.700: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 334us total 24.209ms
+12-04 20:12:52.347: I/art(8586): Explicit concurrent mark sweep GC freed 584(212KB) AllocSpace objects, 262(3MB) LOS objects, 27% free, 5MB/7MB, paused 648us total 45.119ms
+12-04 20:12:52.413: I/art(8586): WaitForGcToComplete blocked for 22.751ms for cause Explicit
+12-04 20:12:52.448: I/art(8586): Explicit concurrent mark sweep GC freed 392(12KB) AllocSpace objects, 196(2MB) LOS objects, 27% free, 5MB/7MB, paused 702us total 34.900ms
+12-04 20:12:52.448: I/art(8586): WaitForGcToComplete blocked for 19.750ms for cause Background
+12-04 20:12:52.512: I/art(8586): WaitForGcToComplete blocked for 27.870ms for cause Explicit
+12-04 20:12:52.561: I/art(8586): Explicit concurrent mark sweep GC freed 544(17KB) AllocSpace objects, 271(3MB) LOS objects, 27% free, 5MB/7MB, paused 631us total 48.956ms
+12-04 20:12:52.562: I/art(8586): WaitForGcToComplete blocked for 32.737ms for cause Background
+12-04 20:12:52.613: I/art(8586): WaitForGcToComplete blocked for 15.056ms for cause Explicit
+12-04 20:12:52.648: I/art(8586): Explicit concurrent mark sweep GC freed 236(7KB) AllocSpace objects, 118(1859KB) LOS objects, 27% free, 5MB/7MB, paused 563us total 35.202ms
+12-04 20:12:52.648: I/art(8586): WaitForGcToComplete blocked for 9.694ms for cause Background
+12-04 20:12:52.712: I/art(8586): WaitForGcToComplete blocked for 25.690ms for cause Explicit
+12-04 20:12:52.750: I/art(8586): Explicit concurrent mark sweep GC freed 338(10KB) AllocSpace objects, 169(2MB) LOS objects, 27% free, 5MB/7MB, paused 624us total 37.079ms
+12-04 20:12:52.751: I/art(8586): WaitForGcToComplete blocked for 18.291ms for cause Background
+12-04 20:12:58.395: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 35.202ms
+12-04 20:12:58.454: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 352us total 23.992ms
+12-04 20:12:58.512: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.648ms
+12-04 20:12:58.570: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 23.911ms
+12-04 20:12:58.629: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 23.642ms
+12-04 20:13:04.251: I/art(8586): Explicit concurrent mark sweep GC freed 140(9KB) AllocSpace objects, 9(190KB) LOS objects, 28% free, 5MB/7MB, paused 372us total 26.866ms
+12-04 20:13:04.318: I/art(8586): Explicit concurrent mark sweep GC freed 73(2768B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 368us total 25.197ms
+12-04 20:13:04.386: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 373us total 26.542ms
+12-04 20:13:04.445: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 368us total 24.375ms
+12-04 20:13:04.505: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 375us total 25.181ms
+12-04 20:13:10.147: I/art(8586): Explicit concurrent mark sweep GC freed 130(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 360us total 25.666ms
+12-04 20:13:10.217: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.015ms
+12-04 20:13:10.276: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 23.703ms
+12-04 20:13:10.334: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.019ms
+12-04 20:13:10.394: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 419us total 25.082ms
+12-04 20:13:16.067: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 26.325ms
+12-04 20:13:16.133: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 25.114ms
+12-04 20:13:16.194: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 348us total 25.316ms
+12-04 20:13:16.254: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 428us total 24.617ms
+12-04 20:13:16.314: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.328ms
+12-04 20:13:21.950: I/art(8586): Explicit concurrent mark sweep GC freed 357(12KB) AllocSpace objects, 178(3MB) LOS objects, 28% free, 5MB/7MB, paused 680us total 33.816ms
+12-04 20:13:21.952: I/art(8586): WaitForGcToComplete blocked for 24.449ms for cause Background
+12-04 20:13:22.028: I/art(8586): WaitForGcToComplete blocked for 37.204ms for cause Explicit
+12-04 20:13:22.070: I/art(8586): Explicit concurrent mark sweep GC freed 533(16KB) AllocSpace objects, 266(4MB) LOS objects, 26% free, 5MB/7MB, paused 545us total 42.171ms
+12-04 20:13:22.072: I/art(8586): WaitForGcToComplete blocked for 40.512ms for cause Background
+12-04 20:13:22.144: I/art(8586): WaitForGcToComplete blocked for 35.967ms for cause Explicit
+12-04 20:13:22.190: I/art(8586): Explicit concurrent mark sweep GC freed 5406(14MB) AllocSpace objects, 7(135KB) LOS objects, 25% free, 9MB/13MB, paused 607us total 45.679ms
+12-04 20:13:22.203: I/art(8586): WaitForGcToComplete blocked for 49.832ms for cause Background
+12-04 20:13:22.257: I/art(8586): WaitForGcToComplete blocked for 27.988ms for cause Explicit
+12-04 20:13:22.299: I/art(8586): Explicit concurrent mark sweep GC freed 1304(3MB) AllocSpace objects, 178(2MB) LOS objects, 26% free, 5MB/7MB, paused 607us total 41.408ms
+12-04 20:13:22.362: I/art(8586): WaitForGcToComplete blocked for 27.547ms for cause Explicit
+12-04 20:13:22.404: I/art(8586): Explicit concurrent mark sweep GC freed 533(28KB) AllocSpace objects, 265(3MB) LOS objects, 26% free, 5MB/7MB, paused 681us total 41.010ms
+12-04 20:13:22.404: I/art(8586): WaitForGcToComplete blocked for 30.339ms for cause Background
+12-04 20:13:28.011: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.841ms
+12-04 20:13:28.078: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.627ms
+12-04 20:13:28.138: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 25.300ms
+12-04 20:13:28.198: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.714ms
+12-04 20:13:28.259: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.319ms
+12-04 20:13:33.017: I/art(8586): WaitForGcToComplete blocked for 5.676ms for cause HomogeneousSpaceCompact
+12-04 20:13:33.902: I/art(8586): Explicit concurrent mark sweep GC freed 143(9KB) AllocSpace objects, 10(209KB) LOS objects, 28% free, 5MB/7MB, paused 411us total 33.792ms
+12-04 20:13:33.963: I/art(8586): Explicit concurrent mark sweep GC freed 73(2768B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 398us total 24.769ms
+12-04 20:13:34.022: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 398us total 24.297ms
+12-04 20:13:34.082: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 399us total 24.619ms
+12-04 20:13:34.141: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 403us total 24.297ms
+12-04 20:13:39.806: I/art(8586): Explicit concurrent mark sweep GC freed 130(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 26.647ms
+12-04 20:13:39.876: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.001ms
+12-04 20:13:39.936: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.003ms
+12-04 20:13:39.994: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.044ms
+12-04 20:13:40.054: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 347us total 25.012ms
+12-04 20:13:45.667: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 1.178ms total 25.786ms
+12-04 20:13:45.737: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.004ms
+12-04 20:13:45.795: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.787ms
+12-04 20:13:45.854: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 348us total 23.985ms
+12-04 20:13:45.923: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 29.724ms
+12-04 20:13:51.603: I/art(8586): WaitForGcToComplete blocked for 16.204ms for cause Explicit
+12-04 20:13:51.650: I/art(8586): Explicit concurrent mark sweep GC freed 634(20KB) AllocSpace objects, 314(4MB) LOS objects, 27% free, 5MB/7MB, paused 700us total 47.055ms
+12-04 20:13:51.652: I/art(8586): WaitForGcToComplete blocked for 29.868ms for cause Background
+12-04 20:13:51.704: I/art(8586): WaitForGcToComplete blocked for 18.011ms for cause Explicit
+12-04 20:13:51.740: I/art(8586): Explicit concurrent mark sweep GC freed 310(9KB) AllocSpace objects, 156(2MB) LOS objects, 27% free, 5MB/7MB, paused 521us total 36.598ms
+12-04 20:13:51.742: I/art(8586): WaitForGcToComplete blocked for 22.598ms for cause Background
+12-04 20:13:51.800: I/art(8586): WaitForGcToComplete blocked for 22.468ms for cause Explicit
+12-04 20:13:51.837: I/art(8586): Explicit concurrent mark sweep GC freed 340(10KB) AllocSpace objects, 168(2MB) LOS objects, 27% free, 5MB/7MB, paused 618us total 36.570ms
+12-04 20:13:51.837: I/art(8586): WaitForGcToComplete blocked for 20.299ms for cause Background
+12-04 20:13:51.915: I/art(8586): WaitForGcToComplete blocked for 29.652ms for cause Explicit
+12-04 20:13:51.949: I/art(8586): Explicit concurrent mark sweep GC freed 302(9KB) AllocSpace objects, 150(2MB) LOS objects, 27% free, 5MB/7MB, paused 645us total 33.583ms
+12-04 20:13:51.951: I/art(8586): WaitForGcToComplete blocked for 18.627ms for cause Background
+12-04 20:13:52.009: I/art(8586): WaitForGcToComplete blocked for 20.885ms for cause Explicit
+12-04 20:13:52.044: I/art(8586): Explicit concurrent mark sweep GC freed 166(5KB) AllocSpace objects, 83(1544KB) LOS objects, 27% free, 5MB/7MB, paused 656us total 34.932ms
+12-04 20:13:52.045: I/art(8586): WaitForGcToComplete blocked for 6.350ms for cause Background
+12-04 20:13:57.652: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.841ms
+12-04 20:13:57.719: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.759ms
+12-04 20:13:57.778: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.250ms
+12-04 20:13:57.839: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.748ms
+12-04 20:13:57.898: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.269ms
+12-04 20:14:03.599: I/art(8586): Explicit concurrent mark sweep GC freed 587(19KB) AllocSpace objects, 291(4MB) LOS objects, 27% free, 5MB/7MB, paused 548us total 42.356ms
+12-04 20:14:03.600: I/art(8586): WaitForGcToComplete blocked for 18.323ms for cause Background
+12-04 20:14:03.668: I/art(8586): WaitForGcToComplete blocked for 31.047ms for cause Explicit
+12-04 20:14:03.703: I/art(8586): Explicit concurrent mark sweep GC freed 310(9KB) AllocSpace objects, 155(2MB) LOS objects, 28% free, 5MB/7MB, paused 513us total 34.868ms
+12-04 20:14:03.706: I/art(8586): WaitForGcToComplete blocked for 34.563ms for cause Background
+12-04 20:14:03.762: I/art(8586): WaitForGcToComplete blocked for 22.764ms for cause Explicit
+12-04 20:14:03.799: I/art(8586): Explicit concurrent mark sweep GC freed 370(11KB) AllocSpace objects, 184(3MB) LOS objects, 27% free, 5MB/7MB, paused 637us total 36.115ms
+12-04 20:14:03.799: I/art(8586): WaitForGcToComplete blocked for 22.490ms for cause Background
+12-04 20:14:03.858: I/art(8586): WaitForGcToComplete blocked for 20.749ms for cause Explicit
+12-04 20:14:03.892: I/art(8586): Explicit concurrent mark sweep GC freed 256(8KB) AllocSpace objects, 128(2MB) LOS objects, 26% free, 5MB/7MB, paused 614us total 32.860ms
+12-04 20:14:03.892: I/art(8586): WaitForGcToComplete blocked for 14.167ms for cause Background
+12-04 20:14:03.953: I/art(8586): WaitForGcToComplete blocked for 26.264ms for cause Explicit
+12-04 20:14:03.989: I/art(8586): Explicit concurrent mark sweep GC freed 424(13KB) AllocSpace objects, 212(3MB) LOS objects, 27% free, 5MB/7MB, paused 502us total 35.784ms
+12-04 20:14:03.990: I/art(8586): WaitForGcToComplete blocked for 33.512ms for cause Background
+12-04 20:14:09.613: I/art(8586): Explicit concurrent mark sweep GC freed 200(8KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 410us total 24.920ms
+12-04 20:14:09.680: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.580ms
+12-04 20:14:09.739: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.192ms
+12-04 20:14:09.799: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.581ms
+12-04 20:14:09.859: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.225ms
+12-04 20:14:15.508: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 342us total 26.921ms
+12-04 20:14:15.579: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.076ms
+12-04 20:14:15.638: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 25.016ms
+12-04 20:14:15.697: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.028ms
+12-04 20:14:15.757: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 25.226ms
+12-04 20:14:21.426: I/art(8586): Explicit concurrent mark sweep GC freed 737(151KB) AllocSpace objects, 349(4MB) LOS objects, 24% free, 6MB/8MB, paused 682us total 56.307ms
+12-04 20:14:21.493: I/art(8586): WaitForGcToComplete blocked for 28.651ms for cause Explicit
+12-04 20:14:21.531: I/art(8586): Explicit concurrent mark sweep GC freed 392(12KB) AllocSpace objects, 195(2MB) LOS objects, 26% free, 5MB/7MB, paused 625us total 37.294ms
+12-04 20:14:21.586: I/art(8586): WaitForGcToComplete blocked for 18.255ms for cause Explicit
+12-04 20:14:21.621: I/art(8586): Explicit concurrent mark sweep GC freed 308(9KB) AllocSpace objects, 154(2MB) LOS objects, 27% free, 5MB/7MB, paused 561us total 35.315ms
+12-04 20:14:21.622: I/art(8586): WaitForGcToComplete blocked for 15.470ms for cause Background
+12-04 20:14:21.683: I/art(8586): WaitForGcToComplete blocked for 25.455ms for cause Explicit
+12-04 20:14:21.721: I/art(8586): Explicit concurrent mark sweep GC freed 546(17KB) AllocSpace objects, 273(4MB) LOS objects, 27% free, 5MB/7MB, paused 517us total 37.821ms
+12-04 20:14:21.721: I/art(8586): WaitForGcToComplete blocked for 34.920ms for cause Background
+12-04 20:14:21.780: I/art(8586): WaitForGcToComplete blocked for 22.482ms for cause Explicit
+12-04 20:14:21.820: I/art(8586): Explicit concurrent mark sweep GC freed 439(13KB) AllocSpace objects, 219(3MB) LOS objects, 26% free, 5MB/7MB, paused 671us total 39.841ms
+12-04 20:14:21.820: I/art(8586): WaitForGcToComplete blocked for 30.479ms for cause Background
+12-04 20:14:27.616: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 26.004ms
+12-04 20:14:27.687: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.020ms
+12-04 20:14:27.747: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 360us total 24.791ms
+12-04 20:14:27.805: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24ms
+12-04 20:14:27.864: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.800ms
+12-04 20:14:33.478: I/art(8586): WaitForGcToComplete blocked for 5.646ms for cause Explicit
+12-04 20:14:33.512: I/art(8586): Explicit concurrent mark sweep GC freed 395(13KB) AllocSpace objects, 196(2MB) LOS objects, 27% free, 5MB/7MB, paused 840us total 34.399ms
+12-04 20:14:33.523: I/art(8586): WaitForGcToComplete blocked for 28.882ms for cause Background
+12-04 20:14:33.575: I/art(8586): WaitForGcToComplete blocked for 25.610ms for cause Explicit
+12-04 20:14:33.612: I/art(8586): Explicit concurrent mark sweep GC freed 321(10KB) AllocSpace objects, 160(2MB) LOS objects, 26% free, 5MB/7MB, paused 443us total 36.776ms
+12-04 20:14:33.622: I/art(8586): WaitForGcToComplete blocked for 29.493ms for cause Background
+12-04 20:14:33.662: I/art(8586): WaitForGcToComplete blocked for 14.148ms for cause Explicit
+12-04 20:14:33.692: I/art(8586): Explicit concurrent mark sweep GC freed 236(7KB) AllocSpace objects, 119(1991KB) LOS objects, 28% free, 5MB/7MB, paused 486us total 29.190ms
+12-04 20:14:33.692: I/art(8586): WaitForGcToComplete blocked for 7.944ms for cause Background
+12-04 20:14:33.758: I/art(8586): WaitForGcToComplete blocked for 26.513ms for cause Explicit
+12-04 20:14:33.797: I/art(8586): Explicit concurrent mark sweep GC freed 412(12KB) AllocSpace objects, 204(3MB) LOS objects, 27% free, 5MB/7MB, paused 479us total 38.855ms
+12-04 20:14:33.802: I/art(8586): WaitForGcToComplete blocked for 33.451ms for cause Background
+12-04 20:14:33.852: I/art(8586): WaitForGcToComplete blocked for 18.982ms for cause Explicit
+12-04 20:14:33.886: I/art(8586): Explicit concurrent mark sweep GC freed 290(9KB) AllocSpace objects, 145(2MB) LOS objects, 26% free, 5MB/7MB, paused 444us total 33.403ms
+12-04 20:14:33.886: I/art(8586): WaitForGcToComplete blocked for 17.241ms for cause Background
+12-04 20:14:39.516: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 26.782ms
+12-04 20:14:39.583: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.274ms
+12-04 20:14:39.644: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 431us total 25.046ms
+12-04 20:14:39.704: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 415us total 24.305ms
+12-04 20:14:39.764: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.987ms
+12-04 20:14:45.424: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 411us total 25.256ms
+12-04 20:14:45.495: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.131ms
+12-04 20:14:45.553: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 23.742ms
+12-04 20:14:45.611: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 23.968ms
+12-04 20:14:45.670: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 23.702ms
+12-04 20:14:51.360: I/art(8586): Explicit concurrent mark sweep GC freed 487(143KB) AllocSpace objects, 224(2MB) LOS objects, 27% free, 5MB/7MB, paused 544us total 41.379ms
+12-04 20:14:51.437: I/art(8586): WaitForGcToComplete blocked for 28.650ms for cause Explicit
+12-04 20:14:51.477: I/art(8586): Explicit concurrent mark sweep GC freed 528(16KB) AllocSpace objects, 264(3MB) LOS objects, 27% free, 5MB/7MB, paused 760us total 39.414ms
+12-04 20:14:51.477: I/art(8586): WaitForGcToComplete blocked for 30.907ms for cause Background
+12-04 20:14:51.534: I/art(8586): WaitForGcToComplete blocked for 21.630ms for cause Explicit
+12-04 20:14:51.571: I/art(8586): Explicit concurrent mark sweep GC freed 360(11KB) AllocSpace objects, 180(2MB) LOS objects, 27% free, 5MB/7MB, paused 529us total 36.997ms
+12-04 20:14:51.582: I/art(8586): WaitForGcToComplete blocked for 22.114ms for cause Background
+12-04 20:14:51.632: I/art(8586): WaitForGcToComplete blocked for 24.209ms for cause Explicit
+12-04 20:14:51.667: I/art(8586): Explicit concurrent mark sweep GC freed 348(10KB) AllocSpace objects, 174(2MB) LOS objects, 27% free, 5MB/7MB, paused 769us total 34.189ms
+12-04 20:14:51.667: I/art(8586): WaitForGcToComplete blocked for 16.756ms for cause Background
+12-04 20:14:51.720: I/art(8586): WaitForGcToComplete blocked for 17.313ms for cause Explicit
+12-04 20:14:51.754: I/art(8586): Explicit concurrent mark sweep GC freed 234(7KB) AllocSpace objects, 117(1891KB) LOS objects, 27% free, 5MB/7MB, paused 501us total 33.665ms
+12-04 20:14:51.755: I/art(8586): WaitForGcToComplete blocked for 11.129ms for cause Background
+12-04 20:14:57.370: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 25.643ms
+12-04 20:14:57.434: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.041ms
+12-04 20:14:57.493: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 23.704ms
+12-04 20:14:57.551: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 23.881ms
+12-04 20:14:57.609: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 23.655ms
+12-04 20:15:02.413: I/art(8586): WaitForGcToComplete blocked for 43.583ms for cause HomogeneousSpaceCompact
+12-04 20:15:03.233: I/art(8586): WaitForGcToComplete blocked for 30.878ms for cause Explicit
+12-04 20:15:03.276: I/art(8586): Explicit concurrent mark sweep GC freed 708(70KB) AllocSpace objects, 346(4MB) LOS objects, 27% free, 5MB/7MB, paused 476us total 42.927ms
+12-04 20:15:03.333: I/art(8586): WaitForGcToComplete blocked for 17.921ms for cause Explicit
+12-04 20:15:03.367: I/art(8586): Explicit concurrent mark sweep GC freed 388(12KB) AllocSpace objects, 192(2MB) LOS objects, 28% free, 5MB/7MB, paused 628us total 33.388ms
+12-04 20:15:03.367: I/art(8586): WaitForGcToComplete blocked for 18.313ms for cause Background
+12-04 20:15:03.421: I/art(8586): WaitForGcToComplete blocked for 12.787ms for cause Explicit
+12-04 20:15:03.456: I/art(8586): Explicit concurrent mark sweep GC freed 380(11KB) AllocSpace objects, 189(2MB) LOS objects, 27% free, 5MB/7MB, paused 453us total 34.617ms
+12-04 20:15:03.456: I/art(8586): WaitForGcToComplete blocked for 20.683ms for cause Background
+12-04 20:15:03.510: I/art(8586): WaitForGcToComplete blocked for 18.316ms for cause Explicit
+12-04 20:15:03.550: I/art(8586): Explicit concurrent mark sweep GC freed 454(14KB) AllocSpace objects, 227(3MB) LOS objects, 26% free, 5MB/7MB, paused 501us total 39.941ms
+12-04 20:15:03.552: I/art(8586): WaitForGcToComplete blocked for 30.576ms for cause Background
+12-04 20:15:03.602: I/art(8586): WaitForGcToComplete blocked for 16.823ms for cause Explicit
+12-04 20:15:03.635: I/art(8586): Explicit concurrent mark sweep GC freed 366(11KB) AllocSpace objects, 184(2MB) LOS objects, 28% free, 5MB/7MB, paused 482us total 33.396ms
+12-04 20:15:03.636: I/art(8586): WaitForGcToComplete blocked for 19.920ms for cause Background
+12-04 20:15:09.307: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 360us total 25.813ms
+12-04 20:15:09.378: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.240ms
+12-04 20:15:09.436: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.719ms
+12-04 20:15:09.495: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.390ms
+12-04 20:15:09.553: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 413us total 23.778ms
+12-04 20:15:15.173: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 343us total 26.274ms
+12-04 20:15:15.240: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.679ms
+12-04 20:15:15.300: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.310ms
+12-04 20:15:15.360: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.632ms
+12-04 20:15:15.421: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.406ms
+12-04 20:15:21.077: I/art(8586): Explicit concurrent mark sweep GC freed 3226(1673KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 430us total 35.618ms
+12-04 20:15:21.141: I/art(8586): WaitForGcToComplete blocked for 17.010ms for cause Explicit
+12-04 20:15:21.179: I/art(8586): Explicit concurrent mark sweep GC freed 3549(9MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 7MB/10MB, paused 543us total 37.477ms
+12-04 20:15:21.179: I/art(8586): WaitForGcToComplete blocked for 33.841ms for cause Background
+12-04 20:15:21.242: I/art(8586): WaitForGcToComplete blocked for 26.699ms for cause Explicit
+12-04 20:15:21.280: I/art(8586): Explicit concurrent mark sweep GC freed 2969(11MB) AllocSpace objects, 67(808KB) LOS objects, 25% free, 5MB/7MB, paused 657us total 37.884ms
+12-04 20:15:21.281: I/art(8586): WaitForGcToComplete blocked for 35.669ms for cause Background
+12-04 20:15:21.336: I/art(8586): WaitForGcToComplete blocked for 20.718ms for cause Explicit
+12-04 20:15:21.376: I/art(8586): Explicit concurrent mark sweep GC freed 182(29KB) AllocSpace objects, 87(1111KB) LOS objects, 27% free, 5MB/7MB, paused 740us total 40.024ms
+12-04 20:15:21.435: I/art(8586): WaitForGcToComplete blocked for 21.020ms for cause Explicit
+12-04 20:15:21.473: I/art(8586): Explicit concurrent mark sweep GC freed 458(14KB) AllocSpace objects, 229(3MB) LOS objects, 27% free, 5MB/7MB, paused 577us total 37.896ms
+12-04 20:15:21.482: I/art(8586): WaitForGcToComplete blocked for 34.495ms for cause Background
+12-04 20:15:22.061: W/art(8586): Suspending all threads took: 5.836ms
+12-04 20:15:27.352: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 26.097ms
+12-04 20:15:27.418: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.619ms
+12-04 20:15:27.479: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 25.535ms
+12-04 20:15:27.539: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.580ms
+12-04 20:15:27.600: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.555ms
+12-04 20:15:33.302: I/art(8586): WaitForGcToComplete blocked for 27.905ms for cause Explicit
+12-04 20:15:33.340: I/art(8586): Explicit concurrent mark sweep GC freed 548(18KB) AllocSpace objects, 272(3MB) LOS objects, 27% free, 5MB/7MB, paused 583us total 37.747ms
+12-04 20:15:33.340: I/art(8586): WaitForGcToComplete blocked for 11.061ms for cause Background
+12-04 20:15:33.390: I/art(8586): WaitForGcToComplete blocked for 14.537ms for cause Explicit
+12-04 20:15:33.421: I/art(8586): Explicit concurrent mark sweep GC freed 372(11KB) AllocSpace objects, 186(2MB) LOS objects, 28% free, 5MB/7MB, paused 594us total 31.464ms
+12-04 20:15:33.422: I/art(8586): WaitForGcToComplete blocked for 17.787ms for cause Background
+12-04 20:15:33.486: I/art(8586): WaitForGcToComplete blocked for 24.279ms for cause Explicit
+12-04 20:15:33.515: I/art(8586): Explicit concurrent mark sweep GC freed 190(5KB) AllocSpace objects, 95(1434KB) LOS objects, 27% free, 5MB/7MB, paused 597us total 29.252ms
+12-04 20:15:33.587: I/art(8586): WaitForGcToComplete blocked for 34.589ms for cause Explicit
+12-04 20:15:33.620: I/art(8586): Explicit concurrent mark sweep GC freed 292(9KB) AllocSpace objects, 145(2MB) LOS objects, 27% free, 5MB/7MB, paused 470us total 32.490ms
+12-04 20:15:33.620: I/art(8586): WaitForGcToComplete blocked for 14.222ms for cause Background
+12-04 20:15:33.683: I/art(8586): WaitForGcToComplete blocked for 25.659ms for cause Explicit
+12-04 20:15:33.716: I/art(8586): Explicit concurrent mark sweep GC freed 338(10KB) AllocSpace objects, 168(2MB) LOS objects, 27% free, 5MB/7MB, paused 592us total 32.798ms
+12-04 20:15:33.722: I/art(8586): WaitForGcToComplete blocked for 25.243ms for cause Background
+12-04 20:15:39.348: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 26.364ms
+12-04 20:15:39.418: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.011ms
+12-04 20:15:39.478: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.787ms
+12-04 20:15:39.536: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.020ms
+12-04 20:15:39.596: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.810ms
+12-04 20:15:45.234: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 403us total 25.172ms
+12-04 20:15:45.301: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.868ms
+12-04 20:15:45.360: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.273ms
+12-04 20:15:45.421: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 24.808ms
+12-04 20:15:45.480: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.275ms
+12-04 20:15:51.072: I/art(8586): Explicit concurrent mark sweep GC freed 21(1736B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.776ms
+12-04 20:15:51.160: I/art(8586): Explicit concurrent mark sweep GC freed 7244(8MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 6MB/9MB, paused 542us total 39.009ms
+12-04 20:15:51.162: I/art(8586): WaitForGcToComplete blocked for 41.191ms for cause Background
+12-04 20:15:51.234: I/art(8586): WaitForGcToComplete blocked for 35.957ms for cause Explicit
+12-04 20:15:51.271: I/art(8586): Explicit concurrent mark sweep GC freed 3568(13MB) AllocSpace objects, 0(0B) LOS objects, 26% free, 5MB/7MB, paused 611us total 37.191ms
+12-04 20:15:51.271: I/art(8586): WaitForGcToComplete blocked for 33.711ms for cause Background
+12-04 20:15:51.327: I/art(8586): WaitForGcToComplete blocked for 20.129ms for cause Explicit
+12-04 20:15:51.367: I/art(8586): Explicit concurrent mark sweep GC freed 377(83KB) AllocSpace objects, 180(2MB) LOS objects, 28% free, 5MB/7MB, paused 629us total 39.161ms
+12-04 20:15:51.367: I/art(8586): WaitForGcToComplete blocked for 19.122ms for cause Background
+12-04 20:15:51.422: I/art(8586): WaitForGcToComplete blocked for 20.044ms for cause Explicit
+12-04 20:15:51.467: I/art(8586): Explicit concurrent mark sweep GC freed 423(13KB) AllocSpace objects, 211(2MB) LOS objects, 27% free, 5MB/7MB, paused 706us total 44.253ms
+12-04 20:15:51.467: I/art(8586): WaitForGcToComplete blocked for 29.353ms for cause Background
+12-04 20:15:57.066: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.684ms
+12-04 20:15:57.133: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.667ms
+12-04 20:15:57.193: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.288ms
+12-04 20:15:57.253: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.592ms
+12-04 20:15:57.312: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.255ms
+12-04 20:16:02.970: I/art(8586): Explicit concurrent mark sweep GC freed 456(15KB) AllocSpace objects, 225(4MB) LOS objects, 26% free, 5MB/7MB, paused 624us total 43.205ms
+12-04 20:16:02.970: I/art(8586): WaitForGcToComplete blocked for 32.100ms for cause Background
+12-04 20:16:03.022: I/art(8586): WaitForGcToComplete blocked for 15.547ms for cause Explicit
+12-04 20:16:03.050: I/art(8586): Explicit concurrent mark sweep GC freed 159(9KB) AllocSpace objects, 66(1316KB) LOS objects, 28% free, 5MB/7MB, paused 432us total 27.644ms
+12-04 20:16:03.103: I/art(8586): WaitForGcToComplete blocked for 17.304ms for cause Explicit
+12-04 20:16:03.143: I/art(8586): Explicit concurrent mark sweep GC freed 4361(11MB) AllocSpace objects, 5(99KB) LOS objects, 24% free, 8MB/11MB, paused 512us total 40.056ms
+12-04 20:16:03.143: I/art(8586): WaitForGcToComplete blocked for 37.880ms for cause Background
+12-04 20:16:03.205: I/art(8586): WaitForGcToComplete blocked for 25.802ms for cause Explicit
+12-04 20:16:03.246: I/art(8586): Explicit concurrent mark sweep GC freed 2816(10MB) AllocSpace objects, 13(156KB) LOS objects, 25% free, 5MB/7MB, paused 706us total 40.310ms
+12-04 20:16:03.249: I/art(8586): WaitForGcToComplete blocked for 34.015ms for cause Background
+12-04 20:16:03.315: I/art(8586): WaitForGcToComplete blocked for 32.480ms for cause Explicit
+12-04 20:16:03.359: I/art(8586): Explicit concurrent mark sweep GC freed 518(40KB) AllocSpace objects, 255(3MB) LOS objects, 27% free, 5MB/7MB, paused 711us total 43.329ms
+12-04 20:16:03.360: I/art(8586): WaitForGcToComplete blocked for 28.076ms for cause Background
+12-04 20:16:08.990: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 24.792ms
+12-04 20:16:09.057: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 25.004ms
+12-04 20:16:09.116: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.258ms
+12-04 20:16:09.176: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.165ms
+12-04 20:16:09.234: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 23.832ms
+12-04 20:16:14.928: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 345us total 35.805ms
+12-04 20:16:14.986: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 24.140ms
+12-04 20:16:15.046: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.828ms
+12-04 20:16:15.104: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.118ms
+12-04 20:16:15.164: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 421us total 24.835ms
+12-04 20:16:20.813: I/art(8586): Explicit concurrent mark sweep GC freed 21(1736B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.622ms
+12-04 20:16:20.884: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 361us total 24.322ms
+12-04 20:16:20.942: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.780ms
+12-04 20:16:21.001: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.188ms
+12-04 20:16:21.059: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 23.658ms
+12-04 20:16:21.822: W/art(8586): Suspending all threads took: 9.857ms
+12-04 20:16:26.681: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.257ms
+12-04 20:16:26.748: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.796ms
+12-04 20:16:26.808: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.442ms
+12-04 20:16:26.868: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.720ms
+12-04 20:16:26.929: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.465ms
+12-04 20:16:32.617: I/art(8586): Explicit concurrent mark sweep GC freed 853(27KB) AllocSpace objects, 426(6MB) LOS objects, 27% free, 5MB/7MB, paused 473us total 72.360ms
+12-04 20:16:32.617: I/art(8586): WaitForGcToComplete blocked for 63.250ms for cause Background
+12-04 20:16:32.683: I/art(8586): WaitForGcToComplete blocked for 21.746ms for cause Explicit
+12-04 20:16:32.719: I/art(8586): Explicit concurrent mark sweep GC freed 428(13KB) AllocSpace objects, 213(3MB) LOS objects, 27% free, 5MB/7MB, paused 536us total 36.177ms
+12-04 20:16:32.720: I/art(8586): WaitForGcToComplete blocked for 29.202ms for cause Background
+12-04 20:16:32.780: I/art(8586): WaitForGcToComplete blocked for 26.298ms for cause Explicit
+12-04 20:16:32.811: I/art(8586): Explicit concurrent mark sweep GC freed 203(6KB) AllocSpace objects, 103(1818KB) LOS objects, 28% free, 5MB/7MB, paused 476us total 30.004ms
+12-04 20:16:32.876: I/art(8586): WaitForGcToComplete blocked for 27.469ms for cause Explicit
+12-04 20:16:32.910: I/art(8586): Explicit concurrent mark sweep GC freed 317(9KB) AllocSpace objects, 158(2MB) LOS objects, 27% free, 5MB/7MB, paused 523us total 33.554ms
+12-04 20:16:32.910: I/art(8586): WaitForGcToComplete blocked for 32.783ms for cause Background
+12-04 20:16:32.963: I/art(8586): WaitForGcToComplete blocked for 16.407ms for cause Explicit
+12-04 20:16:32.996: I/art(8586): Explicit concurrent mark sweep GC freed 357(11KB) AllocSpace objects, 178(3MB) LOS objects, 28% free, 5MB/7MB, paused 634us total 32.500ms
+12-04 20:16:32.997: I/art(8586): WaitForGcToComplete blocked for 28.374ms for cause Background
+12-04 20:16:38.681: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.855ms
+12-04 20:16:38.748: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 354us total 24.820ms
+12-04 20:16:38.808: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.696ms
+12-04 20:16:38.868: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 24.719ms
+12-04 20:16:38.929: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.674ms
+12-04 20:16:43.692: I/art(8586): WaitForGcToComplete blocked for 11.671ms for cause HomogeneousSpaceCompact
+12-04 20:16:44.578: I/art(8586): Explicit concurrent mark sweep GC freed 280(13KB) AllocSpace objects, 79(1576KB) LOS objects, 28% free, 5MB/7MB, paused 372us total 29.127ms
+12-04 20:16:44.644: I/art(8586): Explicit concurrent mark sweep GC freed 73(2768B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 386us total 24.606ms
+12-04 20:16:44.722: I/art(8586): Explicit concurrent mark sweep GC freed 221(44KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 341us total 30.695ms
+12-04 20:16:44.783: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.934ms
+12-04 20:16:44.844: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 353us total 24.686ms
+12-04 20:16:50.474: I/art(8586): Explicit concurrent mark sweep GC freed 21(1736B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 347us total 26.018ms
+12-04 20:16:50.545: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 34.215ms
+12-04 20:16:50.604: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.756ms
+12-04 20:16:50.663: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.030ms
+12-04 20:16:50.727: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 25.807ms
+12-04 20:16:56.406: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 35.211ms
+12-04 20:16:56.464: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.267ms
+12-04 20:16:56.523: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.743ms
+12-04 20:16:56.581: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.175ms
+12-04 20:16:56.640: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.613ms
+12-04 20:17:01.422: I/art(8586): WaitForGcToComplete blocked for 16.181ms for cause HomogeneousSpaceCompact
+12-04 20:17:02.233: I/art(8586): WaitForGcToComplete blocked for 5.765ms for cause Explicit
+12-04 20:17:02.272: I/art(8586): Explicit concurrent mark sweep GC freed 495(183KB) AllocSpace objects, 228(2MB) LOS objects, 27% free, 5MB/7MB, paused 607us total 38.222ms
+12-04 20:17:02.363: I/art(8586): WaitForGcToComplete blocked for 42.986ms for cause Explicit
+12-04 20:17:02.406: I/art(8586): Explicit concurrent mark sweep GC freed 652(20KB) AllocSpace objects, 326(4MB) LOS objects, 27% free, 5MB/7MB, paused 569us total 43.199ms
+12-04 20:17:02.406: I/art(8586): WaitForGcToComplete blocked for 42.359ms for cause Background
+12-04 20:17:02.471: I/art(8586): WaitForGcToComplete blocked for 25.670ms for cause Explicit
+12-04 20:17:02.514: I/art(8586): Explicit concurrent mark sweep GC freed 492(15KB) AllocSpace objects, 245(3MB) LOS objects, 26% free, 5MB/7MB, paused 901us total 41.948ms
+12-04 20:17:02.514: I/art(8586): WaitForGcToComplete blocked for 30.499ms for cause Background
+12-04 20:17:02.564: I/art(8586): WaitForGcToComplete blocked for 15.300ms for cause Explicit
+12-04 20:17:02.596: I/art(8586): Explicit concurrent mark sweep GC freed 286(8KB) AllocSpace objects, 142(2MB) LOS objects, 27% free, 5MB/7MB, paused 668us total 31.693ms
+12-04 20:17:02.602: I/art(8586): WaitForGcToComplete blocked for 17.110ms for cause Background
+12-04 20:17:02.659: I/art(8586): WaitForGcToComplete blocked for 26.909ms for cause Explicit
+12-04 20:17:02.699: I/art(8586): Explicit concurrent mark sweep GC freed 414(12KB) AllocSpace objects, 206(3MB) LOS objects, 26% free, 5MB/7MB, paused 515us total 39.525ms
+12-04 20:17:02.699: I/art(8586): WaitForGcToComplete blocked for 28.266ms for cause Background
+12-04 20:17:08.334: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 350us total 24.899ms
+12-04 20:17:08.402: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.433ms
+12-04 20:17:08.461: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 23.810ms
+12-04 20:17:08.521: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 24.195ms
+12-04 20:17:08.581: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.649ms
+12-04 20:17:14.241: I/art(8586): Explicit concurrent mark sweep GC freed 336(15KB) AllocSpace objects, 107(2MB) LOS objects, 28% free, 5MB/7MB, paused 441us total 35.262ms
+12-04 20:17:14.312: I/art(8586): Explicit concurrent mark sweep GC freed 73(2768B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 373us total 30.243ms
+12-04 20:17:14.375: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 373us total 25.747ms
+12-04 20:17:14.437: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 371us total 24.695ms
+12-04 20:17:14.499: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 375us total 25.693ms
+12-04 20:17:20.113: I/art(8586): Explicit concurrent mark sweep GC freed 130(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.880ms
+12-04 20:17:20.179: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.577ms
+12-04 20:17:20.238: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.230ms
+12-04 20:17:20.298: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.541ms
+12-04 20:17:20.358: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.266ms
+12-04 20:17:26.009: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 25.932ms
+12-04 20:17:26.080: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.012ms
+12-04 20:17:26.139: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.729ms
+12-04 20:17:26.197: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.027ms
+12-04 20:17:26.257: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.762ms
+12-04 20:17:31.951: I/art(8586): Explicit concurrent mark sweep GC freed 455(15KB) AllocSpace objects, 226(4MB) LOS objects, 26% free, 5MB/7MB, paused 513us total 38.460ms
+12-04 20:17:31.952: I/art(8586): WaitForGcToComplete blocked for 35.003ms for cause Background
+12-04 20:17:32.002: I/art(8586): WaitForGcToComplete blocked for 16.312ms for cause Explicit
+12-04 20:17:32.035: I/art(8586): Explicit concurrent mark sweep GC freed 290(9KB) AllocSpace objects, 145(2MB) LOS objects, 27% free, 5MB/7MB, paused 523us total 32.761ms
+12-04 20:17:32.036: I/art(8586): WaitForGcToComplete blocked for 13.904ms for cause Background
+12-04 20:17:32.096: I/art(8586): WaitForGcToComplete blocked for 24.157ms for cause Explicit
+12-04 20:17:32.136: I/art(8586): Explicit concurrent mark sweep GC freed 6513(6MB) AllocSpace objects, 57(1135KB) LOS objects, 25% free, 9MB/12MB, paused 520us total 39.359ms
+12-04 20:17:32.136: I/art(8586): WaitForGcToComplete blocked for 37.801ms for cause Background
+12-04 20:17:32.203: I/art(8586): WaitForGcToComplete blocked for 29.234ms for cause Explicit
+12-04 20:17:32.247: I/art(8586): Explicit concurrent mark sweep GC freed 3461(13MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 8MB/11MB, paused 725us total 43.079ms
+12-04 20:17:32.247: I/art(8586): WaitForGcToComplete blocked for 28.901ms for cause Background
+12-04 20:17:32.311: I/art(8586): WaitForGcToComplete blocked for 26.164ms for cause Explicit
+12-04 20:17:32.355: I/art(8586): Explicit concurrent mark sweep GC freed 482(86KB) AllocSpace objects, 231(2MB) LOS objects, 27% free, 5MB/7MB, paused 566us total 43.410ms
+12-04 20:17:37.990: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 30.059ms
+12-04 20:17:38.057: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.976ms
+12-04 20:17:38.119: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.499ms
+12-04 20:17:38.180: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.754ms
+12-04 20:17:38.242: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 25.613ms
+12-04 20:17:43.000: I/art(8586): WaitForGcToComplete blocked for 9.268ms for cause HomogeneousSpaceCompact
+12-04 20:17:43.856: I/art(8586): WaitForGcToComplete blocked for 5.179ms for cause Explicit
+12-04 20:17:43.887: I/art(8586): Explicit concurrent mark sweep GC freed 310(10KB) AllocSpace objects, 153(2MB) LOS objects, 28% free, 5MB/7MB, paused 599us total 31.011ms
+12-04 20:17:43.891: I/art(8586): WaitForGcToComplete blocked for 16.486ms for cause Background
+12-04 20:17:43.944: I/art(8586): WaitForGcToComplete blocked for 16.324ms for cause Explicit
+12-04 20:17:43.976: I/art(8586): Explicit concurrent mark sweep GC freed 272(8KB) AllocSpace objects, 135(2MB) LOS objects, 28% free, 5MB/7MB, paused 660us total 32.133ms
+12-04 20:17:43.982: I/art(8586): WaitForGcToComplete blocked for 20.642ms for cause Background
+12-04 20:17:44.038: I/art(8586): Explicit concurrent mark sweep GC freed 223(11KB) AllocSpace objects, 51(1023KB) LOS objects, 28% free, 5MB/7MB, paused 452us total 26.438ms
+12-04 20:17:44.098: I/art(8586): Explicit concurrent mark sweep GC freed 73(2768B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 429us total 24.829ms
+12-04 20:17:44.157: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 429us total 24.320ms
+12-04 20:17:49.793: I/art(8586): Explicit concurrent mark sweep GC freed 130(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.941ms
+12-04 20:17:49.859: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.665ms
+12-04 20:17:49.920: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.548ms
+12-04 20:17:49.980: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.555ms
+12-04 20:17:50.041: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.540ms
+12-04 20:17:55.686: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.758ms
+12-04 20:17:55.756: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.007ms
+12-04 20:17:55.815: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 23.733ms
+12-04 20:17:55.873: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.107ms
+12-04 20:17:55.931: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.609ms
+12-04 20:18:01.598: I/art(8586): Explicit concurrent mark sweep GC freed 476(15KB) AllocSpace objects, 236(3MB) LOS objects, 27% free, 5MB/7MB, paused 617us total 37.578ms
+12-04 20:18:01.602: I/art(8586): WaitForGcToComplete blocked for 27.639ms for cause Background
+12-04 20:18:01.656: I/art(8586): WaitForGcToComplete blocked for 19.259ms for cause Explicit
+12-04 20:18:01.688: I/art(8586): Explicit concurrent mark sweep GC freed 326(10KB) AllocSpace objects, 163(2MB) LOS objects, 28% free, 5MB/7MB, paused 617us total 32.354ms
+12-04 20:18:01.692: I/art(8586): WaitForGcToComplete blocked for 10.104ms for cause Background
+12-04 20:18:01.742: I/art(8586): WaitForGcToComplete blocked for 14.433ms for cause Explicit
+12-04 20:18:01.776: I/art(8586): Explicit concurrent mark sweep GC freed 258(8KB) AllocSpace objects, 128(2MB) LOS objects, 28% free, 5MB/7MB, paused 559us total 33.117ms
+12-04 20:18:01.776: I/art(8586): WaitForGcToComplete blocked for 11.572ms for cause Background
+12-04 20:18:01.852: I/art(8586): WaitForGcToComplete blocked for 37.051ms for cause Explicit
+12-04 20:18:01.893: I/art(8586): Explicit concurrent mark sweep GC freed 578(18KB) AllocSpace objects, 288(4MB) LOS objects, 27% free, 5MB/7MB, paused 623us total 40.018ms
+12-04 20:18:01.903: I/art(8586): WaitForGcToComplete blocked for 48.670ms for cause Background
+12-04 20:18:01.962: I/art(8586): WaitForGcToComplete blocked for 29.992ms for cause Explicit
+12-04 20:18:01.998: I/art(8586): Explicit concurrent mark sweep GC freed 386(12KB) AllocSpace objects, 192(3MB) LOS objects, 27% free, 5MB/7MB, paused 700us total 35.442ms
+12-04 20:18:01.999: I/art(8586): WaitForGcToComplete blocked for 23.918ms for cause Background
+12-04 20:18:07.688: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.406ms
+12-04 20:18:07.759: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.217ms
+12-04 20:18:07.817: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 23.652ms
+12-04 20:18:07.876: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.241ms
+12-04 20:18:07.934: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 352us total 23.751ms
+12-04 20:18:12.702: I/art(8586): WaitForGcToComplete blocked for 13.850ms for cause HomogeneousSpaceCompact
+12-04 20:18:13.571: I/art(8586): WaitForGcToComplete blocked for 13.844ms for cause Explicit
+12-04 20:18:13.605: I/art(8586): Explicit concurrent mark sweep GC freed 221(6KB) AllocSpace objects, 109(1709KB) LOS objects, 27% free, 5MB/7MB, paused 429us total 33.145ms
+12-04 20:18:13.612: I/art(8586): WaitForGcToComplete blocked for 14.480ms for cause Background
+12-04 20:18:13.659: I/art(8586): WaitForGcToComplete blocked for 14.936ms for cause Explicit
+12-04 20:18:13.696: I/art(8586): Explicit concurrent mark sweep GC freed 349(10KB) AllocSpace objects, 175(2MB) LOS objects, 27% free, 5MB/7MB, paused 1.335ms total 36.751ms
+12-04 20:18:13.696: I/art(8586): WaitForGcToComplete blocked for 21.942ms for cause Background
+12-04 20:18:13.762: I/art(8586): WaitForGcToComplete blocked for 28.885ms for cause Explicit
+12-04 20:18:13.797: I/art(8586): Explicit concurrent mark sweep GC freed 327(10KB) AllocSpace objects, 162(2MB) LOS objects, 27% free, 5MB/7MB, paused 446us total 33.891ms
+12-04 20:18:13.802: I/art(8586): WaitForGcToComplete blocked for 25.071ms for cause Background
+12-04 20:18:13.859: I/art(8586): WaitForGcToComplete blocked for 19.699ms for cause Explicit
+12-04 20:18:13.893: I/art(8586): Explicit concurrent mark sweep GC freed 355(11KB) AllocSpace objects, 178(3MB) LOS objects, 28% free, 5MB/7MB, paused 542us total 33.161ms
+12-04 20:18:13.902: I/art(8586): WaitForGcToComplete blocked for 28.399ms for cause Background
+12-04 20:18:13.952: I/art(8586): WaitForGcToComplete blocked for 22.122ms for cause Explicit
+12-04 20:18:13.989: I/art(8586): Explicit concurrent mark sweep GC freed 490(15KB) AllocSpace objects, 245(4MB) LOS objects, 27% free, 5MB/7MB, paused 944us total 36.764ms
+12-04 20:18:13.990: I/art(8586): WaitForGcToComplete blocked for 32.339ms for cause Background
+12-04 20:18:19.606: I/art(8586): Explicit concurrent mark sweep GC freed 113(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.252ms
+12-04 20:18:19.671: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.157ms
+12-04 20:18:19.730: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 23.588ms
+12-04 20:18:19.788: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 23.930ms
+12-04 20:18:19.846: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 23.655ms
+12-04 20:18:25.473: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 340us total 32.337ms
+12-04 20:18:25.535: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.266ms
+12-04 20:18:25.595: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 25.212ms
+12-04 20:18:25.655: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.269ms
+12-04 20:18:25.716: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 25.217ms
+12-04 20:18:31.344: I/art(8586): Explicit concurrent mark sweep GC freed 4106(15MB) AllocSpace objects, 55(662KB) LOS objects, 24% free, 6MB/8MB, paused 613us total 40.387ms
+12-04 20:18:31.344: I/art(8586): WaitForGcToComplete blocked for 25.503ms for cause Background
+12-04 20:18:31.416: I/art(8586): WaitForGcToComplete blocked for 35.264ms for cause Explicit
+12-04 20:18:31.451: I/art(8586): Explicit concurrent mark sweep GC freed 504(39KB) AllocSpace objects, 248(3MB) LOS objects, 28% free, 5MB/7MB, paused 542us total 34.654ms
+12-04 20:18:31.451: I/art(8586): WaitForGcToComplete blocked for 17.209ms for cause Background
+12-04 20:18:31.511: I/art(8586): WaitForGcToComplete blocked for 23.770ms for cause Explicit
+12-04 20:18:31.552: I/art(8586): Explicit concurrent mark sweep GC freed 452(14KB) AllocSpace objects, 226(3MB) LOS objects, 26% free, 5MB/7MB, paused 628us total 40.445ms
+12-04 20:18:31.552: I/art(8586): WaitForGcToComplete blocked for 29.365ms for cause Background
+12-04 20:18:31.604: I/art(8586): WaitForGcToComplete blocked for 16.922ms for cause Explicit
+12-04 20:18:31.642: I/art(8586): Explicit concurrent mark sweep GC freed 446(13KB) AllocSpace objects, 223(3MB) LOS objects, 27% free, 5MB/7MB, paused 678us total 37.283ms
+12-04 20:18:31.642: I/art(8586): WaitForGcToComplete blocked for 22.224ms for cause Background
+12-04 20:18:31.702: I/art(8586): WaitForGcToComplete blocked for 21.428ms for cause Explicit
+12-04 20:18:31.739: I/art(8586): Explicit concurrent mark sweep GC freed 426(13KB) AllocSpace objects, 213(3MB) LOS objects, 27% free, 5MB/7MB, paused 686us total 36.619ms
+12-04 20:18:31.739: I/art(8586): WaitForGcToComplete blocked for 24.836ms for cause Background
+12-04 20:18:37.371: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.879ms
+12-04 20:18:37.438: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.614ms
+12-04 20:18:37.499: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.334ms
+12-04 20:18:37.559: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.556ms
+12-04 20:18:37.619: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.311ms
+12-04 20:18:42.382: I/art(8586): WaitForGcToComplete blocked for 11.077ms for cause HomogeneousSpaceCompact
+12-04 20:18:43.292: I/art(8586): WaitForGcToComplete blocked for 11.310ms for cause Explicit
+12-04 20:18:43.339: I/art(8586): Explicit concurrent mark sweep GC freed 590(438KB) AllocSpace objects, 212(2MB) LOS objects, 27% free, 5MB/7MB, paused 581us total 46.725ms
+12-04 20:18:43.412: I/art(8586): WaitForGcToComplete blocked for 25.196ms for cause Explicit
+12-04 20:18:43.444: I/art(8586): Explicit concurrent mark sweep GC freed 172(5KB) AllocSpace objects, 87(1203KB) LOS objects, 28% free, 5MB/7MB, paused 515us total 31.482ms
+12-04 20:18:43.500: I/art(8586): WaitForGcToComplete blocked for 16.536ms for cause Explicit
+12-04 20:18:43.532: I/art(8586): Explicit concurrent mark sweep GC freed 207(6KB) AllocSpace objects, 103(1495KB) LOS objects, 27% free, 5MB/7MB, paused 468us total 31.287ms
+12-04 20:18:43.540: I/art(8586): WaitForGcToComplete blocked for 15.026ms for cause Background
+12-04 20:18:43.594: I/art(8586): WaitForGcToComplete blocked for 21.582ms for cause Explicit
+12-04 20:18:43.626: I/art(8586): Explicit concurrent mark sweep GC freed 273(8KB) AllocSpace objects, 135(2MB) LOS objects, 27% free, 5MB/7MB, paused 515us total 31.953ms
+12-04 20:18:43.627: I/art(8586): WaitForGcToComplete blocked for 10.206ms for cause Background
+12-04 20:18:43.678: I/art(8586): WaitForGcToComplete blocked for 16.173ms for cause Explicit
+12-04 20:18:43.711: I/art(8586): Explicit concurrent mark sweep GC freed 230(7KB) AllocSpace objects, 116(1863KB) LOS objects, 28% free, 5MB/7MB, paused 487us total 32.608ms
+12-04 20:18:43.711: I/art(8586): WaitForGcToComplete blocked for 8.990ms for cause Background
+12-04 20:18:49.316: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 26.002ms
+12-04 20:18:49.387: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 349us total 23.983ms
+12-04 20:18:49.447: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 353us total 24.799ms
+12-04 20:18:49.505: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.991ms
+12-04 20:18:49.564: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.775ms
+12-04 20:18:55.211: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.075ms
+12-04 20:18:55.278: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.664ms
+12-04 20:18:55.338: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.273ms
+12-04 20:18:55.397: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.583ms
+12-04 20:18:55.457: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.300ms
+12-04 20:19:01.121: I/art(8586): Explicit concurrent mark sweep GC freed 3232(1681KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 437us total 40.981ms
+12-04 20:19:01.200: I/art(8586): WaitForGcToComplete blocked for 41.359ms for cause Explicit
+12-04 20:19:01.241: I/art(8586): Explicit concurrent mark sweep GC freed 3516(13MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 8MB/11MB, paused 545us total 40.447ms
+12-04 20:19:01.241: I/art(8586): WaitForGcToComplete blocked for 32.408ms for cause Background
+12-04 20:19:01.313: I/art(8586): WaitForGcToComplete blocked for 33.238ms for cause Explicit
+12-04 20:19:01.354: I/art(8586): Explicit concurrent mark sweep GC freed 398(84KB) AllocSpace objects, 190(2MB) LOS objects, 27% free, 5MB/7MB, paused 770us total 40.444ms
+12-04 20:19:01.416: I/art(8586): WaitForGcToComplete blocked for 23.663ms for cause Explicit
+12-04 20:19:01.456: I/art(8586): Explicit concurrent mark sweep GC freed 460(14KB) AllocSpace objects, 230(3MB) LOS objects, 27% free, 5MB/7MB, paused 723us total 40.664ms
+12-04 20:19:01.463: I/art(8586): WaitForGcToComplete blocked for 34.935ms for cause Background
+12-04 20:19:01.524: I/art(8586): WaitForGcToComplete blocked for 17.456ms for cause Explicit
+12-04 20:19:01.559: I/art(8586): Explicit concurrent mark sweep GC freed 306(9KB) AllocSpace objects, 152(2MB) LOS objects, 28% free, 5MB/7MB, paused 656us total 34.260ms
+12-04 20:19:01.559: I/art(8586): WaitForGcToComplete blocked for 13.536ms for cause Background
+12-04 20:19:07.230: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 24.045ms
+12-04 20:19:07.301: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.966ms
+12-04 20:19:07.359: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 23.641ms
+12-04 20:19:07.417: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 23.940ms
+12-04 20:19:07.476: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 23.697ms
+12-04 20:19:13.145: I/art(8586): Explicit concurrent mark sweep GC freed 2824(10MB) AllocSpace objects, 35(421KB) LOS objects, 26% free, 5MB/7MB, paused 666us total 40.059ms
+12-04 20:19:13.146: I/art(8586): WaitForGcToComplete blocked for 37.315ms for cause Background
+12-04 20:19:13.196: I/art(8586): WaitForGcToComplete blocked for 16.508ms for cause Explicit
+12-04 20:19:13.235: I/art(8586): Explicit concurrent mark sweep GC freed 419(37KB) AllocSpace objects, 207(2MB) LOS objects, 27% free, 5MB/7MB, paused 579us total 38.391ms
+12-04 20:19:13.235: I/art(8586): WaitForGcToComplete blocked for 19.252ms for cause Background
+12-04 20:19:13.302: I/art(8586): WaitForGcToComplete blocked for 32.430ms for cause Explicit
+12-04 20:19:13.339: I/art(8586): Explicit concurrent mark sweep GC freed 523(16KB) AllocSpace objects, 261(3MB) LOS objects, 27% free, 5MB/7MB, paused 497us total 35.848ms
+12-04 20:19:13.339: I/art(8586): WaitForGcToComplete blocked for 26.411ms for cause Background
+12-04 20:19:13.399: I/art(8586): WaitForGcToComplete blocked for 23.303ms for cause Explicit
+12-04 20:19:13.437: I/art(8586): Explicit concurrent mark sweep GC freed 458(14KB) AllocSpace objects, 228(3MB) LOS objects, 27% free, 5MB/7MB, paused 601us total 37.460ms
+12-04 20:19:13.438: I/art(8586): WaitForGcToComplete blocked for 27.198ms for cause Background
+12-04 20:19:13.503: I/art(8586): WaitForGcToComplete blocked for 26.406ms for cause Explicit
+12-04 20:19:13.550: I/art(8586): Explicit concurrent mark sweep GC freed 486(15KB) AllocSpace objects, 243(3MB) LOS objects, 28% free, 5MB/7MB, paused 528us total 46.979ms
+12-04 20:19:13.552: I/art(8586): WaitForGcToComplete blocked for 35.928ms for cause Background
+12-04 20:19:19.263: I/art(8586): Explicit concurrent mark sweep GC freed 113(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 24.840ms
+12-04 20:19:19.342: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.951ms
+12-04 20:19:19.404: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 411us total 24.674ms
+12-04 20:19:19.464: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 411us total 24.298ms
+12-04 20:19:19.522: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.640ms
+12-04 20:19:25.225: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 333us total 36.051ms
+12-04 20:19:25.283: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 408us total 24.124ms
+12-04 20:19:25.343: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.791ms
+12-04 20:19:25.401: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 23.983ms
+12-04 20:19:25.461: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.733ms
+12-04 20:19:31.172: I/art(8586): Explicit concurrent mark sweep GC freed 4743(3MB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 434us total 35.604ms
+12-04 20:19:31.189: I/art(8586): WaitForGcToComplete blocked for 43.083ms for cause Background
+12-04 20:19:31.232: I/art(8586): WaitForGcToComplete blocked for 12.281ms for cause Explicit
+12-04 20:19:31.274: I/art(8586): Explicit concurrent mark sweep GC freed 4382(11MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 9MB/13MB, paused 517us total 41.174ms
+12-04 20:19:31.274: I/art(8586): WaitForGcToComplete blocked for 41.620ms for cause Background
+12-04 20:19:31.338: I/art(8586): WaitForGcToComplete blocked for 25.994ms for cause Explicit
+12-04 20:19:31.377: I/art(8586): Explicit concurrent mark sweep GC freed 1235(3MB) AllocSpace objects, 196(2MB) LOS objects, 27% free, 5MB/7MB, paused 760us total 38.595ms
+12-04 20:19:31.442: I/art(8586): WaitForGcToComplete blocked for 25.389ms for cause Explicit
+12-04 20:19:31.494: I/art(8586): Explicit concurrent mark sweep GC freed 482(15KB) AllocSpace objects, 241(3MB) LOS objects, 27% free, 5MB/7MB, paused 589us total 51.090ms
+12-04 20:19:31.494: I/art(8586): WaitForGcToComplete blocked for 40.115ms for cause Background
+12-04 20:19:31.558: I/art(8586): WaitForGcToComplete blocked for 25.116ms for cause Explicit
+12-04 20:19:31.596: I/art(8586): Explicit concurrent mark sweep GC freed 505(15KB) AllocSpace objects, 253(3MB) LOS objects, 27% free, 5MB/7MB, paused 745us total 37.970ms
+12-04 20:19:31.596: I/art(8586): WaitForGcToComplete blocked for 24.108ms for cause Background
+12-04 20:19:37.231: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 26.219ms
+12-04 20:19:37.301: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24ms
+12-04 20:19:37.361: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.895ms
+12-04 20:19:37.419: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 23.949ms
+12-04 20:19:37.478: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.905ms
+12-04 20:19:43.121: I/art(8586): WaitForGcToComplete blocked for 30.366ms for cause Explicit
+12-04 20:19:43.164: I/art(8586): Explicit concurrent mark sweep GC freed 4596(16MB) AllocSpace objects, 0(0B) LOS objects, 25% free, 9MB/12MB, paused 635us total 42.683ms
+12-04 20:19:43.165: I/art(8586): WaitForGcToComplete blocked for 38.290ms for cause Background
+12-04 20:19:43.232: I/art(8586): WaitForGcToComplete blocked for 30.374ms for cause Explicit
+12-04 20:19:43.273: I/art(8586): Explicit concurrent mark sweep GC freed 490(87KB) AllocSpace objects, 236(2MB) LOS objects, 27% free, 5MB/7MB, paused 555us total 39.860ms
+12-04 20:19:43.336: I/art(8586): WaitForGcToComplete blocked for 23.441ms for cause Explicit
+12-04 20:19:43.371: I/art(8586): Explicit concurrent mark sweep GC freed 260(8KB) AllocSpace objects, 130(1787KB) LOS objects, 27% free, 5MB/7MB, paused 581us total 35.465ms
+12-04 20:19:43.372: I/art(8586): WaitForGcToComplete blocked for 12.372ms for cause Background
+12-04 20:19:43.419: I/art(8586): WaitForGcToComplete blocked for 11.251ms for cause Explicit
+12-04 20:19:43.453: I/art(8586): Explicit concurrent mark sweep GC freed 392(12KB) AllocSpace objects, 194(2MB) LOS objects, 27% free, 5MB/7MB, paused 634us total 33.829ms
+12-04 20:19:43.453: I/art(8586): WaitForGcToComplete blocked for 18.409ms for cause Background
+12-04 20:19:43.506: I/art(8586): WaitForGcToComplete blocked for 17.318ms for cause Explicit
+12-04 20:19:43.545: I/art(8586): Explicit concurrent mark sweep GC freed 348(10KB) AllocSpace objects, 174(2MB) LOS objects, 28% free, 5MB/7MB, paused 682us total 38.572ms
+12-04 20:19:43.547: I/art(8586): WaitForGcToComplete blocked for 24.072ms for cause Background
+12-04 20:19:49.193: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.940ms
+12-04 20:19:49.260: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.616ms
+12-04 20:19:49.320: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.293ms
+12-04 20:19:49.380: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.582ms
+12-04 20:19:49.441: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.314ms
+12-04 20:19:55.068: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 344us total 25.925ms
+12-04 20:19:55.135: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.346ms
+12-04 20:19:55.194: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.321ms
+12-04 20:19:55.254: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.862ms
+12-04 20:19:55.314: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 24.344ms
+12-04 20:20:00.969: I/art(8586): Explicit concurrent mark sweep GC freed 21(1736B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 26.745ms
+12-04 20:20:01.035: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.538ms
+12-04 20:20:01.101: I/art(8586): Explicit concurrent mark sweep GC freed 3972(2MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 6MB/8MB, paused 427us total 30.362ms
+12-04 20:20:01.101: I/art(8586): WaitForGcToComplete blocked for 9.532ms for cause Background
+12-04 20:20:01.173: I/art(8586): WaitForGcToComplete blocked for 34.096ms for cause Explicit
+12-04 20:20:01.219: I/art(8586): Explicit concurrent mark sweep GC freed 5300(17MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 9MB/12MB, paused 633us total 46.069ms
+12-04 20:20:01.219: I/art(8586): WaitForGcToComplete blocked for 33.827ms for cause Background
+12-04 20:20:01.282: I/art(8586): WaitForGcToComplete blocked for 24.180ms for cause Explicit
+12-04 20:20:01.332: I/art(8586): Explicit concurrent mark sweep GC freed 524(88KB) AllocSpace objects, 252(3MB) LOS objects, 24% free, 6MB/8MB, paused 747us total 49.899ms
+12-04 20:20:06.975: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 34.765ms
+12-04 20:20:07.035: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.985ms
+12-04 20:20:07.093: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.804ms
+12-04 20:20:07.152: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 23.932ms
+12-04 20:20:07.210: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 23.641ms
+12-04 20:20:12.002: I/art(8586): WaitForGcToComplete blocked for 27.321ms for cause HomogeneousSpaceCompact
+12-04 20:20:12.848: I/art(8586): WaitForGcToComplete blocked for 40.097ms for cause Explicit
+12-04 20:20:12.888: I/art(8586): Explicit concurrent mark sweep GC freed 393(12KB) AllocSpace objects, 195(3MB) LOS objects, 27% free, 5MB/7MB, paused 495us total 39.631ms
+12-04 20:20:12.888: I/art(8586): WaitForGcToComplete blocked for 17.513ms for cause Background
+12-04 20:20:12.942: I/art(8586): WaitForGcToComplete blocked for 18.387ms for cause Explicit
+12-04 20:20:12.976: I/art(8586): Explicit concurrent mark sweep GC freed 352(11KB) AllocSpace objects, 176(3MB) LOS objects, 27% free, 5MB/7MB, paused 609us total 33.971ms
+12-04 20:20:12.976: I/art(8586): WaitForGcToComplete blocked for 22.131ms for cause Background
+12-04 20:20:13.029: I/art(8586): WaitForGcToComplete blocked for 15.542ms for cause Explicit
+12-04 20:20:13.066: I/art(8586): Explicit concurrent mark sweep GC freed 5958(5MB) AllocSpace objects, 10(195KB) LOS objects, 25% free, 8MB/10MB, paused 505us total 36.504ms
+12-04 20:20:13.066: I/art(8586): WaitForGcToComplete blocked for 26.860ms for cause Background
+12-04 20:20:13.127: I/art(8586): WaitForGcToComplete blocked for 23.772ms for cause Explicit
+12-04 20:20:13.171: I/art(8586): Explicit concurrent mark sweep GC freed 4302(16MB) AllocSpace objects, 2(40KB) LOS objects, 24% free, 9MB/12MB, paused 737us total 43.587ms
+12-04 20:20:13.171: I/art(8586): WaitForGcToComplete blocked for 38.350ms for cause Background
+12-04 20:20:13.239: I/art(8586): WaitForGcToComplete blocked for 29.932ms for cause Explicit
+12-04 20:20:13.279: I/art(8586): Explicit concurrent mark sweep GC freed 459(86KB) AllocSpace objects, 220(2MB) LOS objects, 27% free, 5MB/7MB, paused 795us total 40.205ms
+12-04 20:20:18.967: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 351us total 34.656ms
+12-04 20:20:19.026: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 23.948ms
+12-04 20:20:19.084: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.713ms
+12-04 20:20:19.143: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.031ms
+12-04 20:20:19.201: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 23.640ms
+12-04 20:20:24.890: I/art(8586): Explicit concurrent mark sweep GC freed 221(45KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 340us total 27.720ms
+12-04 20:20:24.985: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 25.150ms
+12-04 20:20:25.046: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 346us total 25.645ms
+12-04 20:20:25.106: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.852ms
+12-04 20:20:25.167: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 540us total 25.579ms
+12-04 20:20:30.805: I/art(8586): Explicit concurrent mark sweep GC freed 21(1736B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.256ms
+12-04 20:20:30.872: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.268ms
+12-04 20:20:30.930: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 23.651ms
+12-04 20:20:30.992: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.881ms
+12-04 20:20:31.050: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 23.708ms
+12-04 20:20:36.674: I/art(8586): Explicit concurrent mark sweep GC freed 181(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 349us total 25.928ms
+12-04 20:20:36.740: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.602ms
+12-04 20:20:36.801: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.318ms
+12-04 20:20:36.861: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.606ms
+12-04 20:20:36.921: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.293ms
+12-04 20:20:41.699: I/art(8586): WaitForGcToComplete blocked for 24.794ms for cause HomogeneousSpaceCompact
+12-04 20:20:42.573: I/art(8586): WaitForGcToComplete blocked for 21.695ms for cause Explicit
+12-04 20:20:42.610: I/art(8586): Explicit concurrent mark sweep GC freed 392(13KB) AllocSpace objects, 194(2MB) LOS objects, 28% free, 5MB/7MB, paused 521us total 36.316ms
+12-04 20:20:42.707: I/art(8586): Explicit concurrent mark sweep GC freed 227(7KB) AllocSpace objects, 112(1710KB) LOS objects, 27% free, 5MB/7MB, paused 679us total 37.653ms
+12-04 20:20:42.707: I/art(8586): WaitForGcToComplete blocked for 9.018ms for cause Background
+12-04 20:20:42.763: I/art(8586): WaitForGcToComplete blocked for 21.059ms for cause Explicit
+12-04 20:20:42.798: I/art(8586): Explicit concurrent mark sweep GC freed 362(11KB) AllocSpace objects, 181(2MB) LOS objects, 28% free, 5MB/7MB, paused 686us total 34.746ms
+12-04 20:20:42.798: I/art(8586): WaitForGcToComplete blocked for 20.504ms for cause Background
+12-04 20:20:42.855: I/art(8586): WaitForGcToComplete blocked for 21.025ms for cause Explicit
+12-04 20:20:42.888: I/art(8586): Explicit concurrent mark sweep GC freed 276(8KB) AllocSpace objects, 139(2MB) LOS objects, 28% free, 5MB/7MB, paused 490us total 32.112ms
+12-04 20:20:42.892: I/art(8586): WaitForGcToComplete blocked for 22.168ms for cause Background
+12-04 20:20:42.954: I/art(8586): WaitForGcToComplete blocked for 29.531ms for cause Explicit
+12-04 20:20:42.998: I/art(8586): Explicit concurrent mark sweep GC freed 374(11KB) AllocSpace objects, 185(3MB) LOS objects, 26% free, 5MB/7MB, paused 525us total 43.904ms
+12-04 20:20:42.999: I/art(8586): WaitForGcToComplete blocked for 31.556ms for cause Background
+12-04 20:20:48.625: I/art(8586): Explicit concurrent mark sweep GC freed 181(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 26.564ms
+12-04 20:20:48.692: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.049ms
+12-04 20:20:48.751: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.922ms
+12-04 20:20:48.810: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 23.975ms
+12-04 20:20:48.870: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.958ms
+12-04 20:20:53.640: I/art(8586): WaitForGcToComplete blocked for 14.833ms for cause HomogeneousSpaceCompact
+12-04 20:20:54.527: I/art(8586): Explicit concurrent mark sweep GC freed 481(20KB) AllocSpace objects, 181(3MB) LOS objects, 28% free, 5MB/7MB, paused 376us total 31.864ms
+12-04 20:20:54.537: I/art(8586): WaitForGcToComplete blocked for 35.117ms for cause Background
+12-04 20:20:54.608: I/art(8586): Explicit concurrent mark sweep GC freed 73(2768B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 368us total 27.302ms
+12-04 20:20:54.677: I/art(8586): Explicit concurrent mark sweep GC freed 226(45KB) AllocSpace objects, 3(60KB) LOS objects, 28% free, 4MB/6MB, paused 777us total 30.975ms
+12-04 20:20:54.740: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.085ms
+12-04 20:20:54.798: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.699ms
+12-04 20:21:00.487: I/art(8586): Explicit concurrent mark sweep GC freed 21(1736B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 1.171ms total 26.747ms
+12-04 20:21:00.557: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.023ms
+12-04 20:21:00.616: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.778ms
+12-04 20:21:00.675: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.057ms
+12-04 20:21:00.734: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 347us total 24.793ms
+12-04 20:21:06.393: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.497ms
+12-04 20:21:06.460: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.399ms
+12-04 20:21:06.519: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.818ms
+12-04 20:21:06.579: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.351ms
+12-04 20:21:06.639: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 23.846ms
+12-04 20:21:12.280: I/art(8586): Explicit concurrent mark sweep GC freed 449(110KB) AllocSpace objects, 210(2MB) LOS objects, 27% free, 5MB/7MB, paused 619us total 37.388ms
+12-04 20:21:12.343: I/art(8586): WaitForGcToComplete blocked for 19.513ms for cause Explicit
+12-04 20:21:12.379: I/art(8586): Explicit concurrent mark sweep GC freed 276(8KB) AllocSpace objects, 138(1809KB) LOS objects, 27% free, 5MB/7MB, paused 526us total 34.955ms
+12-04 20:21:12.379: I/art(8586): WaitForGcToComplete blocked for 13.373ms for cause Background
+12-04 20:21:12.430: I/art(8586): WaitForGcToComplete blocked for 15.542ms for cause Explicit
+12-04 20:21:12.467: I/art(8586): Explicit concurrent mark sweep GC freed 398(12KB) AllocSpace objects, 199(2MB) LOS objects, 27% free, 5MB/7MB, paused 658us total 37.239ms
+12-04 20:21:12.467: I/art(8586): WaitForGcToComplete blocked for 22.566ms for cause Background
+12-04 20:21:12.518: I/art(8586): WaitForGcToComplete blocked for 15.413ms for cause Explicit
+12-04 20:21:12.558: I/art(8586): Explicit concurrent mark sweep GC freed 419(13KB) AllocSpace objects, 210(3MB) LOS objects, 26% free, 5MB/7MB, paused 591us total 39.615ms
+12-04 20:21:12.558: I/art(8586): WaitForGcToComplete blocked for 24.239ms for cause Background
+12-04 20:21:12.618: I/art(8586): WaitForGcToComplete blocked for 21.482ms for cause Explicit
+12-04 20:21:12.657: I/art(8586): Explicit concurrent mark sweep GC freed 373(11KB) AllocSpace objects, 185(2MB) LOS objects, 26% free, 5MB/7MB, paused 699us total 38.185ms
+12-04 20:21:12.657: I/art(8586): WaitForGcToComplete blocked for 21.472ms for cause Background
+12-04 20:21:18.283: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.424ms
+12-04 20:21:18.355: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 24.109ms
+12-04 20:21:18.414: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 433us total 23.759ms
+12-04 20:21:18.472: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.926ms
+12-04 20:21:18.530: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.666ms
+12-04 20:21:24.252: I/art(8586): Explicit concurrent mark sweep GC freed 194(11KB) AllocSpace objects, 36(726KB) LOS objects, 28% free, 5MB/7MB, paused 401us total 28.650ms
+12-04 20:21:24.330: I/art(8586): Explicit concurrent mark sweep GC freed 73(2768B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 371us total 24.287ms
+12-04 20:21:24.390: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 372us total 25.209ms
+12-04 20:21:24.448: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 370us total 24.198ms
+12-04 20:21:24.508: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 371us total 25.152ms
+12-04 20:21:30.146: I/art(8586): Explicit concurrent mark sweep GC freed 130(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 25.164ms
+12-04 20:21:30.216: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.046ms
+12-04 20:21:30.274: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 23.707ms
+12-04 20:21:30.333: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 23.987ms
+12-04 20:21:30.391: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 23.627ms
+12-04 20:21:36.029: I/art(8586): Explicit concurrent mark sweep GC freed 181(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 26.249ms
+12-04 20:21:36.095: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.065ms
+12-04 20:21:36.156: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.932ms
+12-04 20:21:36.216: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.291ms
+12-04 20:21:36.277: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.962ms
+12-04 20:21:41.947: I/art(8586): Explicit concurrent mark sweep GC freed 348(11KB) AllocSpace objects, 172(3MB) LOS objects, 27% free, 5MB/7MB, paused 611us total 36.333ms
+12-04 20:21:41.947: I/art(8586): WaitForGcToComplete blocked for 18.681ms for cause Background
+12-04 20:21:42.002: I/art(8586): WaitForGcToComplete blocked for 14.877ms for cause Explicit
+12-04 20:21:42.050: I/art(8586): Explicit concurrent mark sweep GC freed 390(12KB) AllocSpace objects, 195(3MB) LOS objects, 26% free, 5MB/7MB, paused 453us total 48.153ms
+12-04 20:21:42.052: I/art(8586): WaitForGcToComplete blocked for 19.912ms for cause Background
+12-04 20:21:42.103: I/art(8586): WaitForGcToComplete blocked for 16.547ms for cause Explicit
+12-04 20:21:42.138: I/art(8586): Explicit concurrent mark sweep GC freed 282(8KB) AllocSpace objects, 141(2MB) LOS objects, 27% free, 5MB/7MB, paused 1.016ms total 34.762ms
+12-04 20:21:42.138: I/art(8586): WaitForGcToComplete blocked for 15.585ms for cause Background
+12-04 20:21:42.203: I/art(8586): WaitForGcToComplete blocked for 28.653ms for cause Explicit
+12-04 20:21:42.245: I/art(8586): Explicit concurrent mark sweep GC freed 4955(13MB) AllocSpace objects, 7(138KB) LOS objects, 25% free, 9MB/13MB, paused 567us total 42.178ms
+12-04 20:21:42.263: I/art(8586): WaitForGcToComplete blocked for 50.649ms for cause Background
+12-04 20:21:42.305: I/art(8586): WaitForGcToComplete blocked for 23.036ms for cause Explicit
+12-04 20:21:42.345: I/art(8586): Explicit concurrent mark sweep GC freed 526(726KB) AllocSpace objects, 173(2MB) LOS objects, 27% free, 5MB/7MB, paused 576us total 40.252ms
+12-04 20:21:48.004: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 350us total 35.821ms
+12-04 20:21:48.063: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.079ms
+12-04 20:21:48.122: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.727ms
+12-04 20:21:48.181: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 23.968ms
+12-04 20:21:48.240: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.704ms
+12-04 20:21:53.017: I/art(8586): WaitForGcToComplete blocked for 13.226ms for cause HomogeneousSpaceCompact
+12-04 20:21:53.908: I/art(8586): Explicit concurrent mark sweep GC freed 624(20KB) AllocSpace objects, 310(5MB) LOS objects, 27% free, 5MB/7MB, paused 521us total 37.027ms
+12-04 20:21:53.908: I/art(8586): WaitForGcToComplete blocked for 28.152ms for cause Background
+12-04 20:21:53.961: I/art(8586): WaitForGcToComplete blocked for 14.996ms for cause Explicit
+12-04 20:21:53.997: I/art(8586): Explicit concurrent mark sweep GC freed 353(11KB) AllocSpace objects, 176(3MB) LOS objects, 27% free, 5MB/7MB, paused 574us total 35.738ms
+12-04 20:21:54.001: I/art(8586): WaitForGcToComplete blocked for 26.654ms for cause Background
+12-04 20:21:54.057: I/art(8586): Explicit concurrent mark sweep GC freed 174(9KB) AllocSpace objects, 26(527KB) LOS objects, 28% free, 5MB/7MB, paused 399us total 25.421ms
+12-04 20:21:54.117: I/art(8586): Explicit concurrent mark sweep GC freed 73(2768B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 401us total 24.546ms
+12-04 20:21:54.175: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 5MB/7MB, paused 399us total 24.135ms
+12-04 20:21:59.812: I/art(8586): Explicit concurrent mark sweep GC freed 130(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 336us total 25.980ms
+12-04 20:21:59.883: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.117ms
+12-04 20:21:59.942: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 25.003ms
+12-04 20:22:00.001: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.031ms
+12-04 20:22:00.068: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.062ms
+12-04 20:22:05.694: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.968ms
+12-04 20:22:05.760: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.591ms
+12-04 20:22:05.820: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 332us total 24.702ms
+12-04 20:22:05.882: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 334us total 24.564ms
+12-04 20:22:05.942: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.392ms
+12-04 20:22:11.623: I/art(8586): Explicit concurrent mark sweep GC freed 637(20KB) AllocSpace objects, 317(4MB) LOS objects, 28% free, 5MB/7MB, paused 635us total 43.280ms
+12-04 20:22:11.623: I/art(8586): WaitForGcToComplete blocked for 33.522ms for cause Background
+12-04 20:22:11.685: I/art(8586): WaitForGcToComplete blocked for 26.367ms for cause Explicit
+12-04 20:22:11.722: I/art(8586): Explicit concurrent mark sweep GC freed 494(15KB) AllocSpace objects, 246(3MB) LOS objects, 27% free, 5MB/7MB, paused 653us total 37.262ms
+12-04 20:22:11.722: I/art(8586): WaitForGcToComplete blocked for 29.288ms for cause Background
+12-04 20:22:11.803: I/art(8586): WaitForGcToComplete blocked for 41.524ms for cause Explicit
+12-04 20:22:11.840: I/art(8586): Explicit concurrent mark sweep GC freed 444(13KB) AllocSpace objects, 221(3MB) LOS objects, 27% free, 5MB/7MB, paused 475us total 36.160ms
+12-04 20:22:11.843: I/art(8586): WaitForGcToComplete blocked for 38.236ms for cause Background
+12-04 20:22:11.912: I/art(8586): WaitForGcToComplete blocked for 23.727ms for cause Explicit
+12-04 20:22:11.946: I/art(8586): Explicit concurrent mark sweep GC freed 272(8KB) AllocSpace objects, 135(2MB) LOS objects, 27% free, 5MB/7MB, paused 557us total 33.068ms
+12-04 20:22:11.946: I/art(8586): WaitForGcToComplete blocked for 15.770ms for cause Background
+12-04 20:22:12.008: I/art(8586): WaitForGcToComplete blocked for 25.377ms for cause Explicit
+12-04 20:22:12.041: I/art(8586): Explicit concurrent mark sweep GC freed 254(7KB) AllocSpace objects, 126(2MB) LOS objects, 27% free, 5MB/7MB, paused 613us total 32.370ms
+12-04 20:22:12.041: I/art(8586): WaitForGcToComplete blocked for 11.680ms for cause Background
+12-04 20:22:17.685: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.500ms
+12-04 20:22:17.756: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 347us total 24.269ms
+12-04 20:22:17.814: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 349us total 23.706ms
+12-04 20:22:17.873: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.194ms
+12-04 20:22:17.931: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 23.639ms
+12-04 20:22:22.691: I/art(8586): WaitForGcToComplete blocked for 6.068ms for cause HomogeneousSpaceCompact
+12-04 20:22:23.512: W/art(8586): Suspending all threads took: 7.513ms
+12-04 20:22:23.562: I/art(8586): WaitForGcToComplete blocked for 18.848ms for cause Explicit
+12-04 20:22:23.598: I/art(8586): Explicit concurrent mark sweep GC freed 404(13KB) AllocSpace objects, 199(3MB) LOS objects, 27% free, 5MB/7MB, paused 464us total 35.182ms
+12-04 20:22:23.598: I/art(8586): WaitForGcToComplete blocked for 11.018ms for cause Background
+12-04 20:22:23.657: I/art(8586): WaitForGcToComplete blocked for 22.197ms for cause Explicit
+12-04 20:22:23.690: I/art(8586): Explicit concurrent mark sweep GC freed 234(7KB) AllocSpace objects, 116(1936KB) LOS objects, 27% free, 5MB/7MB, paused 448us total 31.893ms
+12-04 20:22:23.690: I/art(8586): WaitForGcToComplete blocked for 10.262ms for cause Background
+12-04 20:22:23.753: I/art(8586): WaitForGcToComplete blocked for 26.004ms for cause Explicit
+12-04 20:22:23.787: I/art(8586): Explicit concurrent mark sweep GC freed 394(12KB) AllocSpace objects, 197(3MB) LOS objects, 28% free, 5MB/7MB, paused 604us total 34.265ms
+12-04 20:22:23.788: I/art(8586): WaitForGcToComplete blocked for 24.613ms for cause Background
+12-04 20:22:23.852: I/art(8586): WaitForGcToComplete blocked for 26.148ms for cause Explicit
+12-04 20:22:23.887: I/art(8586): Explicit concurrent mark sweep GC freed 308(9KB) AllocSpace objects, 153(2MB) LOS objects, 27% free, 5MB/7MB, paused 491us total 34.231ms
+12-04 20:22:23.893: I/art(8586): WaitForGcToComplete blocked for 26.600ms for cause Background
+12-04 20:22:23.954: I/art(8586): WaitForGcToComplete blocked for 30.047ms for cause Explicit
+12-04 20:22:23.994: I/art(8586): Explicit concurrent mark sweep GC freed 420(13KB) AllocSpace objects, 209(3MB) LOS objects, 26% free, 5MB/7MB, paused 563us total 39.241ms
+12-04 20:22:23.994: I/art(8586): WaitForGcToComplete blocked for 29.237ms for cause Background
+12-04 20:22:29.629: I/art(8586): Explicit concurrent mark sweep GC freed 198(8KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 25.228ms
+12-04 20:22:29.697: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.699ms
+12-04 20:22:29.757: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.742ms
+12-04 20:22:29.816: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.223ms
+12-04 20:22:29.876: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.019ms
+12-04 20:22:35.568: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 26.561ms
+12-04 20:22:35.638: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 23.997ms
+12-04 20:22:35.698: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.968ms
+12-04 20:22:35.756: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 23.992ms
+12-04 20:22:35.816: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.998ms
+12-04 20:22:41.497: I/art(8586): Explicit concurrent mark sweep GC freed 1359(171KB) AllocSpace objects, 661(8MB) LOS objects, 27% free, 5MB/7MB, paused 629us total 53.529ms
+12-04 20:22:41.562: I/art(8586): WaitForGcToComplete blocked for 28.598ms for cause Explicit
+12-04 20:22:41.606: I/art(8586): Explicit concurrent mark sweep GC freed 584(18KB) AllocSpace objects, 292(4MB) LOS objects, 26% free, 5MB/7MB, paused 590us total 42.835ms
+12-04 20:22:41.612: I/art(8586): WaitForGcToComplete blocked for 45.100ms for cause Background
+12-04 20:22:41.663: I/art(8586): WaitForGcToComplete blocked for 21.330ms for cause Explicit
+12-04 20:22:41.700: I/art(8586): Explicit concurrent mark sweep GC freed 364(11KB) AllocSpace objects, 182(2MB) LOS objects, 27% free, 5MB/7MB, paused 628us total 36.700ms
+12-04 20:22:41.700: I/art(8586): WaitForGcToComplete blocked for 18.803ms for cause Background
+12-04 20:22:41.762: I/art(8586): WaitForGcToComplete blocked for 23.979ms for cause Explicit
+12-04 20:22:41.795: I/art(8586): Explicit concurrent mark sweep GC freed 320(10KB) AllocSpace objects, 160(2MB) LOS objects, 28% free, 5MB/7MB, paused 648us total 32.700ms
+12-04 20:22:41.796: I/art(8586): WaitForGcToComplete blocked for 16.564ms for cause Background
+12-04 20:22:41.852: I/art(8586): WaitForGcToComplete blocked for 19.366ms for cause Explicit
+12-04 20:22:41.889: I/art(8586): Explicit concurrent mark sweep GC freed 396(12KB) AllocSpace objects, 197(3MB) LOS objects, 27% free, 5MB/7MB, paused 735us total 36.100ms
+12-04 20:22:41.890: I/art(8586): WaitForGcToComplete blocked for 25.127ms for cause Background
+12-04 20:22:47.528: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 26.743ms
+12-04 20:22:47.598: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.025ms
+12-04 20:22:47.657: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.716ms
+12-04 20:22:47.716: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 24.022ms
+12-04 20:22:47.775: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 24.762ms
+12-04 20:22:53.450: I/art(8586): Explicit concurrent mark sweep GC freed 389(13KB) AllocSpace objects, 193(2MB) LOS objects, 28% free, 5MB/7MB, paused 606us total 37.775ms
+12-04 20:22:53.452: I/art(8586): WaitForGcToComplete blocked for 11.199ms for cause Background
+12-04 20:22:53.503: I/art(8586): WaitForGcToComplete blocked for 15.705ms for cause Explicit
+12-04 20:22:53.538: I/art(8586): Explicit concurrent mark sweep GC freed 294(9KB) AllocSpace objects, 146(2MB) LOS objects, 27% free, 5MB/7MB, paused 617us total 35.376ms
+12-04 20:22:53.539: I/art(8586): WaitForGcToComplete blocked for 9.498ms for cause Background
+12-04 20:22:53.602: I/art(8586): WaitForGcToComplete blocked for 26.268ms for cause Explicit
+12-04 20:22:53.640: I/art(8586): Explicit concurrent mark sweep GC freed 394(12KB) AllocSpace objects, 197(3MB) LOS objects, 26% free, 5MB/7MB, paused 526us total 37.327ms
+12-04 20:22:53.642: I/art(8586): WaitForGcToComplete blocked for 27.659ms for cause Background
+12-04 20:22:53.696: I/art(8586): WaitForGcToComplete blocked for 18.487ms for cause Explicit
+12-04 20:22:53.727: I/art(8586): Explicit concurrent mark sweep GC freed 232(7KB) AllocSpace objects, 116(2017KB) LOS objects, 28% free, 5MB/7MB, paused 580us total 30.599ms
+12-04 20:22:53.727: I/art(8586): WaitForGcToComplete blocked for 7.064ms for cause Background
+12-04 20:22:53.794: I/art(8586): WaitForGcToComplete blocked for 31.409ms for cause Explicit
+12-04 20:22:53.834: I/art(8586): Explicit concurrent mark sweep GC freed 510(15KB) AllocSpace objects, 255(4MB) LOS objects, 26% free, 5MB/7MB, paused 540us total 40.276ms
+12-04 20:22:53.834: I/art(8586): WaitForGcToComplete blocked for 37.048ms for cause Background
+12-04 20:22:59.431: I/art(8586): Explicit concurrent mark sweep GC freed 113(5KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 26.272ms
+12-04 20:22:59.497: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 25.071ms
+12-04 20:22:59.558: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.871ms
+12-04 20:22:59.618: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.128ms
+12-04 20:22:59.678: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.066ms
+12-04 20:23:05.368: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.564ms
+12-04 20:23:05.438: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.051ms
+12-04 20:23:05.497: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 23.685ms
+12-04 20:23:05.555: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.048ms
+12-04 20:23:05.613: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 23.756ms
+12-04 20:23:11.407: I/art(8586): Explicit concurrent mark sweep GC freed 1032(771KB) AllocSpace objects, 421(5MB) LOS objects, 27% free, 5MB/7MB, paused 634us total 48.926ms
+12-04 20:23:11.468: I/art(8586): WaitForGcToComplete blocked for 23.910ms for cause Explicit
+12-04 20:23:11.504: I/art(8586): Explicit concurrent mark sweep GC freed 240(7KB) AllocSpace objects, 119(1605KB) LOS objects, 27% free, 5MB/7MB, paused 582us total 35.909ms
+12-04 20:23:11.505: I/art(8586): WaitForGcToComplete blocked for 6.326ms for cause Background
+12-04 20:23:11.572: I/art(8586): WaitForGcToComplete blocked for 29.481ms for cause Explicit
+12-04 20:23:11.620: I/art(8586): Explicit concurrent mark sweep GC freed 426(13KB) AllocSpace objects, 213(3MB) LOS objects, 27% free, 5MB/7MB, paused 508us total 46.902ms
+12-04 20:23:11.620: I/art(8586): WaitForGcToComplete blocked for 30.267ms for cause Background
+12-04 20:23:11.672: I/art(8586): WaitForGcToComplete blocked for 15.937ms for cause Explicit
+12-04 20:23:11.709: I/art(8586): Explicit concurrent mark sweep GC freed 410(12KB) AllocSpace objects, 205(3MB) LOS objects, 27% free, 5MB/7MB, paused 628us total 36.627ms
+12-04 20:23:11.712: I/art(8586): WaitForGcToComplete blocked for 25.756ms for cause Background
+12-04 20:23:11.766: I/art(8586): WaitForGcToComplete blocked for 18.721ms for cause Explicit
+12-04 20:23:11.803: I/art(8586): Explicit concurrent mark sweep GC freed 322(10KB) AllocSpace objects, 162(2MB) LOS objects, 27% free, 5MB/7MB, paused 506us total 37.395ms
+12-04 20:23:11.806: I/art(8586): WaitForGcToComplete blocked for 23.621ms for cause Background
+12-04 20:23:17.370: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.402ms
+12-04 20:23:17.436: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 25.070ms
+12-04 20:23:17.496: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.841ms
+12-04 20:23:17.556: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.155ms
+12-04 20:23:17.615: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 23.876ms
+12-04 20:23:23.323: I/art(8586): Explicit concurrent mark sweep GC freed 887(435KB) AllocSpace objects, 363(4MB) LOS objects, 27% free, 5MB/7MB, paused 476us total 46.200ms
+12-04 20:23:23.325: I/art(8586): WaitForGcToComplete blocked for 23.592ms for cause Background
+12-04 20:23:23.384: I/art(8586): WaitForGcToComplete blocked for 21.764ms for cause Explicit
+12-04 20:23:23.421: I/art(8586): Explicit concurrent mark sweep GC freed 316(9KB) AllocSpace objects, 158(2MB) LOS objects, 26% free, 5MB/7MB, paused 473us total 37.415ms
+12-04 20:23:23.422: I/art(8586): WaitForGcToComplete blocked for 16.184ms for cause Background
+12-04 20:23:23.482: I/art(8586): WaitForGcToComplete blocked for 23.620ms for cause Explicit
+12-04 20:23:23.518: I/art(8586): Explicit concurrent mark sweep GC freed 440(13KB) AllocSpace objects, 219(3MB) LOS objects, 27% free, 5MB/7MB, paused 859us total 35.937ms
+12-04 20:23:23.519: I/art(8586): WaitForGcToComplete blocked for 23.215ms for cause Background
+12-04 20:23:23.583: I/art(8586): WaitForGcToComplete blocked for 25.108ms for cause Explicit
+12-04 20:23:23.619: I/art(8586): Explicit concurrent mark sweep GC freed 432(13KB) AllocSpace objects, 215(3MB) LOS objects, 28% free, 5MB/7MB, paused 624us total 35.333ms
+12-04 20:23:23.622: I/art(8586): WaitForGcToComplete blocked for 27.524ms for cause Background
+12-04 20:23:23.685: I/art(8586): WaitForGcToComplete blocked for 19.031ms for cause Explicit
+12-04 20:23:23.720: I/art(8586): Explicit concurrent mark sweep GC freed 348(10KB) AllocSpace objects, 174(2MB) LOS objects, 27% free, 5MB/7MB, paused 724us total 34.990ms
+12-04 20:23:23.721: I/art(8586): WaitForGcToComplete blocked for 22.765ms for cause Background
+12-04 20:23:29.335: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.899ms
+12-04 20:23:29.401: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.826ms
+12-04 20:23:29.461: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.246ms
+12-04 20:23:29.521: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 338us total 24.760ms
+12-04 20:23:29.581: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 339us total 24.285ms
+12-04 20:23:35.268: I/art(8586): Explicit concurrent mark sweep GC freed 291(47KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 4MB/6MB, paused 384us total 26.650ms
+12-04 20:23:35.335: I/art(8586): Explicit concurrent mark sweep GC freed 112(4KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 25.059ms
+12-04 20:23:35.397: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 337us total 25.777ms
+12-04 20:23:35.458: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 24.823ms
+12-04 20:23:35.520: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 344us total 25.510ms
+12-04 20:23:41.252: I/art(8586): Explicit concurrent mark sweep GC freed 4892(9MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 8MB/11MB, paused 535us total 59.099ms
+12-04 20:23:41.252: I/art(8586): WaitForGcToComplete blocked for 39.620ms for cause Background
+12-04 20:23:41.317: I/art(8586): WaitForGcToComplete blocked for 25.801ms for cause Explicit
+12-04 20:23:41.360: I/art(8586): Explicit concurrent mark sweep GC freed 3392(13MB) AllocSpace objects, 4(48KB) LOS objects, 25% free, 5MB/7MB, paused 692us total 43.502ms
+12-04 20:23:41.362: I/art(8586): WaitForGcToComplete blocked for 35.734ms for cause Background
+12-04 20:23:41.419: I/art(8586): WaitForGcToComplete blocked for 23.410ms for cause Explicit
+12-04 20:23:41.463: I/art(8586): Explicit concurrent mark sweep GC freed 461(50KB) AllocSpace objects, 225(2MB) LOS objects, 27% free, 5MB/7MB, paused 1.485ms total 43.928ms
+12-04 20:23:41.464: I/art(8586): WaitForGcToComplete blocked for 23.332ms for cause Background
+12-04 20:23:41.516: I/art(8586): WaitForGcToComplete blocked for 16.996ms for cause Explicit
+12-04 20:23:41.553: I/art(8586): Explicit concurrent mark sweep GC freed 346(10KB) AllocSpace objects, 173(2MB) LOS objects, 26% free, 5MB/7MB, paused 547us total 36.431ms
+12-04 20:23:41.553: I/art(8586): WaitForGcToComplete blocked for 17.649ms for cause Background
+12-04 20:23:41.603: I/art(8586): WaitForGcToComplete blocked for 15.994ms for cause Explicit
+12-04 20:23:41.639: I/art(8586): Explicit concurrent mark sweep GC freed 396(12KB) AllocSpace objects, 198(2MB) LOS objects, 27% free, 5MB/7MB, paused 571us total 35.575ms
+12-04 20:23:41.640: I/art(8586): WaitForGcToComplete blocked for 19.787ms for cause Background
+12-04 20:23:47.291: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 27.027ms
+12-04 20:23:47.361: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 347us total 24.045ms
+12-04 20:23:47.421: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.949ms
+12-04 20:23:47.479: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 340us total 24.024ms
+12-04 20:23:47.538: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 24.913ms
+12-04 20:23:53.134: W/art(8586): Suspending all threads took: 11.933ms
+12-04 20:23:53.269: I/art(8586): Explicit concurrent mark sweep GC freed 720(474KB) AllocSpace objects, 272(3MB) LOS objects, 27% free, 5MB/7MB, paused 611us total 40.454ms
+12-04 20:23:53.332: I/art(8586): WaitForGcToComplete blocked for 25.960ms for cause Explicit
+12-04 20:23:53.367: I/art(8586): Explicit concurrent mark sweep GC freed 332(10KB) AllocSpace objects, 165(2MB) LOS objects, 27% free, 5MB/7MB, paused 633us total 34.411ms
+12-04 20:23:53.372: I/art(8586): WaitForGcToComplete blocked for 21.416ms for cause Background
+12-04 20:23:53.428: I/art(8586): WaitForGcToComplete blocked for 18.760ms for cause Explicit
+12-04 20:23:53.464: I/art(8586): Explicit concurrent mark sweep GC freed 386(12KB) AllocSpace objects, 193(2MB) LOS objects, 27% free, 5MB/7MB, paused 556us total 35.164ms
+12-04 20:23:53.464: I/art(8586): WaitForGcToComplete blocked for 18.861ms for cause Background
+12-04 20:23:53.519: I/art(8586): WaitForGcToComplete blocked for 16.442ms for cause Explicit
+12-04 20:23:53.557: I/art(8586): Explicit concurrent mark sweep GC freed 396(12KB) AllocSpace objects, 198(3MB) LOS objects, 27% free, 5MB/7MB, paused 528us total 37.341ms
+12-04 20:23:53.562: I/art(8586): WaitForGcToComplete blocked for 28.543ms for cause Background
+12-04 20:23:53.609: I/art(8586): WaitForGcToComplete blocked for 15.772ms for cause Explicit
+12-04 20:23:53.643: I/art(8586): Explicit concurrent mark sweep GC freed 340(10KB) AllocSpace objects, 170(2MB) LOS objects, 27% free, 5MB/7MB, paused 478us total 33.903ms
+12-04 20:23:53.652: I/art(8586): WaitForGcToComplete blocked for 26.321ms for cause Background
+12-04 20:23:59.320: I/art(8586): Explicit concurrent mark sweep GC freed 183(7KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 343us total 30.022ms
+12-04 20:23:59.378: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 341us total 23.968ms
+12-04 20:23:59.437: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.699ms
+12-04 20:23:59.496: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 345us total 24.052ms
+12-04 20:23:59.555: I/art(8586): Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 28% free, 4MB/6MB, paused 342us total 24.806ms

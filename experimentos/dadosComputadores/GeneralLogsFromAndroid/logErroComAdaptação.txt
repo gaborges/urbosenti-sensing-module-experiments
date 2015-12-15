@@ -1,0 +1,22 @@
+12-06 13:33:01.718: E/CommunicationManager(25307): null
+12-06 13:33:01.718: E/CommunicationManager(25307): java.net.UnknownHostException: Unable to resolve host "ubicomp.inf.ufrgs.br": No address associated with hostname
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at java.net.InetAddress.lookupHostByName(InetAddress.java:457)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at java.net.InetAddress.getAllByNameImpl(InetAddress.java:252)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at java.net.InetAddress.getAllByName(InetAddress.java:215)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at com.android.okhttp.HostResolver$1.getAllByName(HostResolver.java:29)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:232)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:124)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:272)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:211)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:373)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:323)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:491)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at br.ufrgs.urbosenti.android.AndroidGeneralCommunicationInterface.sendMessage(AndroidGeneralCommunicationInterface.java:159)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1973)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at urbosenti.core.communication.UploadService.run(UploadService.java:114)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at java.lang.Thread.run(Thread.java:818)
+12-06 13:33:01.718: E/CommunicationManager(25307): Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at libcore.io.Posix.android_getaddrinfo(Native Method)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:55)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	at java.net.InetAddress.lookupHostByName(InetAddress.java:438)
+12-06 13:33:01.718: E/CommunicationManager(25307): 	... 14 more

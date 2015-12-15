@@ -1,0 +1,16 @@
+12-04 19:25:54.698: E/CommunicationManager(20405): null
+12-04 19:25:54.698: E/CommunicationManager(20405): java.io.IOException: Failed : HTTP error code : 500
+12-04 19:25:54.698: E/CommunicationManager(20405): 	at br.ufrgs.urbosenti.android.AndroidGeneralCommunicationInterface.sendMessage(AndroidGeneralCommunicationInterface.java:160)
+12-04 19:25:54.698: E/CommunicationManager(20405): 	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:1973)
+12-04 19:25:54.698: E/CommunicationManager(20405): 	at urbosenti.core.communication.UploadService.run(UploadService.java:114)
+12-04 19:25:54.698: E/CommunicationManager(20405): 	at java.lang.Thread.run(Thread.java:818)
+12-04 19:25:55.637: E/AndroidRuntime(20405): FATAL EXCEPTION: Thread-4148
+12-04 19:25:55.637: E/AndroidRuntime(20405): Process: br.ufrgs.urbosenti, PID: 20405
+12-04 19:25:55.637: E/AndroidRuntime(20405): java.lang.NullPointerException: Attempt to invoke virtual method 'void java.util.HashMap.clear()' on a null object reference
+12-04 19:25:55.637: E/AndroidRuntime(20405): 	at urbosenti.core.events.Event.cleanEvent(Event.java:220)
+12-04 19:25:55.637: E/AndroidRuntime(20405): 	at br.ufrgs.urbosenti.android.ConcreteApplicationHandler.newEvent(ConcreteApplicationHandler.java:20)
+12-04 19:25:55.637: E/AndroidRuntime(20405): 	at urbosenti.core.events.EventManager.newEvent(EventManager.java:120)
+12-04 19:25:55.637: E/AndroidRuntime(20405): 	at urbosenti.core.communication.CommunicationManager.newInternalEvent(CommunicationManager.java:1639)
+12-04 19:25:55.637: E/AndroidRuntime(20405): 	at urbosenti.core.communication.CommunicationManager.uploadServiceFunction(CommunicationManager.java:2012)
+12-04 19:25:55.637: E/AndroidRuntime(20405): 	at urbosenti.core.communication.UploadService.run(UploadService.java:114)
+12-04 19:25:55.637: E/AndroidRuntime(20405): 	at java.lang.Thread.run(Thread.java:818)
