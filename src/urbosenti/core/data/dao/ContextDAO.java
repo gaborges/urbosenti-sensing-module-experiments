@@ -24,9 +24,9 @@ public class ContextDAO {
     private PreparedStatement stmt;
     private final DataManager dataManager;
 
-    public ContextDAO(Connection connection, DataManager dataManager) {
+    public ContextDAO(Object connection, DataManager dataManager) {
         this.dataManager = dataManager;
-        this.connection = connection;
+        this.connection = (Connection) connection;
     }
     
     public Component getComponentDeviceModel() throws SQLException {

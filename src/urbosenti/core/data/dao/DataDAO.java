@@ -24,9 +24,9 @@ public class DataDAO {
     private PreparedStatement stmt;
     private final DataManager dataManager;
 
-    public DataDAO(Connection connection, DataManager dataManager) {
+    public DataDAO(Object connection, DataManager dataManager) {
         this.dataManager = dataManager;
-        this.connection = connection;
+        this.connection = (Connection) connection;
     }
     
     public Component getComponentDeviceModel() throws SQLException {

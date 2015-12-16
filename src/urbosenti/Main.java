@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 import urbosenti.core.communication.PushServiceReceiver;
 import urbosenti.core.communication.interfaces.WiredCommunicationInterface;
 import urbosenti.core.communication.receivers.HTTPPushServiceReceiver;
+import urbosenti.core.communication.receivers.SocketPushServiceReceiver;
 import urbosenti.core.device.DeviceManager;
 import urbosenti.core.device.model.Service;
 import urbosenti.test.ConcreteApplicationHandler;
@@ -109,8 +110,8 @@ public class Main {
         ConcreteApplicationHandler handler = new ConcreteApplicationHandler(deviceManager);
         deviceManager.getEventManager().subscribe(handler);
         // Execução - inicia todos os serviços e threads em background. Intanciar serviço de recebimento de mensagens
-        //PushServiceReceiver teste = new SocketPushServiceReceiver(deviceManager.getCommunicationManager())
-        PushServiceReceiver teste = new HTTPPushServiceReceiver(deviceManager.getCommunicationManager(), Integer.parseInt(args[0]));
+        PushServiceReceiver teste = new SocketPushServiceReceiver(deviceManager.getCommunicationManager(), Integer.parseInt(args[0]));
+        //PushServiceReceiver teste = new HTTPPushServiceReceiver(deviceManager.getCommunicationManager(), Integer.parseInt(args[0]));
         //DeliveryMessagingService delivaryService = new DeliveryMessagingService(deviceManager.getCommunicationManager());
         deviceManager.addSupportedInputCommunicationInterface(teste);
 

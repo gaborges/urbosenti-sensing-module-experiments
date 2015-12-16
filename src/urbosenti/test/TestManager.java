@@ -217,7 +217,15 @@ public class TestManager extends ComponentManager implements Runnable {
         this.continuousEvent.setParameters(values);
         this.continuousEvent.setEntityId(ENTITY_TEST_ENTITY);
         this.interactionMode = 1;
-        this.deviceManager.getEventManager().newEvent(continuousEvent);
+        // evento gerado
+        Event event = new SystemEvent(this);
+        event.setId(EVENT_START_INTERACTION);
+        event.setName("Continuos interaction event!");
+        event.setTime(this.continuousEvent.getTime());
+        event.setParameters(new HashMap<String, Object>(this.continuousEvent.getParameters()));
+        event.setEntityId(ENTITY_TEST_ENTITY);
+        this.deviceManager.getEventManager().newEvent(event);
+        //this.deviceManager.getEventManager().newEvent(continuousEvent);
     }
 
     public void stopAgents(List<String> ips, List<Integer> ports) {
@@ -291,7 +299,14 @@ public class TestManager extends ComponentManager implements Runnable {
                     if(this.interactionMode==1){
                         if (this.eventCount < this.eventLimit) {
 //                            System.out.println("lalala");
-                            this.deviceManager.getEventManager().newEvent(continuousEvent);
+                            // evento gerado
+                            event = new SystemEvent(this);
+                            event.setId(EVENT_START_INTERACTION);
+                            event.setName("Continuos interaction event!");
+                            event.setTime(this.continuousEvent.getTime());
+                            event.setParameters(new HashMap<String, Object>(this.continuousEvent.getParameters()));
+                            event.setEntityId(ENTITY_TEST_ENTITY);
+                            this.deviceManager.getEventManager().newEvent(event);
                         } else {
 ////                            System.out.println("Como chegou aquiii -----------------");
 //                            this.stopAgent(action.getParameters().get("ip").toString(), 

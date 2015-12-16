@@ -86,9 +86,9 @@ public final class AdaptationDAO {
     private EventModel eventModel;
     private InteractionModel interactionModel;
 
-    public AdaptationDAO(Connection connection, DataManager dataManager) {
+    public AdaptationDAO(Object connection, DataManager dataManager) {
         this.dataManager = dataManager;
-        this.connection = connection;
+        this.connection = (Connection) connection;
         this.acls = null;
         this.deviceModel = null;
         this.agentTypes = null;
@@ -367,6 +367,7 @@ public final class AdaptationDAO {
         // checa em memória primeiro pelo serviço
 //        for (InteractionModel interaction : service.getAgent().getAgentType().getInteractionModels()) {
 //            if (interaction.getId() == interactionId) {
+//                interactionModel = interaction;
 //                interactionExists = true;
 //                break;
 //            }
