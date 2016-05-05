@@ -212,6 +212,23 @@ public class MessageWrapper implements Serializable  {
         messageWrapper.build();
         return messageWrapper;
     }
+    
+    public boolean validateMessage(){
+        return validateMessage(message);
+    }
+    
+    public static boolean validateMessage(Message m){
+        // Verifica se o UID do dispositivo foi adicionado. Esse método retorna false caso, com exceção se for no ato de registro
+        if (Message.SUBJECT_REGISTRATION != m.getSubject() && m.getOrigin().getUid().isEmpty()) { // Se for para registro não há UID de origem
+            return false;
+        }
+        // verifica se o endereço de destino da mensagem não existe
+        if(m.getTarget().getAddress().isEmpty()){
+            return false;
+        }
+        //
+        return true;
+    }
 
     public boolean isSent() {
         return sent;

@@ -155,15 +155,9 @@ public class UploadService extends UrboSentiService implements Runnable, Instanc
         } else {
             messageWrapper.getMessage().setContent("<report>" + messageWrapper.getMessage().getContent() + "</report>");
         }
-        try {
-            // Cria o envelope XML da UrboSenti correspondente da mensagem
-            messageWrapper.build();
-        } catch (ParserConfigurationException ex) {
-            Logger.getLogger(CommunicationManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerConfigurationException ex) {
-            Logger.getLogger(CommunicationManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(CommunicationManager.class.getName()).log(Level.SEVERE, null, ex);
+        // Valida a mensagem para construção do envelope XML da UrboSenti
+        if(messageWrapper.validateMessage()){
+            throw new Error("Problema ao validar a mensagem. Verifique se há um endereço de destino ou se o UID foi descoberto.");
         }
         // adiciona na fila de upload
         this.addReport(messageWrapper);
